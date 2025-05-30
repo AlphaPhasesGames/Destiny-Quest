@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alpha Phases/Scenes/Main Menu.unity
     guid: e6859afe608f299418ed83c3d7ce4cd6
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/Stage1Lab.unity
+    guid: 70d02b70806b5d445b909918097603e4
   m_configObjects: {}

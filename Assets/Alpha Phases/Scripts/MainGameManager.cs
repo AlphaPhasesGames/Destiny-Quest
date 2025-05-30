@@ -25,7 +25,7 @@ namespace Alpha.Phases.Destiny.Quest
         [SerializeField, Header("Initial State Data")]
         DQWBSaveData dqwbSaveData; // get access to save section of this script
         public int currentStagedqwb;
-        private bool hasIPadBeenSelected;
+        public bool hasIPadBeenSelected;
         public bool iPadChosen;
         //   public NavMeshAgent playerNavmeshAgent;
 
@@ -125,6 +125,7 @@ namespace Alpha.Phases.Destiny.Quest
         void RemoveMainMenuUINewGame()
         {
             currentStagedqwb = 1;
+            SaveS1S1();
         }
         void RemoveMainMenuUIContinue()
         {
@@ -134,17 +135,12 @@ namespace Alpha.Phases.Destiny.Quest
         }
 
         #region global Save stuff
-        public void SavePlayerPos()
-        {
-            StartCoroutine(ShowAutoSaveMessage());
-            LOLSDK.Instance.SaveState(dqwbSaveData);
-        }
-       
-        public IEnumerator ShowAutoSaveMessage()
-        {
-            //    autoSavingMessage.gameObject.SetActive(true);
-            yield return new WaitForSeconds(3);
 
+        public void SaveS1S1()
+        {
+            currentStagedqwb = 1;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
         }
         #endregion          
     }

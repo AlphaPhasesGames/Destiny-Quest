@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 
 namespace Alpha.Phases.Destiny.Quest
 {
@@ -25,14 +26,20 @@ namespace Alpha.Phases.Destiny.Quest
             // Handle mouse input (Editor or Desktop builds)
             if (Input.GetMouseButtonDown(0))
             {
+                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                    return;
+
                 TryMoveTo(Input.mousePosition);
             }
 #elif UNITY_IOS || UNITY_ANDROID
-        // Handle first touch input (Mobile builds)
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            TryMoveTo(Input.GetTouch(0).position);
-        }
+    // Handle first touch input (Mobile builds)
+    if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+    {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+            return;
+
+        TryMoveTo(Input.GetTouch(0).position);
+    }
 #endif
         }
 

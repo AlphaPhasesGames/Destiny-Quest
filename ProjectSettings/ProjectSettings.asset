@@ -48,7 +48,7 @@ PlayerSettings:
   defaultScreenHeightWeb: 576
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
-  m_SpriteBatchVertexThreshold: 300
+  m_SpriteBatchVertexThreshold: 775
   m_MTRendering: 1
   mipStripping: 0
   numberOfMipsStripped: 0
@@ -291,7 +291,7 @@ PlayerSettings:
     m_DynamicBatching: 0
   - m_BuildTarget: WebGL
     m_StaticBatching: 1
-    m_DynamicBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
   - m_BuildTarget: MacStandaloneSupport

@@ -21,42 +21,40 @@ namespace Alpha.Phases.Destiny.Quest
     }
     public class MainGameManager : MonoBehaviour
     {
+        public static MainGameManager Instance { get; private set; }
+
         #region global code
         [SerializeField, Header("Initial State Data")]
-        DQWBSaveData dqwbSaveData; // get access to save section of this script
+        DQWBSaveData dqwbSaveData;
         public int currentStagedqwb;
         public bool hasIPadBeenSelected;
         public bool iPadChosen;
-        //   public NavMeshAgent playerNavmeshAgent;
-
-        //public GameObject peoplePLayer; // game object for the player
         public bool runScriptOnce;
 
-
-        [SerializeField] Button continueButton, newGameButton; // declare two buttons for the start new game and continue game options
-        public TextMeshProUGUI newGameText; // TMP for the new game button
-        public TextMeshProUGUI continueText; // TMP for the continue game button
+        [SerializeField] Button continueButton, newGameButton;
+        public TextMeshProUGUI newGameText;
+        public TextMeshProUGUI continueText;
         #endregion
 
-        // stage one stuff
         #region "stage1stufftobecollapsed"
         [SerializeField, Header("Stage 1 Code")]
-
         #endregion
-        JSONNode _langNode; // declare lanuage code for this game so we know if its spanish or english
-        public string _langCode = "en"; // declare string for english text
-        string _langCodeSpanish = "es"; // declare string for spanish text
 
+        JSONNode _langNode;
+        public string _langCode = "en";
+        string _langCodeSpanish = "es";
 
-        private void Awake() // on awake of script
+        private void Awake()
         {
-            Application.runInBackground = false; // dont let the game run in the background
-            DontDestroyOnLoad(this.gameObject);
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this.gameObject); // Prevent duplicates
+                return;
+            }
 
-            //#if UNITY_IOS
-            //   
-            //#endif
-            //  Application.targetFrameRate = -1; // Set the target frame rate for iOS builds
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+            Application.runInBackground = false;
         }
 
         void Start()
@@ -116,9 +114,15 @@ namespace Alpha.Phases.Destiny.Quest
             if (dqwbSaveData.current_stage == 1)
             {
                 SceneManager.LoadScene("Stage1Lab");
-                Debug.Log("Loaded Stage 1 Save");
+                Debug.Log("Loaded Stage 1 Scene 1 Save");
             }
-                  
+
+            if (dqwbSaveData.current_stage == 2)
+            {
+                SceneManager.LoadScene("Stage1Camp");
+                Debug.Log("Loaded Stage 1 Scene 2 Save");
+            }
+
             Debug.Log("Load Function Called");
         }
 
@@ -139,6 +143,13 @@ namespace Alpha.Phases.Destiny.Quest
         public void SaveS1S1()
         {
             currentStagedqwb = 1;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS1S2()
+        {
+            currentStagedqwb = 2;
             dqwbSaveData.current_stage = currentStagedqwb;
             Save();
         }

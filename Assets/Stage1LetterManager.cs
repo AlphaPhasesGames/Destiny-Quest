@@ -81,7 +81,7 @@ namespace Alpha.Phases.Destiny.Quest
             s1TextMan.positionChanged = true;
             s1TextMan.arrayPos = 4;
         }
-
+        
         public void PlayTTSLetter1()
         {
             LOLSDK.Instance.SpeakText("labText6");

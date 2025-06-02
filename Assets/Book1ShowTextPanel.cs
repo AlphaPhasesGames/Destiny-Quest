@@ -2,32 +2,35 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Book1ShowTextPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+namespace Alpha.Phases.Destiny.Quest
 {
-    public GameObject textPanel; // Assign your panel in the inspector
-
-    void Start()
+    public class Book1ShowTextPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        if (textPanel != null)
-            textPanel.SetActive(false); // Hide panel initially
-    }
+        public GameObject textPanel; // Assign your panel in the inspector
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (textPanel != null)
-            textPanel.SetActive(true);
-    }
+        void Start()
+        {
+            if (textPanel != null)
+                textPanel.SetActive(false); // Hide panel initially
+        }
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if (textPanel != null)
-            textPanel.SetActive(false);
-    }
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            if (textPanel != null)
+                textPanel.SetActive(true);
+        }
 
-    // Optional: Call this from a UI Button's OnClick if you want it to also appear when clicked
-    public void OnButtonClick()
-    {
-        if (textPanel != null)
-            textPanel.SetActive(true);
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            if (textPanel != null)
+                textPanel.SetActive(false);
+        }
+
+        // Optional: Call this from a UI Button's OnClick if you want it to also appear when clicked
+        public void OnButtonClick()
+        {
+            if (textPanel != null)
+                textPanel.SetActive(true);
+        }
     }
 }

@@ -30,17 +30,13 @@ namespace Alpha.Phases.Destiny.Quest
             page1TTS.onClick.AddListener(PlayTTSLetter1);
             page2TTS.onClick.AddListener(PlayTTSLetter2);
             page3TTS.onClick.AddListener(PlayTTSLetter3);
-            page4TTS.onClick.AddListener(PlayTTSLetter3);
+            page4TTS.onClick.AddListener(PlayTTSLetter4);
+
+            ShowPage(0);
         }
 
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                letterParent.gameObject.SetActive(true);
-            }
-        }
+      
         public void ShowPage(int index)
         {
             currentPage = index;
@@ -113,7 +109,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public void PlayTTSLetter4()
         {
-            LOLSDK.Instance.SpeakText("thomasJefferson5Letter5");
+            LOLSDK.Instance.SpeakText("thomasJefferson5Letter4");
             Debug.Log("This TTS Worked");
         }
 

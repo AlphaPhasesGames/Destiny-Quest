@@ -23,6 +23,10 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book1BP4;
         public TextMeshProUGUI book1BP5;
         public TextMeshProUGUI book1BP6;
+        public TextMeshProUGUI book2BP1;
+        public TextMeshProUGUI book2BP2;
+        public TextMeshProUGUI book2BP3;
+        public TextMeshProUGUI book2BP4;
         public TextMeshProUGUI referenceButton;
         public TextMeshProUGUI citationInfo;
         public TextMeshProUGUI jeffersonPreText;
@@ -30,6 +34,10 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI letterSection2;
         public TextMeshProUGUI letterSection3;
         public TextMeshProUGUI letterSection4;
+        public TextMeshProUGUI jeffersonWP1;
+        public TextMeshProUGUI jeffersonWP2;
+        public TextMeshProUGUI jeffersonWP3;
+
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -48,13 +56,20 @@ namespace Alpha.Phases.Destiny.Quest
             book1BP4.text = defs["book1BP4"];
             book1BP5.text = defs["book1BP5"];
             book1BP6.text = defs["book1BP6"];
+            book2BP1.text = defs["book2BP1"];
+            book2BP2.text = defs["book2BP2"];
+            book2BP3.text = defs["book2BP3"];
+            book2BP4.text = defs["book2BP4"];
             referenceButton.text = defs["referenceButton"];
             citationInfo.text = defs["citationInfoBook1"];
             jeffersonPreText.text = defs["thomasJefferson1Pretext"];
             letterSection1.text = defs["thomasJefferson1Letter1"];
-            letterSection2.text = defs["thomasJefferson1Letter2"];
-            letterSection3.text = defs["thomasJefferson1Letter3"];
-            letterSection4.text = defs["thomasJefferson1Letter4"];
+            letterSection2.text = defs["thomasJefferson2Letter2"];
+            letterSection3.text = defs["thomasJefferson3Letter3"];
+            letterSection4.text = defs["thomasJefferson4Letter4"];
+            jeffersonWP1.text = defs["thomasJeffersonWesternPrior1"];
+            jeffersonWP2.text = defs["thomasJeffersonWesternPrior2"];
+            jeffersonWP3.text = defs["thomasJeffersonWesternPrior3"];
         }
     }
 }

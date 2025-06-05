@@ -26,8 +26,20 @@
       "book1BP5": 110,
       "book1BP6": 110,
       "referenceButton": 20,
-      "citationInfoBook1": 100
-    }
+      "citationInfoBook1": 100,
+      "stage1Text1": 100,
+      "stage1Text2": 150,
+      "stage1Text3": 80,
+      "stage1Text4": 100,
+      "stage1Text5": 140,
+      "signText1": 20,
+      "signText2": 20,
+      "signText3": 20,
+      "thomasJefferson1Pretext": 150,
+      "thomasJefferson1Letter1": 200,
+      "thomasJefferson2Letter2": 200,
+      "thomasJefferson3Letter3": 320,
+      "thomasJefferson4Letter4": 110,    }
   },
   "en": {
     "newGame": "New Game!",
@@ -55,7 +67,20 @@
     "book1BP5": "Some Americans believed that expansion was right, even if it meant using force or unfair methods.",
     "book1BP6": "By 1848, the United States had tripled in size through treaties, settlements, trickery, and war.",
     "referenceButton": "Reference",
-    "citationInfoBook1": "Manifest Destiny and the Growing Nation - Introduction - Page 1"
+    "citationInfoBook1": "Manifest Destiny and the Growing Nation - Introduction - Page 1",
+    "stage1Text1": "Wow, we're really in 1803. There's a piece of paper on the ground here. Let's read it!",
+    "stage1Text2": "We need to find Thomas Jefferson. Could you please search the camp for a wooden sign with the meaning of “Manifest Destiny” written on it?",
+    "stage1Text3": "Does this sign have the meaning of the term “Manifest Destiny” written on it?",
+    "stage1Text4": "It sounds correct, but it isn’t. Have a look at the book in your inventory and try again.",
+    "stage1Text5": "That's correct. Manifest Destiny means “Obvious Fate”. Oh look, Thomas Jefferson is here and approaching us. Let's talk to him.",
+    "signText1": "Obvious Fate",
+    "signText2": "Certain Fate",
+    "signText3": "Misplaced Fate",
+    "thomasJefferson1Pretext": "My name is Thomas Jefferson. I have written you a letter. Will you please read it? Then I have a task I need you to complete for me.",
+    "thomasJefferson1Letter1": "America is destined to expand westward and claim new land. Our young nation didn’t begin to grow through war — we grew with smart deals and brave settlers.",
+    "thomasJefferson2Letter2": "I sent a man named James Monroe to buy New Orleans for our farmers. Napoleon and France surprised us — they sold us all of Louisiana instead! One peaceful deal doubled our country.",
+    "thomasJefferson3Letter3": "In Texas, Americans moved in with Mexico’s permission. They promised to follow the rules — no fighting, just settlement.  Out west, Lewis and Clark explored new lands. Later, a path known as the South Pass made it easier for wagons to reach Oregon. As more settlers arrived, so did our claim.",
+    "thomasJefferson4Letter4": "We used exploration, trade, and peaceful agreements — not armies — to begin to shape America’s future."
   },
   "es": {
     "newGame": "New Game!",
@@ -84,5 +109,18 @@
     "book1BP6": "By 1848, the United States had tripled in size through treaties, settlements, trickery, and war."
     "referenceButton": "Reference",
     "citationInfoBook1": "Manifest Destiny and the Growing Nation - Introduction - Page 1"
+    "stage1Text1": "Wow, we're really in 1803. There's a piece of paper on the ground here. Let's read it!",
+    "stage1Text2": "We need to find Thomas Jefferson. Could you please search the camp for a wooden sign with the meaning of “Manifest Destiny” written on it?",
+    "stage1Text3": "Does this sign have the meaning of the term “Manifest Destiny” written on it?",
+    "stage1Text4": "It sounds correct, but it isn’t. Have a look at the book in your inventory and try again.",
+    "stage1Text5": "That's correct. Manifest Destiny means “Obvious Fate”. Oh look, Thomas Jefferson is here and approaching us. Let's talk to him.",
+    "signText1": "Obvious Fate",
+    "signText2": "Certain Fate",
+    "signText3": "Misplaced Fate",
+    "thomasJefferson1Pretext": "My name is Thomas Jefferson. I have written you a letter. Will you please read it? Then I have a task I need you to complete for me.",
+    "thomasJefferson1Letter1": "America is destined to expand westward and claim new land. Our young nation didn’t begin to grow through war — we grew with smart deals and brave settlers.",
+    "thomasJefferson2Letter2": "I sent a man named James Monroe to buy New Orleans for our farmers. Napoleon and France surprised us — they sold us all of Louisiana instead! One peaceful deal doubled our country.",
+    "thomasJefferson3Letter3": "In Texas, Americans moved in with Mexico’s permission. They promised to follow the rules — no fighting, just settlement.  Out west, Lewis and Clark explored new lands. Later, a path known as the South Pass made it easier for wagons to reach Oregon. As more settlers arrived, so did our claim.",
+    "thomasJefferson4Letter4": "We used exploration, trade, and peaceful agreements — not armies — to begin to shape America’s future."
   }
 }

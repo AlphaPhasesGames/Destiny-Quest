@@ -13,16 +13,19 @@ namespace Alpha.Phases.Destiny.Quest
             // Cache the NavMeshAgent component at startup
             agent = GetComponent<NavMeshAgent>();
         }
+
         void Update()
         {
             HandleInput();
+            CheckIfArrived();
         }
+
         /// <summary>
         /// Detects input based on platform and calls movement method.
         /// </summary>
         private void HandleInput()
         {
-#if UNITY_EDITOR || UNITY_STANDALONE
+//#if UNITY_EDITOR || UNITY_STANDALONE
             // Handle mouse input (Editor or Desktop builds)
             if (Input.GetMouseButtonDown(0))
             {
@@ -31,16 +34,16 @@ namespace Alpha.Phases.Destiny.Quest
 
                 TryMoveTo(Input.mousePosition);
             }
-#elif UNITY_IOS || UNITY_ANDROID
-    // Handle first touch input (Mobile builds)
-    if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-    {
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-            return;
+//#elif UNITY_IOS || UNITY_ANDROID
+            // Handle first touch input (Mobile builds)
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                    return;
 
-        TryMoveTo(Input.GetTouch(0).position);
-    }
-#endif
+                TryMoveTo(Input.GetTouch(0).position);
+            }
+//#endif
         }
 
         /// <summary>
@@ -58,6 +61,22 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 // Move the agent to the hit point on the NavMesh
                 agent.SetDestination(hit.point);
+                agent.isStopped = false; // Ensure the agent is active
+            }
+        }
+
+        /// <summary>
+        /// Checks if the agent has reached its destination and stops it to prevent circling.
+        /// </summary>
+        private void CheckIfArrived()
+        {
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                {
+                    agent.isStopped = true;
+                    agent.velocity = Vector3.zero;
+                }
             }
         }
     }

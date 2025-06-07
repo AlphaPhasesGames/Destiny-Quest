@@ -64,7 +64,7 @@ namespace Alpha.Phases.Destiny.Quest
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
-            textMan.arrayPos = 4;
+            textMan.arrayPos = 7;
             if (agent != null)
             {
                 agent.isStopped = false;

@@ -37,7 +37,16 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI jeffersonWP1;
         public TextMeshProUGUI jeffersonWP2;
         public TextMeshProUGUI jeffersonWP3;
-
+        public TextMeshProUGUI Letter2Text;
+        public TextMeshProUGUI miniGame2Question;
+        public TextMeshProUGUI miniGame2Correct1;
+        public TextMeshProUGUI miniGame2Correct2;
+        public TextMeshProUGUI miniGame2Correct3;
+        public TextMeshProUGUI miniGame2Incorrect;
+        public TextMeshProUGUI miniGame2Answer1;
+        public TextMeshProUGUI miniGame2Answer2;
+        public TextMeshProUGUI miniGame2Answer3;
+        public TextMeshProUGUI miniGame2Answer4;
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -70,6 +79,16 @@ namespace Alpha.Phases.Destiny.Quest
             jeffersonWP1.text = defs["thomasJeffersonWesternPrior1"];
             jeffersonWP2.text = defs["thomasJeffersonWesternPrior2"];
             jeffersonWP3.text = defs["thomasJeffersonWesternPrior3"];
-        }
+            Letter2Text.text = defs["Stage1Scene2MiniGame2Text"];
+            miniGame2Question.text = defs["Stage1Scene2MiniGame2Question"];
+            miniGame2Correct1.text = defs["Stage1Scene2MiniGame2Correct1"];
+            miniGame2Correct2.text = defs["Stage1Scene2MiniGame2Correct2"];
+            miniGame2Correct3.text = defs["Stage1Scene2MiniGame2Correct3"];
+            miniGame2Incorrect.text = defs["Stage1Scene2MiniGame2InCorrect"];
+            miniGame2Answer1.text = defs["Stage1Scene2MiniGame2Answer1"];
+            miniGame2Answer2.text = defs["Stage1Scene2MiniGame2Answer2"];
+            miniGame2Answer3.text = defs["Stage1Scene2MiniGame2Answer3"];
+            miniGame2Answer4.text = defs["Stage1Scene2MiniGame2Answer4"];
+    }
     }
 }

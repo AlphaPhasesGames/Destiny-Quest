@@ -94,9 +94,9 @@ ModelImporter:
     meshOptimizationFlags: 1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 4
+    secondaryUVAreaDistortion: 8
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
+    secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 10
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 6

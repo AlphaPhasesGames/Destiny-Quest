@@ -46,7 +46,17 @@
       "thomasJefferson4Letter4": 110, 
       "thomasJeffersonWesternPrior1": 220,
       "thomasJeffersonWesternPrior2": 180,   
-      "thomasJeffersonWesternPrior3": 210      
+      "thomasJeffersonWesternPrior3": 210,
+      "Stage1Scene2MiniGame2Text": 130,
+      "Stage1Scene2MiniGame2Question": 80,
+      "Stage1Scene2MiniGame2InCorrect": 80,
+      "Stage1Scene2MiniGame2Correct1": 120,
+      "Stage1Scene2MiniGame2Correct2": 130,
+      "Stage1Scene2MiniGame2Correct3": 110,
+      "Stage1Scene2MiniGame2Answer1": 60,
+      "Stage1Scene2MiniGame2Answer2": 60,
+      "Stage1Scene2MiniGame2Answer3": 60,
+      "Stage1Scene2MiniGame2Answer4": 60      
     }
   },
   "en": {
@@ -95,7 +105,17 @@
     "thomasJefferson4Letter4": "We used exploration, trade, and peaceful agreements — not armies — to begin to shape America’s future.",
     "thomasJeffersonWesternPrior1": "One of my great hopes for westward expansion is to open trade routes stretching from the Mississippi River all the way to the Pacific Ocean. Such paths would link our farms and cities to new ports and markets.",
     "thomasJeffersonWesternPrior2": "Along the way, we must greet the native nations with respect. Through fair trade and cultural exchange, I believe we can build trust and friendship as we journey west.",   
-    "thomasJeffersonWesternPrior3": "I have written down these priorities for westward expansion, but I have left them around camp. Can you please search through the tents and crates to see if you can find them? There should be 3 to find." 
+    "thomasJeffersonWesternPrior3": "I have written down these priorities for westward expansion, but I have left them around camp. Can you please search through the tents and crates to see if you can find them? There should be 3 to find.",
+    "Stage1Scene2MiniGame2Text": "Find 3 of Thomas Jefferson's priorities for Westward Expansion. Look through the crates in camp.",
+    "Stage1Scene2MiniGame2Question": "Is this one of Thomas Jefferson's priorities for Westward Expansion?",
+    "Stage1Scene2MiniGame2InCorrect": "Are you sure? Have a look at the books in your inventory and try again!",
+    "Stage1Scene2MiniGame2Correct1": "Correct, Thomas Jefferson prioritized creating trade routes along the Mississippi to reach the Pacific Ocean.",
+    "Stage1Scene2MiniGame2Correct2": "Correct, Thomas Jefferson saw greeting the natives and gaining good relations as a priority for westward expansion.",
+    "Stage1Scene2MiniGame2Correct3": "Correct, offering trade and a cultural exchange with the natives as a priority for westward expansion.",
+    "Stage1Scene2MiniGame2Answer1": "Offer native tribes trade and a cultural exchange.",
+    "Stage1Scene2MiniGame2Answer2": "Create trade routes along the Mississippi.",
+    "Stage1Scene2MiniGame2Answer3": "Greet native tribes and gain good relations.",
+    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home."  
   },
   "es": {
     "newGame": "New Game!",
@@ -143,6 +163,16 @@
     "thomasJefferson4Letter4": "We used exploration, trade, and peaceful agreements — not armies — to begin to shape America’s future.",
     "thomasJeffersonWesternPrior1": "One of my great hopes for westward expansion is to open trade routes stretching from the Mississippi River all the way to the Pacific Ocean. Such paths would link our farms and cities to new ports and markets.",
     "thomasJeffersonWesternPrior2": "Along the way, we must greet the native nations with respect. Through fair trade and cultural exchange, I believe we can build trust and friendship as we journey west.",   
-    "thomasJeffersonWesternPrior3": "I have written down these priorities for westward expansion, but I have left them around camp. Can you please search through the tents and crates to see if you can find them? There should be 3 to find." 
+    "thomasJeffersonWesternPrior3": "I have written down these priorities for westward expansion, but I have left them around camp. Can you please search through the tents and crates to see if you can find them? There should be 3 to find.",
+    "Stage1Scene2MiniGame2Text": "Find 3 of Thomas Jefferson's priorities for Westward Expansion. Look through the crates in camp.",
+    "Stage1Scene2MiniGame2Question": "Is this one of Thomas Jefferson's priorities for Westward Expansion?",
+    "Stage1Scene2MiniGame2InCorrect": "Are you sure? Have a look at the books in your inventory and try again!",
+    "Stage1Scene2MiniGame2Correct1": "Correct, Thomas Jefferson prioritized creating trade routes along the Mississippi to reach the Pacific Ocean.",
+    "Stage1Scene2MiniGame2Correct2": "Correct, Thomas Jefferson saw greeting the natives and gaining good relations as a priority for westward expansion.",
+    "Stage1Scene2MiniGame2Correct3": "Correct, offering trade and a cultural exchange with the natives as a priority for westward expansion.",
+    "Stage1Scene2MiniGame2Answer1": "Offer native tribes trade and a cultural exchange.",
+    "Stage1Scene2MiniGame2Answer2": "Create trade routes along the Mississippi.",
+    "Stage1Scene2MiniGame2Answer3": "Greet native tribes and gain good relations.",
+    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home." 
   }
 }

@@ -56,7 +56,8 @@
       "Stage1Scene2MiniGame2Answer1": 60,
       "Stage1Scene2MiniGame2Answer2": 60,
       "Stage1Scene2MiniGame2Answer3": 60,
-      "Stage1Scene2MiniGame2Answer4": 60      
+      "Stage1Scene2MiniGame2Answer4": 60,
+      "Stage1Scene2MiniGame2Complete": 90           
     }
   },
   "en": {
@@ -115,7 +116,9 @@
     "Stage1Scene2MiniGame2Answer1": "Offer native tribes trade and a cultural exchange.",
     "Stage1Scene2MiniGame2Answer2": "Create trade routes along the Mississippi.",
     "Stage1Scene2MiniGame2Answer3": "Greet native tribes and gain good relations.",
-    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home."  
+    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home."
+    "Stage1Scene2MiniGame2Complete": "That's all 3 priorities collected. Let us head back to talk to Thomas Jefferson."           
+  
   },
   "es": {
     "newGame": "New Game!",
@@ -173,6 +176,7 @@
     "Stage1Scene2MiniGame2Answer1": "Offer native tribes trade and a cultural exchange.",
     "Stage1Scene2MiniGame2Answer2": "Create trade routes along the Mississippi.",
     "Stage1Scene2MiniGame2Answer3": "Greet native tribes and gain good relations.",
-    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home." 
+    "Stage1Scene2MiniGame2Answer4": "Collect types of rocks to study back home.",
+    "Stage1Scene2MiniGame2Complete": "That's all 3 priorities collected. Let us head back to talk to Thomas Jefferson." 
   }
 }

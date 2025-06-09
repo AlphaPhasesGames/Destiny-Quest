@@ -13,6 +13,7 @@ namespace Alpha.Phases.Destiny.Quest
         public PlayerMovement playerMoveScript; // Handles player movement logic
         public GameObject s1s2Letter;           // UI element for the first letter
         public GameObject s1s2TommyLetter;      // UI element for Thomas Jefferson's letter
+        public GameObject task2PrioritiesLetter;
         public GameObject forwardParent;        // Parent object holding forward navigation UI
 
         public GameObject currentTextSection;   // Currently active text display section
@@ -142,10 +143,39 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 6:
                     backwardsButton.gameObject.SetActive(false);
+                    task2PrioritiesLetter.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanal());
                     break;
 
-                case 7:
+                case 7: // incorrect Mini game 2
+                    textPanal.gameObject.SetActive(true);
+                    agent.isStopped = false;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+
+                case 8: // correct Mini game 2 1
+                    textPanal.gameObject.SetActive(true);
+                    agent.isStopped = false;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+
+                case 9: // correct Mini game 2 1
+                    textPanal.gameObject.SetActive(true);
+                    agent.isStopped = false;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+
+                case 10: // correct Mini game 2 1
+                    textPanal.gameObject.SetActive(true);
+                    agent.isStopped = false;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+
+                case 11:
+                    textPanal.gameObject.SetActive(true);
+                    agent.isStopped = false;
+                    break;
+                case 12:
                     textPanal.gameObject.SetActive(false);
                     agent.isStopped = false;
                     break;
@@ -223,7 +253,7 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(5);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 7;
+            arrayPos = 12;
             Debug.Log("This start coRoutine Runs");
         }
 
@@ -232,7 +262,7 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(5);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 7;
+            arrayPos = 12;
             jeffersonCam.gameObject.SetActive(false);
             playerCam.gameObject.SetActive(true);
             Debug.Log("This start coRoutine Runs");
@@ -244,7 +274,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
             s1s2Letter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 7;
+            arrayPos = 12;
             Debug.Log("This start coRoutine Runs well");
         }
 
@@ -254,7 +284,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
             s1s2TommyLetter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 7;
+            arrayPos = 12;
             Debug.Log("This start coRoutine Runs well");
         }
 

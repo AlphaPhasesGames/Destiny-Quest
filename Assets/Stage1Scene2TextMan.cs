@@ -15,6 +15,9 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject s1s2TommyLetter;      // UI element for Thomas Jefferson's letter
         public GameObject task2PrioritiesLetter;
         public GameObject forwardParent;        // Parent object holding forward navigation UI
+        public GameObject timeTravelUIImage;
+        public GameObject playerObject;
+        public BoxCollider tommyBox;
 
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
@@ -121,6 +124,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
 
                 case 2:
+                    playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToTommyJefferson());
                     SpeakText("stage1Text5");
@@ -133,6 +137,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
 
                 case 4:
+                    playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(DelayTextButton());
                     break;
@@ -142,6 +147,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
 
                 case 6:
+                  
                     backwardsButton.gameObject.SetActive(false);
                     task2PrioritiesLetter.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanal());
@@ -173,9 +179,23 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 11:
                     textPanal.gameObject.SetActive(true);
+                    tommyBox.enabled = true;
                     agent.isStopped = false;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
+
                 case 12:
+                    StopAllCoroutines();
+                    positionChanged = true;
+                    textPanal.gameObject.SetActive(true);
+                    playerCam.gameObject.SetActive(false);
+                    jeffersonCam.gameObject.SetActive(true);
+                    agent.isStopped = true;
+                    playerObject.gameObject.SetActive(false);
+                    StartCoroutine(MoveToParis());
+                    break;
+
+                case 13:
                     textPanal.gameObject.SetActive(false);
                     agent.isStopped = false;
                     break;
@@ -253,7 +273,7 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(5);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
             Debug.Log("This start coRoutine Runs");
         }
 
@@ -262,7 +282,7 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(5);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
             jeffersonCam.gameObject.SetActive(false);
             playerCam.gameObject.SetActive(true);
             Debug.Log("This start coRoutine Runs");
@@ -274,17 +294,26 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
             s1s2Letter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
             Debug.Log("This start coRoutine Runs well");
         }
 
         public IEnumerator OpenTommyLetter()
         {
             yield return new WaitForSeconds(4);
-            playerMoveScript.enabled = true;
+            playerMoveScript.enabled = false;
             s1s2TommyLetter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
+            Debug.Log("This start coRoutine Runs well");
+        }
+
+        public IEnumerator MoveToBlank()
+        {
+            yield return new WaitForSeconds(3);
+            positionChanged = true;
+            playerMoveScript.enabled = false;
+            arrayPos = 13;
             Debug.Log("This start coRoutine Runs well");
         }
 
@@ -303,6 +332,14 @@ namespace Alpha.Phases.Destiny.Quest
             positionChanged = true;
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
+            Debug.Log("This start function Runs");
+        }
+
+        public IEnumerator MoveToParis()
+        {
+            yield return new WaitForSeconds(6);
+            timeTravelUIImage.gameObject.SetActive(true);
+           // positionChanged = true;           
             Debug.Log("This start coRoutine Runs");
         }
     }

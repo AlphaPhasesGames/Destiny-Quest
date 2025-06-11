@@ -123,6 +123,12 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Loaded Stage 1 Scene 2 Save");
             }
 
+            if (dqwbSaveData.current_stage == 3)
+            {
+                SceneManager.LoadScene("ParisStudy");
+                Debug.Log("Loaded Stage 1 Scene 3 Save");
+            }
+
             Debug.Log("Load Function Called");
         }
 
@@ -150,6 +156,13 @@ namespace Alpha.Phases.Destiny.Quest
         public void SaveS1S2()
         {
             currentStagedqwb = 2;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS1S3()
+        {
+            currentStagedqwb = 3;
             dqwbSaveData.current_stage = currentStagedqwb;
             Save();
         }

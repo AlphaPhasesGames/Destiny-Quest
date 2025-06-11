@@ -16,7 +16,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button correctButton;
         public Button incorrectButton;
         public Animator tommyJ;
-
+        public PlayerMovement player;
         // Reference to player's NavMeshAgent
         private NavMeshAgent agent;
 
@@ -45,7 +45,7 @@ namespace Alpha.Phases.Destiny.Quest
                     signQuestion.gameObject.SetActive(true);
                     correctButton.gameObject.SetActive(true);
                     incorrectButton.gameObject.SetActive(true);
-
+                    player.enabled = false;
                     // Stop the player's movement
                     agent.isStopped = true;
                     agent.velocity = Vector3.zero;

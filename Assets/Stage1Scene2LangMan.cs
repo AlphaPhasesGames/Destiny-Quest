@@ -48,6 +48,7 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI miniGame2Answer3;
         public TextMeshProUGUI miniGame2Answer4;
         public TextMeshProUGUI miniGame2Complete;
+        public TextMeshProUGUI miniGame2MoveToParis;
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -91,6 +92,7 @@ namespace Alpha.Phases.Destiny.Quest
             miniGame2Answer3.text = defs["Stage1Scene2MiniGame2Answer3"];
             miniGame2Answer4.text = defs["Stage1Scene2MiniGame2Answer4"];
             miniGame2Complete.text = defs["Stage1Scene2MiniGame2Complete"];
+            miniGame2MoveToParis.text = defs["Stage1Scene2MoveToParis"];
     }
     }
 }

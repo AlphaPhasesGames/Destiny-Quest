@@ -6,6 +6,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage1Scene2Minigame2CorrectCrate : MonoBehaviour
     {
         public Stage1Scene2TextMan textMan;
+        public Stage1Scene2MinigameBoolManager boolMan;
         public GameObject signText;
         public GameObject signObject;
         public GameObject signQuestion;
@@ -54,6 +55,7 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 agent.isStopped = false;
             }
+            boolMan.priority1 = true;
             agent = null;
         }
         public void IncorrectButton()
@@ -65,7 +67,7 @@ namespace Alpha.Phases.Destiny.Quest
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
-            textMan.arrayPos = 12;
+            textMan.arrayPos = 13;
             if (agent != null)
             {
                 agent.isStopped = false;

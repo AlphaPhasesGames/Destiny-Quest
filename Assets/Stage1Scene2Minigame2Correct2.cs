@@ -6,6 +6,8 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage1Scene2Minigame2Correct2 : MonoBehaviour
     {
         public Stage1Scene2TextMan textMan;
+        public Stage1Scene2MinigameBoolManager boolMan;
+
         public GameObject signText;
         public GameObject signObject;
         public GameObject signQuestion;
@@ -30,7 +32,7 @@ namespace Alpha.Phases.Destiny.Quest
                     signQuestion.gameObject.SetActive(true);
                     correctButton.gameObject.SetActive(true);
                     incorrectButton.gameObject.SetActive(true);
-
+                  
                     agent.isStopped = true;
                     agent.velocity = Vector3.zero;
                 }
@@ -50,6 +52,8 @@ namespace Alpha.Phases.Destiny.Quest
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
+            boolMan.priority2 = true;
+
             textMan.arrayPos = 9; // this text box closes the text panal and players can look for a new sign
             if (agent != null)
             {
@@ -66,7 +70,7 @@ namespace Alpha.Phases.Destiny.Quest
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
-            textMan.arrayPos = 12;
+            textMan.arrayPos = 13;
             if (agent != null)
             {
                 agent.isStopped = false;

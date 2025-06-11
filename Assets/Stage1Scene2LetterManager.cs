@@ -6,6 +6,7 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage1Scene2LetterManager : MonoBehaviour
     {
+
         public Stage1Scene2TextMan s1TextMan;
         [Header("Letter Pages")]
         public GameObject[] letterPages; // Assign all your letter page UI images here

@@ -129,6 +129,17 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Loaded Stage 1 Scene 3 Save");
             }
 
+            if (dqwbSaveData.current_stage == 4)
+            {
+                SceneManager.LoadScene("Stage1CampSection2");
+                Debug.Log("Loaded Stage 1 Scene 4 Save");
+            }
+
+            if (dqwbSaveData.current_stage == 5)
+            {
+                SceneManager.LoadScene("Stage1Scene5Map");
+                Debug.Log("Loaded Stage 1 Scene 4 Save");
+            }
             Debug.Log("Load Function Called");
         }
 
@@ -163,6 +174,20 @@ namespace Alpha.Phases.Destiny.Quest
         public void SaveS1S3()
         {
             currentStagedqwb = 3;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS1S4()
+        {
+            currentStagedqwb = 4;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS1S5()
+        {
+            currentStagedqwb = 5;
             dqwbSaveData.current_stage = currentStagedqwb;
             Save();
         }

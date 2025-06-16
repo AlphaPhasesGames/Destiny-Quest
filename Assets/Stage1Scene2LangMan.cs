@@ -81,18 +81,18 @@ namespace Alpha.Phases.Destiny.Quest
             jeffersonWP1.text = defs["thomasJeffersonWesternPrior1"];
             jeffersonWP2.text = defs["thomasJeffersonWesternPrior2"];
             jeffersonWP3.text = defs["thomasJeffersonWesternPrior3"];
-            Letter2Text.text = defs["Stage1Scene2MiniGame2Text"];
-            miniGame2Question.text = defs["Stage1Scene2MiniGame2Question"];
-            miniGame2Correct1.text = defs["Stage1Scene2MiniGame2Correct1"];
-            miniGame2Correct2.text = defs["Stage1Scene2MiniGame2Correct2"];
-            miniGame2Correct3.text = defs["Stage1Scene2MiniGame2Correct3"];
-            miniGame2Incorrect.text = defs["Stage1Scene2MiniGame2InCorrect"];
-            miniGame2Answer1.text = defs["Stage1Scene2MiniGame2Answer1"];
-            miniGame2Answer2.text = defs["Stage1Scene2MiniGame2Answer2"];
-            miniGame2Answer3.text = defs["Stage1Scene2MiniGame2Answer3"];
-            miniGame2Answer4.text = defs["Stage1Scene2MiniGame2Answer4"];
-            miniGame2Complete.text = defs["Stage1Scene2MiniGame2Complete"];
-            miniGame2MoveToParis.text = defs["Stage1Scene2MoveToParis"];
+            Letter2Text.text = defs["stage1Scene2MiniGame2Text"];
+            miniGame2Question.text = defs["stage1Scene2MiniGame2Question"];
+            miniGame2Correct1.text = defs["stage1Scene2MiniGame2Correct1"];
+            miniGame2Correct2.text = defs["stage1Scene2MiniGame2Correct2"];
+            miniGame2Correct3.text = defs["stage1Scene2MiniGame2Correct3"];
+            miniGame2Incorrect.text = defs["stage1Scene2MiniGame2InCorrect"];
+            miniGame2Answer1.text = defs["stage1Scene2MiniGame2Answer1"];
+            miniGame2Answer2.text = defs["stage1Scene2MiniGame2Answer2"];
+            miniGame2Answer3.text = defs["stage1Scene2MiniGame2Answer3"];
+            miniGame2Answer4.text = defs["stage1Scene2MiniGame2Answer4"];
+            miniGame2Complete.text = defs["stage1Scene2MiniGame2Complete"];
+            miniGame2MoveToParis.text = defs["stage1Scene2MoveToParis"];
     }
     }
 }

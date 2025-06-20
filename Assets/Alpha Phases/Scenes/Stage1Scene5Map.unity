@@ -1895,7 +1895,6 @@ MonoBehaviour:
   - {fileID: 1554210524}
   - {fileID: 338261059}
   textBools: 000000000000000000000000000000
-  agent: {fileID: 0}
   choice1Answer1North: {fileID: 91829189}
   choice1Answer2East: {fileID: 727403697}
   choice1Answer3South: {fileID: 1743181717}
@@ -1906,6 +1905,7 @@ MonoBehaviour:
   choice3Answer1GodsPlan: {fileID: 948990747}
   choice3Answer2StayHere: {fileID: 160397495}
   choice3Answer3GoHome: {fileID: 923463298}
+  moveToNextStage: {fileID: 785547617}
 --- !u!114 &314300314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7624,9 +7624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Paris
-
-'
+  m_text: 1843
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

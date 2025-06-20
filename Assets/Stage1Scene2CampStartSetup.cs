@@ -15,20 +15,8 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 MainGameManager.Instance.currentStagedqwb = 2;
                 MainGameManager.Instance.SaveS1S2();
+                runonce = true;
             }
-
-           
-        }
-        // Start is called before the first frame update
-        void Start()
-        {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 }

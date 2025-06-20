@@ -14,9 +14,8 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 MainGameManager.Instance.currentStagedqwb = 3;
                 MainGameManager.Instance.SaveS1S3();
+                runonce = true;
             }
-
-
         }
     }
 }

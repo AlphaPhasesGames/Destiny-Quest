@@ -36,7 +36,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+      //  public NavMeshAgent agent;              // Controls AI navigation
 
         public Button choice1Answer1North;
         public Button choice1Answer2East;
@@ -53,7 +53,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button choice3Answer2StayHere;
         public Button choice3Answer3GoHome;
 
-
+        public Button moveToNextStage;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -71,6 +71,8 @@ namespace Alpha.Phases.Destiny.Quest
             choice3Answer1GodsPlan.onClick.AddListener(Choice3ButtonGodplan);
             choice3Answer2StayHere.onClick.AddListener(Choice3ButtonStayHere);
             choice3Answer3GoHome.onClick.AddListener(Choice3ButtonGoHome);
+
+            moveToNextStage.onClick.AddListener(MoveToOregon);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -391,6 +393,11 @@ namespace Alpha.Phases.Destiny.Quest
             positionChanged = true;
             arrayPos = 12;
             StartCoroutine(ReturnToDecision3());
+        }
+
+        public void MoveToOregon()
+        {
+            SceneManager.LoadScene("Stage2Scene1");
         }
     }
 }

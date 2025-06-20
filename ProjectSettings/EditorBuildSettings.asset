@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alpha Phases/Scenes/Stage1Scene5Map.unity
     guid: a398f12493db5e7468c134aad708f575
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/Stage2Scene1.unity
+    guid: 8face738714e8f44a92bff4a73592168
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/Stage2Scene2.unity
+    guid: 1bebd6ca38f8b9147b448c20d27b4c39
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/Stage2Scene3.unity
+    guid: 750c8287905305c4984d9d8f2ef03df0
   m_configObjects: {}

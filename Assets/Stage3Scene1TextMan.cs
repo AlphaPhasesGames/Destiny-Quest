@@ -7,20 +7,9 @@ using LoLSDK;
 using UnityEngine.SceneManagement;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class Stage1Scene4TextMan : MonoBehaviour
+    public class Stage3Scene1TextMan : MonoBehaviour
     {
-        // References to other scripts and objects
-        public PlayerMovement playerMoveScript; // Handles player movement logic
-        public GameObject s1s4Letter;           // UI element for the first letter
-      
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-        public GameObject s1s4TommyLetter;      // UI element for Thomas Jefferson's letter
-
-        public Animator lewisWave1;
-        public Animator clarkWave1;
-
-        public GameObject playerObject;
-        public BoxCollider tommyBox;
 
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
@@ -30,9 +19,8 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject[] modelArray;         // Array of text panel GameObjects
         public GameObject textPanal;            // Main UI panel for text display
 
-        public Camera playerCam;                // Player's main camera
-        public Camera jeffersonCam;             // Camera for Thomas Jefferson scenes
-        public Camera lewisClarkCam;
+        public GameObject letter;
+        public GameObject taskHeader;
         // State flags
         public bool positionChanged;            // Used to trigger updates when arrayPos changes
         public bool hasScrolled;                // Tracks if user has scrolled
@@ -46,7 +34,9 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+        //public NavMeshAgent agent;              // Controls AI navigation
+
+       
 
         private void Awake()
         {
@@ -60,21 +50,20 @@ namespace Alpha.Phases.Destiny.Quest
                 int index = i + 1;
                 textButtons[i].onClick.AddListener(() => IntroTTSSpeak(index));
             }
-
             // Begin scene coroutine
-            StartCoroutine(StartStage1Scene4());
+            StartCoroutine(StartStage2Scene3());
         }
 
         void Start()
         {
             // Setup bounds based on model array
             maxLengthArray = modelArray.Length;
-            textBools = new bool[maxLengthArray];
+            textBools = new bool[maxLengthArray + 1]; // Add +1 to safely include index 11
         }
 
         void Update()
         {
-          
+
             // If arrayPos has changed, update UI
             if (positionChanged)
             {
@@ -95,6 +84,7 @@ namespace Alpha.Phases.Destiny.Quest
             }
         }
 
+
         private void HandleArrayPosActions()
         {
             switch (arrayPos)
@@ -105,71 +95,91 @@ namespace Alpha.Phases.Destiny.Quest
                         LOLSDK.Instance.SubmitProgress(0, 10, 100);
                         submitOnce = true;
                     }
-                 
-                    playerMoveScript.enabled = false;
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(true);
+                    SpeakText("stage1Text1");
+                    Debug.Log("Array1Fires");
+                    break;
+                case 1:
+
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    StartCoroutine(OpenLetter());
+                    SpeakText("stage1Text4");
+                    break;
+                
+                case 2:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage1Text1");
-                    StartCoroutine(OpenLetter());
-                    Debug.Log("Array1Fires");
-                    break;
-
-                case 1:
-                    textPanal.gameObject.SetActive(true);
-                    playerCam.gameObject.SetActive(false);
-                    jeffersonCam.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
-                    playerMoveScript.enabled = false;
-                    SpeakText("stage1Text4");
-                    agent.isStopped = false;
-                    break;
-                   
-                case 2:
-                                                    
+                    taskHeader.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Text5");
                     break;
-
+                
                 case 3:
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(OpenTommyLetter());
+                    taskHeader.gameObject.SetActive(true);
+                
                     SpeakText("thomasJefferson1Pretext");
                     break;
-
+                
                 case 4:
-                    //playerMoveScript.enabled = false;
-                    jeffersonCam.gameObject.SetActive(false);
-                    lewisClarkCam.gameObject.SetActive(true);
-                    lewisWave1.SetBool("wave2", true);
-                    clarkWave1.SetBool("wave1", true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+               
+                case 5: // Correct 1 Correct
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
-                case 5:
-                    jeffersonCam.gameObject.SetActive(true);
-                    lewisClarkCam.gameObject.SetActive(false);
-                    lewisWave1.SetBool("isIdle", true);
-                    clarkWave1.SetBool("isIdle", true);
-                    backwardsButton.gameObject.SetActive(true);
+                case 6: // Correct 2 Correct
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
-                case 6:
-                    
-                   break;
-
-                case 7: // incorrect Mini game 2
-                 
-                    agent.isStopped = false;
-                    StartCoroutine(MoveToBlankInvislbePanal());
+                case 7: // Correct 3 Correct
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
-                                      
+                case 8: // Correct 4 InCorrect
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
 
-                case 8:
+                case 9: // Correct 5 InCorrect
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToScene3());
+                    break;
+
+                case 10: // decision 2 wrong
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    taskHeader.gameObject.SetActive(false);
+                    StartCoroutine(MoveToScene3());
+                    break;
+
+                case 11: // decision 2 wrong
                     textPanal.gameObject.SetActive(false);
-                    agent.isStopped = false;
                     break;
             }
         }
@@ -192,7 +202,7 @@ namespace Alpha.Phases.Destiny.Quest
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
 
-                if (arrayPos != 3)
+                if (arrayPos != 8)
                 {
                     StartCoroutine(DelayTextButton());
                 }
@@ -229,7 +239,6 @@ namespace Alpha.Phases.Destiny.Quest
             Array.Fill(textBools, false);
         }
 
-        // Waits before showing forward button (used for pacing)
         public IEnumerator DelayTextButton()
         {
             yield return new WaitForSeconds(5);
@@ -238,66 +247,24 @@ namespace Alpha.Phases.Destiny.Quest
             Debug.Log("Forward Arrow Showing");
         }
 
-        // Letter and transition routines:
-
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
             yield return new WaitForSeconds(5);
-            playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 8;
+            arrayPos = 5;
             Debug.Log("This start coRoutine Runs");
         }
 
-        public IEnumerator MoveToBlankInvislbePanal()
+        public IEnumerator LoopToWrongAnswer()
         {
             yield return new WaitForSeconds(5);
-            playerMoveScript.enabled = true;
-            textPanal.gameObject.SetActive(false);
-            arrayPos = 8;
-            SceneManager.LoadScene("Stage1Scene5Map");
-            Debug.Log("This start coRoutine Runs");
-        }
-
-        public IEnumerator OpenLetter()
-        {
-            yield return new WaitForSeconds(4);
-            playerMoveScript.enabled = true;
-            s1s4Letter.gameObject.SetActive(true);
-            textPanal.gameObject.SetActive(false);
-            arrayPos = 8;
-            Debug.Log("This start coRoutine Runs well");
-        }
-
-        public IEnumerator OpenTommyLetter()
-        {
-            yield return new WaitForSeconds(4);
-            playerMoveScript.enabled = false;
-            s1s4TommyLetter.gameObject.SetActive(true);
-            textPanal.gameObject.SetActive(false);
-            arrayPos = 8;
-            Debug.Log("This start coRoutine Runs well");
-        }
-
-        public IEnumerator MoveToBlank()
-        {
-            yield return new WaitForSeconds(3);
             positionChanged = true;
-            playerMoveScript.enabled = false;
-            arrayPos = 8;
-            Debug.Log("This start coRoutine Runs well");
+            //  textPanal.gameObject.SetActive(true);
+            arrayPos = 1;
+            Debug.Log("This start function Runs");
         }
 
-        public IEnumerator MoveToTommyJefferson()
-        {
-            yield return new WaitForSeconds(3);
-            positionChanged = true;
-            playerMoveScript.enabled = false;
-            arrayPos = 3;
-            Debug.Log("This start coRoutine Runs well");
-        }
-
-        public IEnumerator StartStage1Scene4()
+        public IEnumerator StartStage2Scene3()
         {
             yield return new WaitForSeconds(2);
             positionChanged = true;
@@ -306,6 +273,16 @@ namespace Alpha.Phases.Destiny.Quest
             Debug.Log("This start function Runs");
         }
 
-       
+        public IEnumerator MoveToScene3()
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Stage3Scene2");
+        }
+
+        public IEnumerator OpenLetter()
+        {
+            yield return new WaitForSeconds(5);
+            letter.gameObject.SetActive(true);
+        }
     }
 }

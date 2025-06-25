@@ -232,7 +232,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene3()
         {
             yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Stage3");
+            SceneManager.LoadScene("Stage3Scene1");
         }
 
 

@@ -86,7 +86,11 @@ namespace Alpha.Phases.Destiny.Quest
 
                 Debug.Log("Is this running twice");
 
-            }                  
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SceneManager.LoadScene("Stage3Scene1");
+            }
 
         }
        
@@ -159,6 +163,12 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Loaded Stage 2 Scene 3 Save");
             }
 
+            if (dqwbSaveData.current_stage == 9)
+            {
+                SceneManager.LoadScene("Stage3Scene1");
+                Debug.Log("Loaded Stage 2 Scene 1 Save");
+            }
+
             Debug.Log("Load Function Called");
         }
 
@@ -228,6 +238,13 @@ namespace Alpha.Phases.Destiny.Quest
         public void SaveS2S3()
         {
             currentStagedqwb = 8;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS3S1()
+        {
+            currentStagedqwb = 9;
             dqwbSaveData.current_stage = currentStagedqwb;
             Save();
         }

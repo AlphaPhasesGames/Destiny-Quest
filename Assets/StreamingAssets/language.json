@@ -192,7 +192,25 @@
       "stage3Scene1Rule3Answer": 200,
       "stage3Scene1Rule4Answer": 200,
       "stage3Scene1Rule5Answer": 200,
-      "stage3Scene1TextEnd": 200
+      "stage3Scene1TextEnd": 200,
+      "stage3Scene2Text1": 90,
+      "stage3Scene2Text2": 30,
+      "stage3Scene2Text3": 100,
+      "mexicoLetter1header": 50,
+      "mexicoLetter1a": 270,
+      "mexicoLetter1b": 230,
+      "mexicoLetter2header": 50,
+      "mexicoLetter2a": 220,
+      "mexicoLetter2b": 160,
+      "mexicoLetter3header": 50,
+      "mexicoLetter3a": 250,
+      "mexicoLetter3b": 210,
+      "mexicoLetter4header": 50,
+      "mexicoLetter4a": 320,
+      "mexicoLetter3header": 50,
+      "mexicoLetter5a": 310,
+      "mexicoLetter5b": 190
+
     }
   },
   "en": {
@@ -387,7 +405,24 @@
     "stage3Scene1Rule3Answer": "Well done. Mexican officials asked the settlers to join the Catholic Church.",
     "stage3Scene1Rule4Answer": "This doesn't sound right. Without hunting, food would be scarce. Keep looking!",
     "stage3Scene1Rule5Answer": "This sounds incorrect. The settlers were never given a time limit on their expansion into Texas.",
-    "stage3Scene1TextEnd": "That's all the terms of settlement found. Let's move forward now and go meet the American settlers who moved to Texas."    
+    "stage3Scene1TextEnd": "That's all the terms of settlement found. Let's move forward now and go meet the American settlers who moved to Texas.",
+    "stage3Scene2Text1": "We made it to Texas in 1830. That's Polk up ahead in front of that building.",
+    "stage3Scene2Text2": "Let's go talk to him.",
+    "stage3Scene2Text3": "Greetings. I have a task for you. Before we do, please read this letter I have for you.",
+    "mexicoLetter1header": "Rising Tensions in Texas t",
+    "mexicoLetter1a": "By 1830, over 25,000 Americans had moved to Texas, outnumbering the 4,000 Tejanos (Texans of Mexican descent). Americans didn’t like following Mexican laws, hated having to use Spanish in official documents, and were angry when Mexico banned slavery in 1829.",
+    "mexicoLetter1b": "Meanwhile, Tejanos were frustrated that many Americans settled illegally and ignored Mexican culture. Fearing U.S. takeover, the Mexican government banned further American immigration and sent troops to enforce the law.",
+    "mexicoLetter2header": "Calls for Rebellion",
+    "mexicoLetter2a": "Angry at Mexico’s actions, some Texans called for revolution. William Travis led one group pushing for rebellion, while Stephen F. Austin asked Mexico to allow immigration again and give Texas more control.",
+    "mexicoLetter2b": "In 1833, Austin went to Mexico, but General Santa Anna had him arrested for promoting rebellion. When he was released, Texans began to revolt.",
+    "mexicoLetter3header": "The Battle of the Alamo",
+    "mexicoLetter3a": "In 1836, Santa Anna’s army reached San Antonio. Around 180 Texans, including famous figures like Davy Crockett and James Bowie, defended the Alamo mission. Santa Anna flew a black flag—meaning no mercy. The Texans refused to surrender.",
+    "mexicoLetter3b": "After 12 days of cannon fire, Mexican troops stormed the Alamo. All defenders were killed, and any survivors were executed. Though Santa Anna called it a “small affair,” the loss enraged Texans.",
+    "mexicoLetter4header": "Texas Fights Back",
+    "mexicoLetter4a": "Sam Houston led the Texan army in retreat, hoping to stretch Santa Anna’s supply lines. In April, near the San Jacinto River, Houston surprised Santa Anna’s exhausted troops with an afternoon attack. The Texans won, and Santa Anna was captured. He ordered his army out of Texas in exchange for his freedom. ",
+    "mexicoLetter3header": "Annexing Texas",
+    "mexicoLetter5a": "Texas became an independent nation—the "Lone Star Republic"—but most Texans wanted to join the U.S. Northerners opposed annexation due to slavery, while Southerners supported it. By 1845, enslaved people in Texas had grown from 5,000 to 24,000. Some feared that adding Texas would cause war with Mexico.",
+    "mexicoLetter5b": "In the 1844 election, candidate James K. Polk supported annexation as part of manifest destiny. After Polk won, Congress voted to admit Texas as the 28th U.S. state in 1845."    
   },
   "es": {
     "newGame": "New Game!",
@@ -581,6 +616,23 @@
     "stage3Scene1Rule3Answer": "Well done. Mexican officials asked the settlers to join the Catholic Church.",
     "stage3Scene1Rule4Answer": "This doesn't sound right. Without hunting, food would be scarce. Keep looking!",
     "stage3Scene1Rule5Answer": "This sounds incorrect. The settlers were never given a time limit on their expansion into Texas.",
-    "stage3Scene1TextEnd": "That's all the terms of settlement found. Let's move forward now and go meet the American settlers who moved to Texas."                      
+    "stage3Scene1TextEnd": "That's all the terms of settlement found. Let's move forward now and go meet the American settlers who moved to Texas.",
+    "stage3Scene2Text1": "We made it to Texas in 1830. That's Polk up ahead in front of that building.",
+    "stage3Scene2Text2": "Let's go talk to him.",
+    "stage3Scene2Text3": "Greetings. I have a task for you. Before we do, please read this letter I have for you.",
+    "mexicoLetter1header": "Rising Tensions in Texas t",
+    "mexicoLetter1a": "By 1830, over 25,000 Americans had moved to Texas, outnumbering the 4,000 Tejanos (Texans of Mexican descent). Americans didn’t like following Mexican laws, hated having to use Spanish in official documents, and were angry when Mexico banned slavery in 1829.",
+    "mexicoLetter1b": "Meanwhile, Tejanos were frustrated that many Americans settled illegally and ignored Mexican culture. Fearing U.S. takeover, the Mexican government banned further American immigration and sent troops to enforce the law.",
+    "mexicoLetter2header": "Calls for Rebellion",
+    "mexicoLetter2a": "Angry at Mexico’s actions, some Texans called for revolution. William Travis led one group pushing for rebellion, while Stephen F. Austin asked Mexico to allow immigration again and give Texas more control.",
+    "mexicoLetter2b": "In 1833, Austin went to Mexico, but General Santa Anna had him arrested for promoting rebellion. When he was released, Texans began to revolt.",
+    "mexicoLetter3header": "The Battle of the Alamo",
+    "mexicoLetter3a": "In 1836, Santa Anna’s army reached San Antonio. Around 180 Texans, including famous figures like Davy Crockett and James Bowie, defended the Alamo mission. Santa Anna flew a black flag—meaning no mercy. The Texans refused to surrender.",
+    "mexicoLetter3b": "After 12 days of cannon fire, Mexican troops stormed the Alamo. All defenders were killed, and any survivors were executed. Though Santa Anna called it a “small affair,” the loss enraged Texans.",
+    "mexicoLetter4header": "Texas Fights Back",
+    "mexicoLetter4a": "Sam Houston led the Texan army in retreat, hoping to stretch Santa Anna’s supply lines. In April, near the San Jacinto River, Houston surprised Santa Anna’s exhausted troops with an afternoon attack. The Texans won, and Santa Anna was captured. He ordered his army out of Texas in exchange for his freedom. ",
+    "mexicoLetter3header": "Annexing Texas",
+    "mexicoLetter5a": "Texas became an independent nation—the "Lone Star Republic"—but most Texans wanted to join the U.S. Northerners opposed annexation due to slavery, while Southerners supported it. By 1845, enslaved people in Texas had grown from 5,000 to 24,000. Some feared that adding Texas would cause war with Mexico.",
+    "mexicoLetter5b": "In the 1844 election, candidate James K. Polk supported annexation as part of manifest destiny. After Polk won, Congress voted to admit Texas as the 28th U.S. state in 1845."                      
   }
 }

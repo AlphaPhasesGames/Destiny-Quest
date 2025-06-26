@@ -10,7 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage3Scene2TextMan : MonoBehaviour
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-
+        public Stage3Scene2PolkConcernSelectMan choicesMan;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray
@@ -143,44 +143,43 @@ namespace Alpha.Phases.Destiny.Quest
                 forwardParent.gameObject.SetActive(false);
                
                 break;
-                /*
-                           case 6: // Correct 2 Correct
+                
+                           case 6: // Wrong
+                               
                                textPanal.gameObject.SetActive(true);
                                backwardsButton.gameObject.SetActive(false);
                                forwardParent.gameObject.SetActive(false);
-                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                               choicesMan.concern4Incorrect = false;
+                               choicesMan.concern4BGSelected.gameObject.SetActive(false);
+                               StartCoroutine(MoveToBlankInvislbePanalReRouteTo5());
                                break;
 
-                           case 7: // Correct 3 Correct
+                           case 7: // Right
                                textPanal.gameObject.SetActive(true);
                                backwardsButton.gameObject.SetActive(false);
-                               forwardParent.gameObject.SetActive(false);
-                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                               break;
+                               forwardParent.gameObject.SetActive(true);
+                               forwardButton.gameObject.SetActive(true);
+                    break;
+                
+                            case 8:
 
-                           case 8: // Correct 4 InCorrect
-                               textPanal.gameObject.SetActive(true);
-                               backwardsButton.gameObject.SetActive(false);
-                               forwardParent.gameObject.SetActive(false);
-                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                               break;
+                    forwardButton.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(true);
+                                break;
 
-                           case 9: // Correct 5 InCorrect
-                               textPanal.gameObject.SetActive(true);
-                               backwardsButton.gameObject.SetActive(false);
-                               forwardParent.gameObject.SetActive(false);
-                               StartCoroutine(MoveToScene3());
-                               break;
+                            case 9:
+                  
+                    forwardButton.gameObject.SetActive(true);
+                    break;
 
-                           case 10: // decision 2 wrong
-                               textPanal.gameObject.SetActive(true);
-                               backwardsButton.gameObject.SetActive(false);
-                               forwardParent.gameObject.SetActive(false);
-                             //  taskHeader.gameObject.SetActive(false);
-                               StartCoroutine(MoveToScene3());
-                               break;
-                               */
-                case 6: // decision 2 wrong
+                       case 10: // decision 2 wrong
+                           backwardsButton.gameObject.SetActive(false);
+                           forwardParent.gameObject.SetActive(false);
+
+                           StartCoroutine(MoveToScene3());
+                           break;
+                           
+                case 11: // decision 2 wrong
                     textPanal.gameObject.SetActive(false);
                     break;
             }
@@ -204,10 +203,7 @@ namespace Alpha.Phases.Destiny.Quest
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
 
-                if (arrayPos != 8)
-                {
-                    StartCoroutine(DelayTextButton());
-                }
+               
             }
         }
 
@@ -253,7 +249,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 6;
+            arrayPos = 11;
             Debug.Log("This start coRoutine Runs");
         }
 
@@ -261,9 +257,17 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 6;
+            arrayPos = 11;
             polkCam.gameObject.SetActive(false);
             playerCam.gameObject.SetActive(true);
+            Debug.Log("This start coRoutine Runs");
+        }
+
+        public IEnumerator MoveToBlankInvislbePanalReRouteTo5()
+        {
+            yield return new WaitForSeconds(5);
+            positionChanged = true;
+            arrayPos = 5;
             Debug.Log("This start coRoutine Runs");
         }
 
@@ -288,7 +292,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene3()
         {
             yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Stage3Scene2");
+            SceneManager.LoadScene("Stage3Scene3");
         }
 
         public IEnumerator OpenLetter()

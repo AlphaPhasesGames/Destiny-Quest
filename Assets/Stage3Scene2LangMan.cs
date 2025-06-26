@@ -15,10 +15,17 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI text3;
         public TextMeshProUGUI text4;
         public TextMeshProUGUI textBackToPolk;
+
         public TextMeshProUGUI concernLaw;
         public TextMeshProUGUI concernDocs;
         public TextMeshProUGUI concernOutlawed;
         public TextMeshProUGUI concernHunt;
+
+        public TextMeshProUGUI concernLawButtonText;
+        public TextMeshProUGUI concernDocsButtonText;
+        public TextMeshProUGUI concernOutlawedButtonText;
+        public TextMeshProUGUI concernHuntButtonText;
+
         public TextMeshProUGUI text4SelectConcerns;
         public TextMeshProUGUI text5WrongConcerns;
         public TextMeshProUGUI text6RightConcerns;
@@ -78,6 +85,11 @@ namespace Alpha.Phases.Destiny.Quest
             concernDocs.text = defs["stage3Scene2UsConcern2Docs"];
             concernOutlawed.text = defs["stage3Scene2UsConcern3Outlawed"];
             concernHunt.text = defs["stage3Scene2UsConcern4Hunt"];
+
+            concernLawButtonText.text = defs["stage3Scene2UsConcern1Laws"];
+            concernDocsButtonText.text = defs["stage3Scene2UsConcern2Docs"];
+            concernOutlawedButtonText.text = defs["stage3Scene2UsConcern3Outlawed"];
+            concernHuntButtonText.text = defs["stage3Scene2UsConcern4Hunt"];
 
             textBackToPolk.text = defs["stage3Scene2ReturnToPolk"];
 

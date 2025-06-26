@@ -13,6 +13,19 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI text1;
         public TextMeshProUGUI text2;
         public TextMeshProUGUI text3;
+        public TextMeshProUGUI text4;
+        public TextMeshProUGUI textBackToPolk;
+        public TextMeshProUGUI concernLaw;
+        public TextMeshProUGUI concernDocs;
+        public TextMeshProUGUI concernOutlawed;
+        public TextMeshProUGUI concernHunt;
+        public TextMeshProUGUI text4SelectConcerns;
+        public TextMeshProUGUI text5WrongConcerns;
+        public TextMeshProUGUI text6RightConcerns;
+        public TextMeshProUGUI text7;
+        public TextMeshProUGUI text8;
+        public TextMeshProUGUI text9;
+
 
         public TextMeshProUGUI letter1Head;
         public TextMeshProUGUI letter1a;
@@ -59,6 +72,21 @@ namespace Alpha.Phases.Destiny.Quest
             text1.text = defs["stage3Scene2Text1"];
             text2.text = defs["stage3Scene2Text2"];
             text3.text = defs["stage3Scene2Text3"];
+            text4.text = defs["stage3Scene2Text4"];
+
+            concernLaw.text = defs["stage3Scene2UsConcern1Laws"];
+            concernDocs.text = defs["stage3Scene2UsConcern2Docs"];
+            concernOutlawed.text = defs["stage3Scene2UsConcern3Outlawed"];
+            concernHunt.text = defs["stage3Scene2UsConcern4Hunt"];
+
+            textBackToPolk.text = defs["stage3Scene2ReturnToPolk"];
+
+            text4SelectConcerns.text = defs["stage3Scene2Text4Select"];
+            text5WrongConcerns.text = defs["stage3Scene2Text5Wrong"];
+            text6RightConcerns.text = defs["stage3Scene2Text6Correct"];
+            text7.text = defs["stage3Scene2Text7"];
+            text8.text =defs["stage3Scene2Text8"];
+            text9.text = defs["stage3Scene2Text9End"];
 
             letter1Head.text = defs["mexicoLetter1header"];
             letter1a.text = defs["mexicoLetter1a"];

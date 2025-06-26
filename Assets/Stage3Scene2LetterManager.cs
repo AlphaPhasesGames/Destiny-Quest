@@ -6,7 +6,7 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage3Scene2LetterManager : MonoBehaviour
     {
-       // public Stage3Scene1TextMan s3TextMan;
+        public Stage3Scene2TextMan s3TextMan;
         [Header("Letter Pages")]
         public GameObject[] letterPages; // Assign all your letter page UI images here
         public GameObject letterParent;
@@ -94,8 +94,8 @@ namespace Alpha.Phases.Destiny.Quest
         public void CloseLetter()
         {
             letterParent.gameObject.SetActive(false);
-          //  s3TextMan.positionChanged = true;
-          //  s3TextMan.arrayPos = 2;
+            s3TextMan.positionChanged = true;
+            s3TextMan.arrayPos = 3;
         }
 
         public void PlayTTSLetter1()

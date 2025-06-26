@@ -36,7 +36,8 @@ namespace Alpha.Phases.Destiny.Quest
         public bool[] textBools;                // Track whether each arrayPos has already been processed
                                                 //public NavMeshAgent agent;              // Controls AI navigation
 
-
+        public Camera polkCam;
+        public Camera playerCam;
 
         private void Awake()
         {
@@ -124,62 +125,62 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                   // taskHeader.gameObject.SetActive(true);
-
+                    // taskHeader.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit172());
                     SpeakText("thomasJefferson1Pretext");
                     break;
 
                 case 4:
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
-
-                case 5: // Correct 1 Correct
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
+               
+            case 5: // Correct 1 Correct
+                textPanal.gameObject.SetActive(true);
+                backwardsButton.gameObject.SetActive(false);
+                forwardParent.gameObject.SetActive(false);
+               
+                break;
+                /*
+                           case 6: // Correct 2 Correct
+                               textPanal.gameObject.SetActive(true);
+                               backwardsButton.gameObject.SetActive(false);
+                               forwardParent.gameObject.SetActive(false);
+                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                               break;
 
-                case 6: // Correct 2 Correct
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
+                           case 7: // Correct 3 Correct
+                               textPanal.gameObject.SetActive(true);
+                               backwardsButton.gameObject.SetActive(false);
+                               forwardParent.gameObject.SetActive(false);
+                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                               break;
 
-                case 7: // Correct 3 Correct
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
+                           case 8: // Correct 4 InCorrect
+                               textPanal.gameObject.SetActive(true);
+                               backwardsButton.gameObject.SetActive(false);
+                               forwardParent.gameObject.SetActive(false);
+                               StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                               break;
 
-                case 8: // Correct 4 InCorrect
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
+                           case 9: // Correct 5 InCorrect
+                               textPanal.gameObject.SetActive(true);
+                               backwardsButton.gameObject.SetActive(false);
+                               forwardParent.gameObject.SetActive(false);
+                               StartCoroutine(MoveToScene3());
+                               break;
 
-                case 9: // Correct 5 InCorrect
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToScene3());
-                    break;
-
-                case 10: // decision 2 wrong
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                  //  taskHeader.gameObject.SetActive(false);
-                    StartCoroutine(MoveToScene3());
-                    break;
-
-                case 11: // decision 2 wrong
+                           case 10: // decision 2 wrong
+                               textPanal.gameObject.SetActive(true);
+                               backwardsButton.gameObject.SetActive(false);
+                               forwardParent.gameObject.SetActive(false);
+                             //  taskHeader.gameObject.SetActive(false);
+                               StartCoroutine(MoveToScene3());
+                               break;
+                               */
+                case 6: // decision 2 wrong
                     textPanal.gameObject.SetActive(false);
                     break;
             }
@@ -252,7 +253,17 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 5;
+            arrayPos = 6;
+            Debug.Log("This start coRoutine Runs");
+        }
+
+        public IEnumerator MoveToBlankInvislbePanalUnit172()
+        {
+            yield return new WaitForSeconds(5);
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 6;
+            polkCam.gameObject.SetActive(false);
+            playerCam.gameObject.SetActive(true);
             Debug.Log("This start coRoutine Runs");
         }
 

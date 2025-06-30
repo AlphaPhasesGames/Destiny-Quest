@@ -2,9 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using LoLSDK;
+using UnityEngine.SceneManagement;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class Stage3Scene2LetterManager : MonoBehaviour
+    public class Stage3Scene2Letter2Manager : MonoBehaviour
     {
         public Stage3Scene2TextMan s3TextMan;
         [Header("Letter Pages")]
@@ -17,8 +18,8 @@ namespace Alpha.Phases.Destiny.Quest
         public Button page1TTS;
         public Button page1TTSa;
         public Button page2TTS;
-        public Button page2TTSa;
-
+        public Button page3TTS;
+        public Button page3TTSa;
 
         private int currentPage = 0;
         public Button closeButton;
@@ -28,11 +29,11 @@ namespace Alpha.Phases.Destiny.Quest
             backButton.onClick.AddListener(OnBackButtonClicked);
             closeButton.onClick.AddListener(CloseLetter);
 
-            page1TTS.onClick.AddListener(PlayTTSLetter1);
-            page1TTSa.onClick.AddListener(PlayTTSLetter1a);
-            page2TTS.onClick.AddListener(PlayTTSLetter2);
-            page2TTSa.onClick.AddListener(PlayTTSLetter2a);
-
+            page1TTS.onClick.AddListener(PlayTTSLetter3);
+            page1TTSa.onClick.AddListener(PlayTTSLetter3a);
+            page2TTS.onClick.AddListener(PlayTTSLetter4);
+            page3TTS.onClick.AddListener(PlayTTSLetter5);
+            page3TTSa.onClick.AddListener(PlayTTSLetter5a);
 
             ShowPage(0);
         }
@@ -86,34 +87,42 @@ namespace Alpha.Phases.Destiny.Quest
         public void CloseLetter()
         {
             letterParent.gameObject.SetActive(false);
-            s3TextMan.positionChanged = true;
-            s3TextMan.arrayPos = 3;
+            SceneManager.LoadScene("Stage3Scene3");
         }
 
-        public void PlayTTSLetter1()
+
+
+
+        public void PlayTTSLetter3()
         {
-            LOLSDK.Instance.SpeakText("mexicoLetter1a");
+            LOLSDK.Instance.SpeakText("mexicoLetter3a");
             Debug.Log("This TTS Worked");
         }
 
-        public void PlayTTSLetter1a()
+
+        public void PlayTTSLetter3a()
         {
-            LOLSDK.Instance.SpeakText("mexicoLetter1b");
+            LOLSDK.Instance.SpeakText("mexicoLetter3b");
+            Debug.Log("This TTS Worked");
+        }
+        public void PlayTTSLetter4()
+        {
+            LOLSDK.Instance.SpeakText("mexicoLetter4a");
             Debug.Log("This TTS Worked");
         }
 
-        public void PlayTTSLetter2()
+        public void PlayTTSLetter5()
         {
-            LOLSDK.Instance.SpeakText("mexicoLetter2a");
+            LOLSDK.Instance.SpeakText("mexicoLetter5a");
             Debug.Log("This TTS Worked");
         }
 
-        public void PlayTTSLetter2a()
+
+        public void PlayTTSLetter5a()
         {
-            LOLSDK.Instance.SpeakText("mexicoLetter2b");
+            LOLSDK.Instance.SpeakText("mexicoLetter5b");
             Debug.Log("This TTS Worked");
         }
 
- 
     }
 }

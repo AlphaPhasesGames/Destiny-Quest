@@ -19,6 +19,7 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject[] modelArray;         // Array of text panel GameObjects
         public GameObject textPanal;            // Main UI panel for text display
 
+        public GameObject letterEnd;
         public GameObject letter;
       //  public GameObject taskHeader;
         // State flags
@@ -175,8 +176,8 @@ namespace Alpha.Phases.Destiny.Quest
                        case 10: // decision 2 wrong
                            backwardsButton.gameObject.SetActive(false);
                            forwardParent.gameObject.SetActive(false);
-
-                           StartCoroutine(MoveToScene3());
+                           StartCoroutine(OpenLetter2());
+                          
                            break;
                            
                 case 11: // decision 2 wrong
@@ -299,6 +300,12 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             letter.gameObject.SetActive(true);
+        }
+
+        public IEnumerator OpenLetter2()
+        {
+            yield return new WaitForSeconds(5);
+            letterEnd.gameObject.SetActive(true);
         }
     }
 }

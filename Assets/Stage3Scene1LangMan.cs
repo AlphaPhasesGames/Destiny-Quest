@@ -62,6 +62,12 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book5BP4;
         public TextMeshProUGUI book5BP5;
         public TextMeshProUGUI book5BP6;
+        public TextMeshProUGUI book6BP1;
+        public TextMeshProUGUI book6BP2;
+        public TextMeshProUGUI book6BP3;
+        public TextMeshProUGUI book6BP4;
+        public TextMeshProUGUI book6BP5;
+        public TextMeshProUGUI book6BP6;
 
         // Start is called before the first frame update
         private void Awake()
@@ -119,6 +125,13 @@ namespace Alpha.Phases.Destiny.Quest
             book5BP4.text = defs["book5BP4"];
             book5BP5.text = defs["book5BP5"];
             book5BP6.text = defs["book5BP6"];
+
+            book6BP1.text = defs["book6P1"];
+            book6BP2.text = defs["book6BP2"];
+            book6BP3.text = defs["book6BP3"];
+            book6BP4.text = defs["book6BP4"];
+            book6BP5.text = defs["book6BP5"];
+            book6BP6.text = defs["book6BP6"];
 
         }
     }

@@ -233,8 +233,22 @@
       "stage3Scene2Text6Correct": 90,
       "stage3Scene2Text7": 110,
       "stage3Scene2Text8": 240,
-      "stage3Scene2Text9End": 110
-
+      "stage3Scene2Text9End": 110,
+      "stage4Scene1Text1": 40,
+      "stage4Scene1Text2": 130,
+      "stage4Scene1Text3": 100,
+      "stage4Scene1Text4": 110,
+      "stage4Scene1Text5": 100,
+      "stage4Scene1Text6": 120,
+      "stage4Scene1Text7": 170,
+      "stage4Scene1Text8": 90,
+      "stage4Scene1Text9": 90,
+      "treatyLetter1a": 110,
+      "treatyLetter1b": 210,
+      "treatyLetter2a": 170,
+      "treatyLetter2b": 140,
+      "treatyLetter3a": 140,
+      "treatyLetter3b": 190
     }
   },
   "en": {
@@ -470,7 +484,22 @@
     "stage3Scene2Text6Correct": "Excellent, thank you. These concerns are important for keeping settlers happy.",
     "stage3Scene2Text7": "Mexico has banned US immigration into Texas, and no more US settlers are allowed to immigrate here.",
     "stage3Scene2Text8": "It appears many US settlers are angry at Mexico’s actions, and some of the US Texans are calling for revolution. I shall send Stephen F. Austin to Mexico to ask Mexico to allow immigration again and give Texas more control.",
-    "stage3Scene2Text9End": "Let’s head there now and talk to Stephen F Austin! But first, I have this letter for you."                      
+    "stage3Scene2Text9End": "Let’s head there now and talk to Stephen F Austin! But first, I have this letter for you.",
+    "stage4Scene1Text1": "Welcome to Mexico in 1848",
+    "stage4Scene1Text2": "The signing of the Treaty of Guadalupe Hidalgo is immentant. Lets read this letter before we meet with the banker.",
+    "stage4Scene1Text3": "We should talk to the banker infront of the tent and collect the money for the purchase.",
+    "stage4Scene1Text4": "Greetings. Mexico agreed to give up Texas and a huge area of land called the Mexican Cession.",
+    "stage4Scene1Text5": "In return, the United States has agreed to pay Mexico. How much shall we pay for it?",
+    "stage4Scene1Text6": "Please use the Buttons to increase the amount we agreed to pay and press confirm when you have the correct amount.",
+    "stage4Scene1Text7": "Correct, the United States agreed to pay Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
+    "stage4Scene1Text8": "Can you please take the money to Guadalupe Hidalgo? and bring the treaty with you?",
+    "stage4Scene1Text9": "That doesnt seem right? Have a look at the books in your inventory and try again.",
+    "treatyLetter1a": "In early 1848, Mexico and the United States signed a peace treaty called the Treaty of Guadalupe Hidalgo.",
+    "treatyLetter1b": "Mexico agreed to give up Texas and a huge area of land called the Mexican Cession. This land included what is now California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado and Wyoming.",
+    "treatyLetter2a": "In return, the United States paid Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
+    "treatyLetter2b": "However, when the U.S. Senate approved the treaty, they removed some of these promises. Many Mexicans lost their land and rights.",
+    "treatyLetter3a": "Some senators did not want the treaty. They thought the U.S. should only have Texas. Others wanted even more land from Mexico.",
+    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14."                      
   },
   "es": {
     "newGame": "New Game!",
@@ -705,6 +734,21 @@
     "stage3Scene2Text6Correct": "Excellent, thank you. These concerns are important for keeping settlers happy.",
     "stage3Scene2Text7": "Mexico has banned US immigration into Texas, and no more US settlers are allowed to immigrate here.",
     "stage3Scene2Text8": "It appears many US settlers are angry at Mexico’s actions, and some of the US Texans are calling for revolution. I shall send Stephen F. Austin to Mexico to ask Mexico to allow immigration again and give Texas more control.",
-    "stage3Scene2Text9End": "Let’s head there now and talk to Stephen F Austin! But first, I have this letter for you."                      
+    "stage3Scene2Text9End": "Let’s head there now and talk to Stephen F Austin! But first, I have this letter for you.",
+    "stage4Scene1Text1": "Welcome to Mexico in 1848",
+    "stage4Scene1Text2": "The signing of the Treaty of Guadalupe Hidalgo is immentant. Lets read this letter before we meet with the banker.",
+    "stage4Scene1Text3": "We should talk to the banker infront of the tent and collect the money for the purchase.",
+    "stage4Scene1Text4": "Greetings. Mexico agreed to give up Texas and a huge area of land called the Mexican Cession.",
+    "stage4Scene1Text5": "In return, the United States has agreed to pay Mexico. How much shall we pay for it?",
+    "stage4Scene1Text6": "Please use the Buttons to increase the amount we agreed to pay and press confirm when you have the correct amount.",
+    "stage4Scene1Text7": "Correct, the United States agreed to pay Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
+    "stage4Scene1Text8": "Can you please take the money to Guadalupe Hidalgo? and bring the treaty with you?",
+    "stage4Scene1Text9": "That doesnt seem right? Have a look at the books in your inventory and try again.",
+    "treatyLetter1a": "In early 1848, Mexico and the United States signed a peace treaty called the Treaty of Guadalupe Hidalgo.",
+    "treatyLetter1b": "Mexico agreed to give up Texas and a huge area of land called the Mexican Cession. This land included what is now California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado and Wyoming.",
+    "treatyLetter2a": "In return, the United States paid Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
+    "treatyLetter2b": "However, when the U.S. Senate approved the treaty, they removed some of these promises. Many Mexicans lost their land and rights.",
+    "treatyLetter3a": "Some senators did not want the treaty. They thought the U.S. should only have Texas. Others wanted even more land from Mexico.",
+    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14."                      
   }
 }

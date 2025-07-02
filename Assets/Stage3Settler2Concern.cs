@@ -12,7 +12,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Camera playerCam;
         public Stage3Scene2MinigameManager miniMan;
         public bool runOnce;
-        public BoxCollider collider;
+        public SphereCollider collider;
         private void Awake()
         {
             closeConcern.onClick.AddListener(CloseConcern);

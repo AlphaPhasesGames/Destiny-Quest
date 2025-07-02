@@ -181,6 +181,12 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Loaded Stage 4 Scene 1 Save");
             }
 
+            if (dqwbSaveData.current_stage == 12)
+            {
+                SceneManager.LoadScene("Stage4EndGame");
+                Debug.Log("Loaded Stage 4 Scene 2 Save");
+            }
+
             Debug.Log("Load Function Called");
         }
 
@@ -271,6 +277,13 @@ namespace Alpha.Phases.Destiny.Quest
         public void SaveS4S1()
         {
             currentStagedqwb = 11;
+            dqwbSaveData.current_stage = currentStagedqwb;
+            Save();
+        }
+
+        public void SaveS4S2()
+        {
+            currentStagedqwb = 12;
             dqwbSaveData.current_stage = currentStagedqwb;
             Save();
         }

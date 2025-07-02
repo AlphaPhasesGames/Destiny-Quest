@@ -7,7 +7,7 @@ using LoLSDK;
 using UnityEngine.SceneManagement;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class Stage4TextMan : MonoBehaviour
+    public class Stage4Scene2TextMan : MonoBehaviour
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
         public PlayerMovement playerMove;
@@ -34,8 +34,6 @@ namespace Alpha.Phases.Destiny.Quest
         public bool[] textBools;                // Track whether each arrayPos has already been processed
         public NavMeshAgent agent;              // Controls AI navigation
 
-        public GameObject letter;
-        public GameObject amountAddGame;
 
         private void Awake()
         {
@@ -43,7 +41,7 @@ namespace Alpha.Phases.Destiny.Quest
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
 
-         
+
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -103,49 +101,36 @@ namespace Alpha.Phases.Destiny.Quest
                 case 1:
 
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(OpenLetter());
+                    StartCoroutine(DelayTextButton());
                     break;
                 case 2:
+     
+                    backwardsButton.gameObject.SetActive(true);
+                    playerMove.enabled = true;
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    break;
+                case 3:
+
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
-                case 3:
-                  
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    positionChanged = true;
-                    StartCoroutine(DelayTextButton());
-                    break;
                 case 4:
-                    backwardsButton.gameObject.SetActive(true);
-                    StartCoroutine(DelayTextButton());
-                    break;
-                case 5: 
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    amountAddGame.gameObject.SetActive(true);
-                    break;
-                case 6:
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToEnd());
-                    break;
-                case 7: 
                     textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToQuestion());
+                    backwardsButton.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
-                case 8: 
+                case 5:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToScene4Stage1());
                     break;
-                case 9: 
+
+                case 6:
                     textPanal.gameObject.SetActive(false);
                     break;
-                  
+
             }
         }
 
@@ -212,7 +197,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 9;
+            arrayPos = 6;
             playerMove.enabled = true;
             Debug.Log("This start coRoutine Runs");
         }
@@ -238,15 +223,10 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene4Stage1()
         {
             yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Stage4EndGame");
+            SceneManager.LoadScene("SigningScene");
         }
 
-        public IEnumerator MoveToQuestion()
-        {
-            yield return new WaitForSeconds(5);
-            positionChanged = true;
-            arrayPos = 5;
-        }
+
 
         public IEnumerator MoveToEnd()
         {
@@ -255,12 +235,6 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 8;
         }
 
-
-        public IEnumerator OpenLetter()
-        {
-            yield return new WaitForSeconds(4);
-            letter.gameObject.SetActive(true);
-        }
 
     }
 }

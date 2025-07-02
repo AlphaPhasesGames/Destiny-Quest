@@ -248,7 +248,18 @@
       "treatyLetter2a": 170,
       "treatyLetter2b": 140,
       "treatyLetter3a": 140,
-      "treatyLetter3b": 190
+      "treatyLetter3b": 190,
+      "stage4Scene2text1": 200,
+      "stage4Scene2text2": 100,
+      "stage4Scene2text3": 30,
+      "stage4Scene2text4": 90,
+      "stage4Scene2text5": 80,
+      "stage4Scene2text6": 90,
+      "endGame1": 140,
+      "endGame2": 200,
+      "endGame3": 260,
+      "endGame4": 240,
+      "endGame5": 290
     }
   },
   "en": {
@@ -499,7 +510,18 @@
     "treatyLetter2a": "In return, the United States paid Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
     "treatyLetter2b": "However, when the U.S. Senate approved the treaty, they removed some of these promises. Many Mexicans lost their land and rights.",
     "treatyLetter3a": "Some senators did not want the treaty. They thought the U.S. should only have Texas. Others wanted even more land from Mexico.",
-    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14."                      
+    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14.",
+    "stage4Scene2text1": "We have the money, but I’ve just been informed that the treaty has been dropped by the courier. We need to find it and get it to Guadalupe Hidalgo to get it signed.",
+    "stage4Scene2text2": "Guadalupe Hidalgo is just through this canyon. Along the way, we must find the treaty.",
+    "stage4Scene2text3": "Let's get going.",
+    "stage4Scene2text4": "Fantastic, you found the treaty. Let's get it down the canyon to Guadalupe Hidalgo.",
+    "stage4Scene2text5": "You haven’t found the treaty. We need it. Please go back and find it.",
+    "stage4Scene2text6": "Here we are, money and treaty in hand. Let's go see the signing in person.",
+    "endGame1": "Manifest Destiny was ambitious, and many Americans believed this would bring progress, opportunity, and unity to the country.",
+    "endGame2": "As settlers moved west, the U.S. gained new lands and built new towns, railroads, and trade routes. But expansion also had serious effects on the people who were already living there.",
+    "endGame3": "Many Native American tribes were forced to leave their homelands. Some were moved to distant areas, and others were pressured to give up their cultures and languages. The U.S. made treaties with tribes, but many of these agreements were broken.",
+    "endGame4": "Mexico also lost a large part of its land after the Mexican-American War. In 1848, the U.S. signed a treaty with Mexico that added California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado and Wyoming to the country.",
+    "endGame5": "Westward expansion helped shape the United States into the country we know today. But it also led to loss and hardship for many people. Learning about this time means thinking about what was gained—and what was lost—so we can understand the full story of our nation’s growth."                     
   },
   "es": {
     "newGame": "New Game!",
@@ -749,6 +771,18 @@
     "treatyLetter2a": "In return, the United States paid Mexico $15 million. The U.S. also promised to protect the rights and property of Mexicans living in the new American land.",
     "treatyLetter2b": "However, when the U.S. Senate approved the treaty, they removed some of these promises. Many Mexicans lost their land and rights.",
     "treatyLetter3a": "Some senators did not want the treaty. They thought the U.S. should only have Texas. Others wanted even more land from Mexico.",
-    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14."                      
+    "treatyLetter3b": "Most senators saw this as fulfilling America’s “Manifest Destiny”—the idea that the U.S. should stretch from coast to coast. The Senate agreed to the treaty by a vote of 38 to 14.",
+    "stage4Scene2text1": "We have the money, but I’ve just been informed that the treaty has been dropped by the courier. We need to find it and get it to Guadalupe Hidalgo to get it signed.",
+    "stage4Scene2text2": "Guadalupe Hidalgo is just through this canyon. Along the way, we must find the treaty.",
+    "stage4Scene2text3": "Let's get going.",
+    "stage4Scene2text4": "Fantastic, you found the treaty. Let's get it down the canyon to Guadalupe Hidalgo.",
+    "stage4Scene2text5": "You haven’t found the treaty. We need it. Please go back and find it.",
+    "stage4Scene2text6": "Here we are, money and treaty in hand. Let's go see the signing in person.",
+    "endGame1": "Manifest Destiny was ambitious, and many Americans believed this would bring progress, opportunity, and unity to the country.",
+    "endGame2": "As settlers moved west, the U.S. gained new lands and built new towns, railroads, and trade routes. But expansion also had serious effects on the people who were already living there.",
+    "endGame3": "Many Native American tribes were forced to leave their homelands. Some were moved to distant areas, and others were pressured to give up their cultures and languages. The U.S. made treaties with tribes, but many of these agreements were broken.",
+    "endGame4": "Mexico also lost a large part of its land after the Mexican-American War. In 1848, the U.S. signed a treaty with Mexico that added California, Nevada, Utah, Arizona, New Mexico, and parts of Colorado and Wyoming to the country.",
+    "endGame5": "Westward expansion helped shape the United States into the country we know today. But it also led to loss and hardship for many people. Learning about this time means thinking about what was gained—and what was lost—so we can understand the full story of our nation’s growth."                     
+                     
   }
 }

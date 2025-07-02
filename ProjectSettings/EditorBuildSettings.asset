@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alpha Phases/Scenes/Stage4Scene1.unity
     guid: 009353666970b6849a15c17f95981a89
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/Stage4EndGame.unity
+    guid: 3f2d21ac7e761f740b12908853d3bb1d
+  - enabled: 1
+    path: Assets/Alpha Phases/Scenes/SigningScene.unity
+    guid: 5f3823f13dae63f419f4be5518599485
   m_configObjects: {}

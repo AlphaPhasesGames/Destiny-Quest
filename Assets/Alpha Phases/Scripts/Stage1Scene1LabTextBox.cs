@@ -21,6 +21,8 @@ namespace Alpha.Phases.Destiny.Quest
 
         public bool positionChanged; //= true;
 
+        public GameObject invButton;
+
         public GameObject[] modelArray;
         public GameObject textPanal;
 
@@ -104,26 +106,27 @@ namespace Alpha.Phases.Destiny.Quest
                     backwardsButton.gameObject.SetActive(false);
                     
                     // forwardParent.gameObject.SetActive(true);
-                    SpeakText("labText1"); break;
+                     break;
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
                     StartCoroutine(DelayTextButton());
-                    SpeakText("labText2"); break;
+                    break;
                 case 2:
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     forwardButton.gameObject.SetActive(false);
 
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("labText3"); break;
+                    break;
                 case 3:
                    // positionChanged = true;
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(OpenLetter());
-                    SpeakText("labText4"); break;
+                    break;
                 case 4:
                     textPanal.gameObject.SetActive(true);
+                    invButton.gameObject.SetActive(true);
                     //inventoryReadToBeOpen = true;
                     break;
                 case 5:

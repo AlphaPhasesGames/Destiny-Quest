@@ -8,16 +8,18 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage1Scene1LabLangMan : MonoBehaviour
     {
-         //public TextMeshProUGUI testText;
+
+        public TextMeshProUGUI book1Title;
+
          public TextMeshProUGUI labText1;
          public TextMeshProUGUI labText2;
          public TextMeshProUGUI labText3;
          public TextMeshProUGUI labText4;
         
-         public TextMeshProUGUI labText5;
-         public TextMeshProUGUI labText6;
-         public TextMeshProUGUI labText7;
-         public TextMeshProUGUI labText8;
+         public TextMeshProUGUI labTextLetterHead;
+         public TextMeshProUGUI labTextLetter1;
+         public TextMeshProUGUI labTextLetter2;
+         public TextMeshProUGUI labTextLetter3;
         public TextMeshProUGUI labText9;
         public TextMeshProUGUI labText10;
         public TextMeshProUGUI labText11;
@@ -43,18 +45,21 @@ namespace Alpha.Phases.Destiny.Quest
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+
+            book1Title.text = defs["book1Title"];
+
             labText1.text = defs["labText1"];
             labText2.text = defs["labText2"];
             labText3.text = defs["labText3"];
             labText4.text = defs["labText4"];
-            labText5.text = defs["labText5"];
-            labText6.text = defs["labText6"];
-            labText7.text = defs["labText7"];
-            labText8.text = defs["labText8"];
-            labText9.text = defs["labText9"];
-            labText10.text = defs["labText10"];
-            labText11.text = defs["labText11"];
-            labText12.text = defs["labText12"];
+            labTextLetterHead.text = defs["labTextLetterHead"];
+            labTextLetter1.text = defs["labTextLetter1"];
+            labTextLetter2.text = defs["labTextLetter2"];
+            labTextLetter3.text = defs["labTextLetter3"];
+            labText9.text = defs["labText5"];
+            labText10.text = defs["labText6"];
+            labText11.text = defs["labText7"];
+            labText12.text = defs["labText8"];
             book1BP1.text = defs["book1BP1"];
             book1BP2.text = defs["book1BP2"];
             book1BP3.text = defs["book1BP3"];

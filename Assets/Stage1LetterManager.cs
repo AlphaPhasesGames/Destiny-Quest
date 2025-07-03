@@ -84,20 +84,20 @@ namespace Alpha.Phases.Destiny.Quest
         
         public void PlayTTSLetter1()
         {
-            LOLSDK.Instance.SpeakText("labText6");
+            LOLSDK.Instance.SpeakText("labTextLetter1");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSLetter2()
         {
-            LOLSDK.Instance.SpeakText("labText7");
+            LOLSDK.Instance.SpeakText("labTextLetter2");
             Debug.Log("This TTS Worked");
         }
 
 
         public void PlayTTSLetter3()
         {
-            LOLSDK.Instance.SpeakText("labText8");
+            LOLSDK.Instance.SpeakText("labTextLetter3");
             Debug.Log("This TTS Worked");
         }
     }

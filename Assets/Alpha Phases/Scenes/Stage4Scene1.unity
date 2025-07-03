@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_text: Can you please take the money to Guadalupe Hidalgo? and bring the treaty
     with you? T
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_margin: {x: -89.74561, y: 0, z: -266.3267, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &156779752
@@ -320,7 +320,7 @@ MonoBehaviour:
     to protect the rights and property of Mexicans living in the new American land.
     t
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_margin: {x: -41.400314, y: 0, z: -126.36508, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &182283655
@@ -592,7 +592,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &254570403
@@ -1928,7 +1928,7 @@ MonoBehaviour:
     Cession. This land included what is now California, Nevada, Utah, Arizona, New
     Mexico, and parts of Colorado and Wyoming. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1992,7 +1992,7 @@ MonoBehaviour:
   m_margin: {x: -61.539673, y: 0, z: -133.38335, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &866797501
@@ -2940,6 +2940,14 @@ PrefabInstance:
       value: The signing of the Treaty of Guadalupe Hidalgo is immentant. Lets read
         this letter before we meet with the banker. T
       objectReference: {fileID: 0}
+    - target: {fileID: 199149275835393017, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 199149275835393017, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 424073623219976534, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Name
       value: Text4
@@ -2952,6 +2960,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Greetings. Mexico agreed to give up Texas and a huge area of land called
         the Mexican Cession.  T
+      objectReference: {fileID: 0}
+    - target: {fileID: 895986621591878945, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 895986621591878945, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1114716712211221097, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Name
@@ -2973,6 +2989,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Please use the Buttons to increase the amount we agreed to pay and press
         confirm when you have the correct amount.  T
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990697262955528342, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 2990697262955528342, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4056712684707579235, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Pivot.x
@@ -3067,14 +3091,38 @@ PrefabInstance:
       value: In return, the United States has agreed to pay Mexico. How much shall
         we pay for it? T
       objectReference: {fileID: 0}
+    - target: {fileID: 4501393068178170980, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 4501393068178170980, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5252704235308653938, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_text
       value: That doesnt seem right? Have a look at the books in your inventory and
         try again. t
       objectReference: {fileID: 0}
+    - target: {fileID: 5252704235308653938, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 5252704235308653938, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_text
       value: Welcome to Mexico in 1848. T
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7454742577122694699, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Name
@@ -3085,11 +3133,35 @@ PrefabInstance:
       value: We should talk to the banker infront of the tent and collect the money
         for the purchase. T
       objectReference: {fileID: 0}
+    - target: {fileID: 7965916922589924731, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 7965916922589924731, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8501199095513643511, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_text
       value: Correct, the United States agreed to pay Mexico $15 million. The U.S.
         also promised to protect the rights and property of Mexicans living in the
         new American land. T
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501199095513643511, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 8501199095513643511, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824523343537989895, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 8824523343537989895, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3533,7 +3605,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '-'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3597,7 +3669,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1313461019
@@ -3673,7 +3745,7 @@ MonoBehaviour:
   m_text: However, when the U.S. Senate approved the treaty, they removed some of
     these promises. Many Mexicans lost their land and rights. t
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3737,7 +3809,7 @@ MonoBehaviour:
   m_margin: {x: -61.539673, y: 0, z: -155.01482, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1381437956
@@ -4108,7 +4180,7 @@ MonoBehaviour:
     idea that the U.S. should stretch from coast to coast. The Senate agreed to the
     treaty by a vote of 38 to 14. t"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4172,7 +4244,7 @@ MonoBehaviour:
   m_margin: {x: -61.539673, y: 0, z: -155.01482, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1595222912
@@ -4237,6 +4309,14 @@ PrefabInstance:
       propertyPath: m_text
       value: In early 1848, Mexico and the United States signed a peace treaty called
         the Treaty of Guadalupe Hidalgo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423322245616329650, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 5423322245616329650, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6942336555557265867, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_Pivot.x
@@ -4706,7 +4786,7 @@ MonoBehaviour:
   m_text: Some senators did not want the treaty. They thought the U.S. should only
     have Texas. Others wanted even more land from Mexico. t
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4770,7 +4850,7 @@ MonoBehaviour:
   m_margin: {x: -41.400314, y: 0, z: -126.36508, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1799636277
@@ -5399,7 +5479,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5463,7 +5543,7 @@ MonoBehaviour:
   m_margin: {x: -13.445641, y: 0, z: 173.37636, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1870303759

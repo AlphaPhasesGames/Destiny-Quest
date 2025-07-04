@@ -17,6 +17,10 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI signQuestion;
         public TextMeshProUGUI signCorrect;
         public TextMeshProUGUI signIncorrect;
+
+        public TextMeshProUGUI book1Name;
+        public TextMeshProUGUI book2Name;
+
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
         public TextMeshProUGUI book1BP3;
@@ -28,7 +32,12 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book2BP3;
         public TextMeshProUGUI book2BP4;
         public TextMeshProUGUI referenceButton;
-        public TextMeshProUGUI citationInfo;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
         public TextMeshProUGUI jeffersonPreText;
         public TextMeshProUGUI letterSection1;
         public TextMeshProUGUI letterSection2;
@@ -61,6 +70,10 @@ namespace Alpha.Phases.Destiny.Quest
             sign1TextIncorrect.text = defs["signText2"];
             sign2TextCorrect.text = defs["signText1"];
             sign3TextIncorrect.text = defs["signText3"];
+
+            book1Name.text = defs["book1Title"];
+            book2Name.text = defs["book2Title"];
+
             book1BP1.text = defs["book1BP1"];
             book1BP2.text = defs["book1BP2"];
             book1BP3.text = defs["book1BP3"];
@@ -72,15 +85,20 @@ namespace Alpha.Phases.Destiny.Quest
             book2BP3.text = defs["book2BP3"];
             book2BP4.text = defs["book2BP4"];
             referenceButton.text = defs["referenceButton"];
-            citationInfo.text = defs["citationInfoBook1"];
-            jeffersonPreText.text = defs["thomasJefferson1Pretext"];
-            letterSection1.text = defs["thomasJefferson1Letter1"];
-            letterSection2.text = defs["thomasJefferson2Letter2"];
-            letterSection3.text = defs["thomasJefferson3Letter3"];
-            letterSection4.text = defs["thomasJefferson4Letter4"];
-            jeffersonWP1.text = defs["thomasJeffersonWesternPrior1"];
-            jeffersonWP2.text = defs["thomasJeffersonWesternPrior2"];
-            jeffersonWP3.text = defs["thomasJeffersonWesternPrior3"];
+            referenceButton2.text = defs["referenceButton"];
+            citationBook1Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            jeffersonPreText.text = defs["stage1thomasJefferson1Pretext"];
+            letterSection1.text = defs["stage1thomasJefferson1Letter1"];
+            letterSection2.text = defs["stage1thomasJefferson2Letter2"];
+            letterSection3.text = defs["stage1thomasJefferson3Letter3"];
+            letterSection4.text = defs["stage1thomasJefferson4Letter4"];
+            jeffersonWP1.text = defs["stage1thomasJeffersonWesternPrior1"];
+            jeffersonWP2.text = defs["stage1thomasJeffersonWesternPrior2"];
+            jeffersonWP3.text = defs["stage1thomasJeffersonWesternPrior3"];
             Letter2Text.text = defs["stage1Scene2MiniGame2Text"];
             miniGame2Question.text = defs["stage1Scene2MiniGame2Question"];
             miniGame2Correct1.text = defs["stage1Scene2MiniGame2Correct1"];

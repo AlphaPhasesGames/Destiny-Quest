@@ -10,6 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
         public bool priority3;
         public Stage1Scene2TextMan textMan;
         public bool runONce;
+
         private void Update()
         {
             if (!runONce)

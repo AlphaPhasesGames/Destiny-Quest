@@ -74,10 +74,10 @@ namespace Alpha.Phases.Destiny.Quest
             ttsBulletPoint3Book2.onClick.AddListener(PlayTTSBook2BulletPoint3);
             ttsBulletPoint4Book2.onClick.AddListener(PlayTTSBook2BulletPoint4);
 
-            ttsBulletPoint1Book2.onClick.AddListener(PlayTTSBook3BulletPoint1);
-            ttsBulletPoint2Book2.onClick.AddListener(PlayTTSBook3BulletPoint2);
-            ttsBulletPoint3Book2.onClick.AddListener(PlayTTSBook3BulletPoint3);
-            ttsBulletPoint4Book2.onClick.AddListener(PlayTTSBook3BulletPoint4);
+            ttsBulletPoint1Book3.onClick.AddListener(PlayTTSBook3BulletPoint1);
+            ttsBulletPoint2Book3.onClick.AddListener(PlayTTSBook3BulletPoint2);
+            ttsBulletPoint3Book3.onClick.AddListener(PlayTTSBook3BulletPoint3);
+            ttsBulletPoint4Book3.onClick.AddListener(PlayTTSBook3BulletPoint4);
         }
         // Update is called once per frame
         void Update()
@@ -210,25 +210,25 @@ namespace Alpha.Phases.Destiny.Quest
 
         public void PlayTTSBook3BulletPoint1()
         {
-            LOLSDK.Instance.SpeakText("book2BP1");
+            LOLSDK.Instance.SpeakText("book3BP1");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSBook3BulletPoint2()
         {
-            LOLSDK.Instance.SpeakText("book2BP2");
+            LOLSDK.Instance.SpeakText("book3BP2");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSBook3BulletPoint3()
         {
-            LOLSDK.Instance.SpeakText("book2BP3");
+            LOLSDK.Instance.SpeakText("book3BP3");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSBook3BulletPoint4()
         {
-            LOLSDK.Instance.SpeakText("book2BP4");
+            LOLSDK.Instance.SpeakText("book3BP4");
             Debug.Log("This TTS Worked");
         }
 

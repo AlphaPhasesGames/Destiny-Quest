@@ -23,7 +23,10 @@ namespace Alpha.Phases.Destiny.Quest
         // References to cameras (not currently used in this script, but likely used elsewhere)
         public Camera playerCam;
         public Camera jeffersonCam;
-
+        public SphereCollider box1;
+        public SphereCollider box2;
+        public SphereCollider box3;
+        public SphereCollider box4;
         private void Awake()
         {
             // Assign listener functions to buttons
@@ -71,6 +74,11 @@ namespace Alpha.Phases.Destiny.Quest
             signParent.gameObject.SetActive(false);
             // Set the text manager to play the next text box (array index 2)
             textMan.arrayPos = 2;
+
+            box1.enabled = true;
+            box2.enabled = true;
+            box3.enabled = true;
+            box4.enabled = true;
 
             // Resume player movement if agent exists
             if (agent != null)

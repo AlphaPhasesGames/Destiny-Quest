@@ -17,7 +17,7 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject forwardParent;        // Parent object holding forward navigation UI
         public GameObject timeTravelUIImage;
         public GameObject playerObject;
-        public BoxCollider tommyBox;
+        public SphereCollider tommyBox;
 
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
@@ -41,23 +41,81 @@ namespace Alpha.Phases.Destiny.Quest
         public Button forwardButton;            // UI button for progressing forward
         public Button backwardsButton;          // UI button for going back
 
-        public Button[] textButtons;            // Optional buttons to play TTS
+        //public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
         public NavMeshAgent agent;              // Controls AI navigation
+
+        public Button text1TTS;
+        public Button TaskTTS; // task TTS
+        public Button Task2TTS; // task TTS
+        public Button IsThisCorrectTTS;
+        public Button thisIsCorrectTTS;
+        public Button thisIsInCorrectTTS;
+
+        public Button tommyJeffersonPreTextTTS;
+        public Button tommyJeffersonText2TTS;
+        public Button tommyJeffersonText3TTS;
+        public Button tommyJeffersonText4TTS;
+
+        public Button crateMiniGameIsThisCorrectTTS; // task TTS
+        public Button crateMiniGameThisIsInCorrectTTS; // task TTS
+
+
+        public Button crateMiniGameThisIsCorrect1TTS; // task TTS
+        public Button crateMiniGameThisIsCorrect2TTS; // task TTS
+        public Button crateMiniGameThisIsCorrect3TTS; // task TTS
+
+        public Button crateMiniGameCompleteTTS; // task TTS
+
+       // public Button answer1TTS; // task TTS
+       // public Button answer2TTS; // task TTS
+       // public Button answer3TTS; // task TTS
+       // public Button answer4TTS; // task TTS
+
+        public Button moveToParisTTS;
 
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
-
+            /*
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
                 int index = i + 1;
                 textButtons[i].onClick.AddListener(() => IntroTTSSpeak(index));
             }
+            */
 
+            text1TTS.onClick.AddListener(SpeakText1TTS); 
+            TaskTTS.onClick.AddListener(SpeakTask1TTS); ; // task TTS
+            Task2TTS.onClick.AddListener(SpeakTask2TTS); // task TTS
+            IsThisCorrectTTS.onClick.AddListener(SpeakIsThisCorrectTTS);
+            thisIsCorrectTTS.onClick.AddListener(SpeakThisIsCorrectTTS);
+            thisIsInCorrectTTS.onClick.AddListener(SpeakThisIsInCorrectTTS);
+
+            tommyJeffersonPreTextTTS.onClick.AddListener(SpeakTommy1TTS);
+
+            tommyJeffersonText2TTS.onClick.AddListener(SpeakTommyWesternPriority1TTS);
+            tommyJeffersonText3TTS.onClick.AddListener(SpeakTommyWesternPriority2TTS);
+            tommyJeffersonText4TTS.onClick.AddListener(SpeakTommyWesternPriority3TTS);
+
+            crateMiniGameIsThisCorrectTTS.onClick.AddListener(SpeakTask2QuestionTTS);
+            crateMiniGameThisIsInCorrectTTS.onClick.AddListener(SpeakTask2QuestionIncorrectTTS);
+
+            crateMiniGameThisIsCorrect1TTS.onClick.AddListener(SpeakTask2Correct1TTS);
+            crateMiniGameThisIsCorrect2TTS.onClick.AddListener(SpeakTask2Correct2TTS);
+            crateMiniGameThisIsCorrect3TTS.onClick.AddListener(SpeakTask2Correct3TTS);
+
+            crateMiniGameCompleteTTS.onClick.AddListener(SpeakTask2CompleteTTS);
+
+         //   answer1TTS.onClick.AddListener();
+         //   answer2TTS.onClick.AddListener();
+          //  answer3TTS.onClick.AddListener();
+         //   answer4TTS.onClick.AddListener();
+
+            moveToParisTTS.onClick.AddListener(MoveToParisTTS);
             // Begin scene coroutine
             StartCoroutine(StartStage1());
         }
@@ -113,27 +171,24 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage1Text1");
                     Debug.Log("Array1Fires");
                     break;
 
                 case 1:
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Text4");
                     break;
 
                 case 2:
                     playerMoveScript.enabled = false;
+                    playerObject.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToTommyJefferson());
-                    SpeakText("stage1Text5");
                     break;
 
                 case 3:
                     backwardsButton.gameObject.SetActive(false);
                     StartCoroutine(OpenTommyLetter());
-                    SpeakText("thomasJefferson1Pretext");
                     break;
 
                 case 4:
@@ -150,6 +205,7 @@ namespace Alpha.Phases.Destiny.Quest
                   
                     backwardsButton.gameObject.SetActive(false);
                     task2PrioritiesLetter.gameObject.SetActive(true);
+                    playerObject.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanal());
                     break;
 
@@ -157,23 +213,27 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     agent.isStopped = false;
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    forwardParent.gameObject.SetActive(false);
                     break;
 
                 case 8: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
                     agent.isStopped = false;
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 9: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
                     agent.isStopped = false;
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 10: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
                     agent.isStopped = false;
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
@@ -181,6 +241,8 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     tommyBox.enabled = true;
                     agent.isStopped = false;
+                    task2PrioritiesLetter.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
@@ -192,6 +254,7 @@ namespace Alpha.Phases.Destiny.Quest
                     jeffersonCam.gameObject.SetActive(true);
                     agent.isStopped = true;
                     playerObject.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToParis());
                     break;
 
@@ -201,7 +264,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
             }
         }
-
+        /*
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
@@ -209,7 +272,7 @@ namespace Alpha.Phases.Destiny.Quest
             LOLSDK.Instance.SpeakText(textKey);
             Debug.Log($"labText{textIndex} Button is pressed");
         }
-
+        */
         // Progress forward through array
         public void ProgressTextForward()
         {
@@ -339,8 +402,99 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(6);
             timeTravelUIImage.gameObject.SetActive(true);
-           // positionChanged = true;           
+            // positionChanged = true;
+            LOLSDK.Instance.SubmitProgress(0, 14, 100);
             Debug.Log("This start coRoutine Runs");
+        }
+
+        private void SpeakText1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Text1");
+        }
+
+        private void SpeakTask1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Text2");
+        }
+
+        private void SpeakTask2TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Text");
+        }
+
+        private void SpeakIsThisCorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Text3");
+        }
+
+        private void SpeakThisIsCorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Text5");
+        }
+
+
+        private void SpeakThisIsInCorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Text4");
+        }
+        private void SpeakTommy1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1thomasJefferson1Pretext");
+        }
+        private void SpeakTommyWesternPriority1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1thomasJeffersonWesternPrior1");
+        }
+
+        private void SpeakTommyWesternPriority2TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1thomasJeffersonWesternPrior2");
+        }
+
+        private void SpeakTommyWesternPriority3TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1thomasJeffersonWesternPrior3");
+        }
+
+        private void SpeakTask2QuestionTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Question");
+        }
+
+        private void SpeakTask2QuestionIncorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2InCorrect");
+        }
+
+        private void SpeakTask2Correct1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Correct1");
+        }
+
+        private void SpeakTask2Correct2TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Correct2");
+        }
+
+        private void SpeakTask2Correct3TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Correct3");
+        }
+
+        private void SpeakTask2CompleteTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MiniGame2Complete");
+        }
+
+        private void MoveToParisTTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene2MoveToParis");
         }
     }
 }
+
+
+
+
+
+

@@ -50,10 +50,40 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book3BP3;
         public TextMeshProUGUI book3BP4;
 
+        public TextMeshProUGUI book1Title;
+        public TextMeshProUGUI book2Title;
+        public TextMeshProUGUI book3Title;
+
+        public TextMeshProUGUI referenceButton;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI referenceButton3;
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
+        public TextMeshProUGUI citationBook3Info;
 
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+
+            book1Title.text = defs["book1Title"];
+            book2Title.text = defs["book2Title"];
+            book3Title.text = defs["book3Title"];
+
+            referenceButton.text = defs["referenceButton"];
+            referenceButton2.text = defs["referenceButton"];
+            referenceButton3.text = defs["referenceButton"];
+
+            citationBook1Info1.text = defs["citationInfoBook1"];
+
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            citationBook3Info.text = defs["citationInfoBook3"];
+
 
             stageStartText.text = defs["stage1Scene3Start"];
             letter1.text = defs["napoleonLetter1"];

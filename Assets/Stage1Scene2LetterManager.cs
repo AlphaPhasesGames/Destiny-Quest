@@ -91,29 +91,29 @@ namespace Alpha.Phases.Destiny.Quest
 
         public void PlayTTSLetter1()
         {
-            LOLSDK.Instance.SpeakText("thomasJefferson1Letter1");
+            LOLSDK.Instance.SpeakText("stage1thomasJefferson1Letter1");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSLetter2()
         {
-            LOLSDK.Instance.SpeakText("thomasJefferson2Letter2");
+            LOLSDK.Instance.SpeakText("stage1thomasJefferson2Letter2");
             Debug.Log("This TTS Worked");
         }
 
 
         public void PlayTTSLetter3()
         {
-            StartCoroutine(PlayTwoLines());
+            LOLSDK.Instance.SpeakText("stage1thomasJefferson3Letter3");
             Debug.Log("This TTS Worked");
         }
 
         public void PlayTTSLetter4()
         {
-            LOLSDK.Instance.SpeakText("thomasJefferson5Letter4");
+            LOLSDK.Instance.SpeakText("stage1thomasJefferson4Letter4");
             Debug.Log("This TTS Worked");
         }
-
+        /*
         private IEnumerator PlayTwoLines()
         {
             LOLSDK.Instance.SpeakText("thomasJefferson3Letter3");
@@ -125,5 +125,6 @@ namespace Alpha.Phases.Destiny.Quest
 
             Debug.Log("Both TTS lines played.");
         }
+        */
     }
 }

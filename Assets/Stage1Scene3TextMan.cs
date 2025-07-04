@@ -42,10 +42,18 @@ namespace Alpha.Phases.Destiny.Quest
         public Button forwardButton;            // UI button for progressing forward
         public Button backwardsButton;          // UI button for going back
 
-        public Button[] textButtons;            // Optional buttons to play TTS
+       // public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
 
         public Animator napoAnim;
+
+        public Button stageText1TTS;
+        public Button stageText2TTS;
+        public Button stageTaskTTS;
+        public Button stageTextBuyLouisiana;
+        public Button stageTextBuyOrleans;
+        public Button stageText4TTS;
+
 
         private void Awake()
         {
@@ -53,13 +61,22 @@ namespace Alpha.Phases.Destiny.Quest
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
 
+            stageTaskTTS.onClick.AddListener(SpeakTask1TTS);
+
+            stageText1TTS.onClick.AddListener(SpeakText1TTS);
+            stageText2TTS.onClick.AddListener(SpeakText2TTS);
+
+            stageTextBuyLouisiana.onClick.AddListener(SpeakThisIsCorrectTTS);
+            stageTextBuyOrleans.onClick.AddListener(SpeakThisIsInCorrectTTS);
+            stageText4TTS.onClick.AddListener(SpeakText2FinalTTS);
+            /*
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
                 int index = i + 1;
                 textButtons[i].onClick.AddListener(() => IntroTTSSpeak(index));
             }
-
+            */
             // Begin scene coroutine
             StartCoroutine(StartStage1S3());
         }
@@ -244,6 +261,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToNapoleon()
         {
             yield return new WaitForSeconds(5);
+            playerCam.gameObject.SetActive(false);
             napoleonCam.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
             minigame.minigameCanvas.gameObject.SetActive(true);
@@ -253,5 +271,36 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 5;
             Debug.Log("This start coRoutine Runs");
         }
+
+        private void SpeakText1TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene3Start");
+        }
+
+        private void SpeakTask1TTS()
+        {
+            LOLSDK.Instance.SpeakText("taskStage1Scene3");
+        }
+
+        private void SpeakText2TTS()
+        {
+            LOLSDK.Instance.SpeakText("stage1Scene3Talks");
+        }
+
+        private void SpeakThisIsCorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("monroeChoiceBuyLouisiana");
+        }
+
+        private void SpeakThisIsInCorrectTTS()
+        {
+            LOLSDK.Instance.SpeakText("monroeChoiceBuyOrleans");
+        }
+
+        private void SpeakText2FinalTTS()
+        {
+            LOLSDK.Instance.SpeakText("textToMoveToScene1Stage4");
+        }
+
     }
 }

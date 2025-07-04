@@ -87,9 +87,18 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Is this running twice");
 
             }
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                SceneManager.LoadScene("Stage1Camp");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SceneManager.LoadScene("ParisStudy");
+
+            }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                SceneManager.LoadScene("Stage3Scene1");
+                SceneManager.LoadScene("Stage2Scene3");
             }
 
         }

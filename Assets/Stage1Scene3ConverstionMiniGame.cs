@@ -120,8 +120,8 @@ namespace Alpha.Phases.Destiny.Quest
        
             textMan.arrayPos = 3;
             textMan.ResetBools();
-            // monroeAnim.Play("Idle");
-            // napoAnim.SetBool("nepoStart", true);
+             monroeAnim.Play("Idle");
+             napoAnim.SetBool("nepoStart", true);
 
         }
 
@@ -132,8 +132,8 @@ namespace Alpha.Phases.Destiny.Quest
 
             textMan.arrayPos = 2;
             textMan.ResetBools();
-            //monroeAnim.Play("Idle");
-            //  napoAnim.SetBool("nepoStart", true);
+            monroeAnim.Play("Idle");
+            napoAnim.SetBool("nepoStart", true);
         }
     }
 }

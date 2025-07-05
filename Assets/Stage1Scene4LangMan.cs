@@ -21,6 +21,24 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI stage1Scene4Letter2;
         public TextMeshProUGUI stage1Scene4Letter3;
 
+        public TextMeshProUGUI book1Title;
+        public TextMeshProUGUI book2Title;
+        public TextMeshProUGUI book3Title;
+        public TextMeshProUGUI book4Title;
+
+        public TextMeshProUGUI referenceButton;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI referenceButton3;
+        public TextMeshProUGUI referenceButton4;
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
+        public TextMeshProUGUI citationBook3Info;
+        public TextMeshProUGUI citationBook4Infoa;
+        public TextMeshProUGUI citationBook4Infob;
+
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
         public TextMeshProUGUI book1BP3;
@@ -43,14 +61,34 @@ namespace Alpha.Phases.Destiny.Quest
         {
             JSONNode defs = SharedState.LanguageDefs;
 
-            stageStartText.text = defs["startScene1Stage4"];
-            stage1Scene4Text1.text = defs["stage1Scene4Text1"];
-            stage1Scene4Text2.text = defs["stage1Scene4Text2"];
-            stage1Scene4Text3.text = defs["stage1Scene4Text3"];
-            stage1Scene4Text4.text = defs["stage1Scene4Text4"];
-            stage1Scene4Text5.text = defs["stage1Scene4Text5"];
-            stage1Scene4Text6.text = defs["stage1Scene4Text6"];
-            stage1Scene4Text7.text = defs["stage1Scene4Text7"];
+
+            book1Title.text = defs["book1Title"];
+            book2Title.text = defs["book2Title"];
+            book3Title.text = defs["book3Title"];
+            book4Title.text = defs["book4Title"];
+
+            referenceButton.text = defs["referenceButton"];
+            referenceButton2.text = defs["referenceButton"];
+            referenceButton3.text = defs["referenceButton"];
+            referenceButton4.text = defs["referenceButton"];
+
+            citationBook1Info1.text = defs["citationInfoBook1"];
+
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            citationBook3Info.text = defs["citationInfoBook3"];
+            citationBook4Infoa.text = defs["citationInfoBook3"];
+            citationBook4Infob.text = defs["citationInfoBook4"];
+            stageStartText.text = defs["stage1Scene4Text1"];
+            stage1Scene4Text1.text = defs["stage1Scene4Text2"];
+            stage1Scene4Text2.text = defs["stage1Scene4Text3"];
+            stage1Scene4Text3.text = defs["stage1Scene4Text4"];
+            stage1Scene4Text4.text = defs["stage1Scene4Text5"];
+            stage1Scene4Text5.text = defs["stage1Scene4Text6"];
+            stage1Scene4Text6.text = defs["stage1Scene4Text7"];
+            stage1Scene4Text7.text = defs["stage1Scene4Text8"];
             stage1Scene4Letter1.text = defs["politicalEcoCultureLetter1"];
             stage1Scene4Letter2.text = defs["politicalEcoCultureLetter2"];
             stage1Scene4Letter3.text = defs["politicalEcoCultureLetter3"];

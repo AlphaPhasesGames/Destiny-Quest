@@ -13,6 +13,7 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI keyLouisana;
         public TextMeshProUGUI keySpanishTerritory;
         public TextMeshProUGUI keyFlorida;
+        public TextMeshProUGUI keyUnclaimed;
         public TextMeshProUGUI mapStartIllinois;
         public TextMeshProUGUI mapPoint1Mississippi;
         public TextMeshProUGUI mapPoint2RockMountains;
@@ -45,6 +46,25 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI mapGameComplete1;
         public TextMeshProUGUI mapGameComplete2;
 
+        public TextMeshProUGUI book1Title;
+        public TextMeshProUGUI book2Title;
+        public TextMeshProUGUI book3Title;
+        public TextMeshProUGUI book4Title;
+
+        public TextMeshProUGUI referenceButton;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI referenceButton3;
+        public TextMeshProUGUI referenceButton4;
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
+        public TextMeshProUGUI citationBook3Info;
+        public TextMeshProUGUI citationBook4Infoa;
+        public TextMeshProUGUI citationBook4Infob;
+
+
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
         public TextMeshProUGUI book1BP3;
@@ -71,37 +91,59 @@ namespace Alpha.Phases.Destiny.Quest
             keyLouisana.text = defs["mapKeyLouisiana"];
             keySpanishTerritory.text = defs["mapKeySpanish"];
             keyFlorida.text = defs["mapKeyFlorida"];
+            keyUnclaimed.text = defs["mapKeyUnclaimed"];
             mapStartIllinois.text = defs["mapStartIllinois"];
             mapPoint1Mississippi.text = defs["mapPoint1Mississippi"];
             mapPoint2RockMountains.text = defs["mapPoint2RockyMountain"];
             mapPoint3Pacific.text = defs["mapPoint3PacificCoast"];
 
+            book1Title.text = defs["book1Title"];
+            book2Title.text = defs["book2Title"];
+            book3Title.text = defs["book3Title"];
+            book4Title.text = defs["book4Title"];
+
+            referenceButton.text = defs["referenceButton"];
+            referenceButton2.text = defs["referenceButton"];
+            referenceButton3.text = defs["referenceButton"];
+            referenceButton4.text = defs["referenceButton"];
+
+            citationBook1Info1.text = defs["citationInfoBook1"];
+
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            citationBook3Info.text = defs["citationInfoBook3"];
+            citationBook4Infoa.text = defs["citationInfoBook3"];
+            citationBook4Infob.text = defs["citationInfoBook4"];
+
+
             mapText1.text = defs["maptext1"];
             mapText2.text = defs["maptext2"];
             mapText3.text = defs["maptext3"];
             mapText4.text = defs["maptext4"];
-            mapChoiceText1.text = defs["mapDecisionText1"];
+            mapChoiceText1.text = defs["maptext5"];
             mapChoiceDecision1.text = defs["mapDecisionAnswer1North"];
             mapChoiceDecision2.text = defs["mapDecisionAnswer2South"];
             mapChoiceDecision3.text = defs["mapDecisionAnswer3East"];
             mapChoiceDecision4.text = defs["mapDecisionAnswer4West"];
-            mapDecisionAnswerWrong.text = defs["mapDecisionAnswerWrong"];
-            mapDecisionAnswerRight.text = defs["mapDecisionAnswerCorrect"];
-            mapChoice2Text.text = defs["mapDecision2Text1"];
+            mapDecisionAnswerWrong.text = defs["maptext6"];
+            mapDecisionAnswerRight.text = defs["maptext7"];
+            mapChoice2Text.text = defs["maptext8"];
             mapChoice2Decision1.text = defs["mapDecision2Answer1"];
             mapChoice2Decision2.text = defs["mapDecision2Answer2"];
          //   mapChoice2Decision3.text = defs["mapDecision2Answer3"];
-            mapDecision2AnswerWrong.text = defs["mapDecision2AnswerWrong"];
-            mapDecision2AnswerRight.text = defs["mapDecision2AnswerCorrect"];
-            mapChoice3Text.text = defs["mapDecision3Text1"];
+            mapDecision2AnswerWrong.text = defs["maptext9"];
+            mapDecision2AnswerRight.text = defs["maptext10"];
+            mapChoice3Text.text = defs["maptext11"];
             mapChoice3Decision1.text = defs["mapDecision3Answer1"];
             mapChoice3Decision2.text = defs["mapDecision3Answer2"];
             mapChoice3Decision3.text = defs["mapDecision3Answer3"];
-            mapDecision3AnswerWrong1.text = defs["mapDecision3AnswerWrong1"];
-            mapDecision3AnswerWrong2.text = defs["mapDecision3AnswerWrong2"];
-            mapDecision3AnswerRight.text = defs["mapDecision3AnswerCorrect"];
-            mapGameComplete1.text = defs["mapComplete"];
-            mapGameComplete2.text = defs["mapComplete2"];
+            mapDecision3AnswerWrong1.text = defs["maptext12"];
+            mapDecision3AnswerWrong2.text = defs["maptext13"];
+            mapDecision3AnswerRight.text = defs["maptext14"];
+            mapGameComplete1.text = defs["maptext15"];
+            mapGameComplete2.text = defs["maptext16"];
 
             book1BP1.text = defs["book1BP1"];
             book1BP2.text = defs["book1BP2"];

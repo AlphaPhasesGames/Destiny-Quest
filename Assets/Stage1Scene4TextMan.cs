@@ -102,7 +102,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 35, 100);
                         submitOnce = true;
                     }
                  
@@ -110,9 +110,7 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage1Text1");
                     StartCoroutine(OpenLetter());
-                    Debug.Log("Array1Fires");
                     break;
 
                 case 1:
@@ -121,27 +119,19 @@ namespace Alpha.Phases.Destiny.Quest
                     jeffersonCam.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     playerMoveScript.enabled = false;
-                    SpeakText("stage1Text4");
                     agent.isStopped = false;
-                    break;
-                   
+                    break;   
+                    
                 case 2:
-                                                    
-                    SpeakText("stage1Text5");
                     break;
 
                 case 3:
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(OpenTommyLetter());
-                    SpeakText("thomasJefferson1Pretext");
                     break;
-
-                case 4:
-                    //playerMoveScript.enabled = false;
+                case 4:                   
                     jeffersonCam.gameObject.SetActive(false);
                     lewisClarkCam.gameObject.SetActive(true);
-               //     lewisWave1.SetBool("wave2", true);
-               //     clarkWave1.SetBool("wave1", true);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(true);
@@ -150,17 +140,13 @@ namespace Alpha.Phases.Destiny.Quest
                 case 5:
                     jeffersonCam.gameObject.SetActive(true);
                     lewisClarkCam.gameObject.SetActive(false);
-               //     lewisWave1.SetBool("isIdle", true);
-               //     clarkWave1.SetBool("isIdle", true);
                     backwardsButton.gameObject.SetActive(true);
                     break;
 
                 case 6:
-                    
                    break;
 
-                case 7: // incorrect Mini game 2
-                 
+                case 7:             
                     agent.isStopped = false;
                     StartCoroutine(MoveToBlankInvislbePanal());
                     break;
@@ -177,9 +163,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage1Scene4Text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage1Scene4Text{textIndex} Button is pressed");
         }
 
         // Progress forward through array
@@ -255,6 +241,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 8;
+            LOLSDK.Instance.SubmitProgress(0, 42, 100);
             SceneManager.LoadScene("Stage1Scene5Map");
             Debug.Log("This start coRoutine Runs");
         }

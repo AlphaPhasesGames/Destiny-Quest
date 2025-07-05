@@ -122,7 +122,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 40, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 21, 100);
                         submitOnce = true;
                     }                                 
                     textPanal.gameObject.SetActive(true);

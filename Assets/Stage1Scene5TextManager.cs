@@ -124,46 +124,31 @@ namespace Alpha.Phases.Destiny.Quest
                         LOLSDK.Instance.SubmitProgress(0, 10, 100);
                         submitOnce = true;
                     }
-
-                   
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Text1");
-               
-                    Debug.Log("Array1Fires");
                     break;
 
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
-                    SpeakText("stage1Text4");
                     break;
-               
                 case 2:
-
-                    SpeakText("stage1Text5");
                     break;
 
                 case 3:
-                   
-                   
-                    SpeakText("thomasJefferson1Pretext");
                     break;
 
                 case 4:
-                   
-                    forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     break;
                 case 5: // decision 2 wrong
-
                     backwardsButton.gameObject.SetActive(false);
                     break;
                 case 6: // // decision 2 right
+                    StartCoroutine(DelayTextButton());
                     moveToMississipi.SetBool("step1", true);
                     break;
                 case 7:
-                    forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     break;
                 case 8: 
@@ -171,6 +156,8 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
                 case 9:
                     moveToMississipi.SetBool("step2", true);
+                    StartCoroutine(DelayTextButton());
+
                     break;
                 case 10: // Decision 3
 
@@ -183,6 +170,7 @@ namespace Alpha.Phases.Destiny.Quest
 
                     break;
                 case 13: // Decision 3 right
+                    StartCoroutine(DelayTextButton());
                     moveToMississipi.SetBool("step3", true);
                     break;
 
@@ -203,9 +191,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"maptext{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"maptext{textIndex} Button is pressed");
         }
 
         // Progress forward through array
@@ -218,9 +206,14 @@ namespace Alpha.Phases.Destiny.Quest
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
 
-                if (arrayPos != 8)
+
+
+
+
+                if (arrayPos != 5 && arrayPos != 4 && arrayPos != 7 && arrayPos != 8 && arrayPos != 10 && arrayPos != 11 && arrayPos != 12) // add any other positions too
                 {
                     StartCoroutine(DelayTextButton());
+
                 }
             }
         }
@@ -259,9 +252,10 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator DelayTextButton()
         {
             yield return new WaitForSeconds(5);
-            forwardParent.gameObject.SetActive(true);
-            forwardButton.gameObject.SetActive(true);
-            Debug.Log("Forward Arrow Showing");
+           
+                forwardParent.gameObject.SetActive(true);
+                forwardButton.gameObject.SetActive(true);
+                Debug.Log("Forward Arrow Showing");
         }
 
         // Letter and transition routines:

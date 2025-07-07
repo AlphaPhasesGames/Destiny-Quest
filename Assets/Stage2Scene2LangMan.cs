@@ -18,6 +18,27 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI text4;
         public TextMeshProUGUI text5;
 
+        public TextMeshProUGUI book1Title;
+        public TextMeshProUGUI book2Title;
+        public TextMeshProUGUI book3Title;
+        public TextMeshProUGUI book4Title;
+        public TextMeshProUGUI book5Title;
+
+        public TextMeshProUGUI referenceButton;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI referenceButton3;
+        public TextMeshProUGUI referenceButton4;
+        public TextMeshProUGUI referenceButton5;
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
+        public TextMeshProUGUI citationBook3Info;
+        public TextMeshProUGUI citationBook4Infoa;
+        public TextMeshProUGUI citationBook4Infob;
+        public TextMeshProUGUI citationBook5Info;
+
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
         public TextMeshProUGUI book1BP3;
@@ -54,6 +75,28 @@ namespace Alpha.Phases.Destiny.Quest
             text3.text = defs["stage2Scene2Text3"];
             text4.text = defs["stage2Scene2Text4"];
             text5.text = defs["stage2Scene2Text5"];
+
+            book1Title.text = defs["book1Title"];
+            book2Title.text = defs["book2Title"];
+            book3Title.text = defs["book3Title"];
+            book4Title.text = defs["book4Title"];
+            book5Title.text = defs["book5Title"];
+
+            referenceButton.text = defs["referenceButton"];
+            referenceButton2.text = defs["referenceButton"];
+            referenceButton3.text = defs["referenceButton"];
+            referenceButton4.text = defs["referenceButton"];
+            referenceButton5.text = defs["referenceButton"];
+
+            citationBook1Info1.text = defs["citationInfoBook1"];
+
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            citationBook3Info.text = defs["citationInfoBook3"];
+            citationBook4Infoa.text = defs["citationInfoBook4"]; // not a mistake, same as the previous stage for one of the citations
+            citationBook5Info.text = defs["citationInfoBook5"];
 
             book1BP1.text = defs["book1BP1"];
             book1BP2.text = defs["book1BP2"];

@@ -102,27 +102,23 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Text1");
                     Debug.Log("Array1Fires");
                     break;
                 case 1:
                  
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage1Text4");
                     break;
                 case 2:
                     
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(LoopToWrongAnswer());
-                    SpeakText("stage1Text5");
                     break;
                 case 3:
                    
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("thomasJefferson1Pretext");
                     break;
                 case 4:
                     backwardsButton.gameObject.SetActive(false);
@@ -143,9 +139,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage2Scene3Text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage2Scene3Text{textIndex} Button is pressed");
         }
 
         // Progress forward through array

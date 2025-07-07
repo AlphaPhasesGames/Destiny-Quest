@@ -22,6 +22,31 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI text3;
         public TextMeshProUGUI text4Task;
 
+        public TextMeshProUGUI book1Title;
+        public TextMeshProUGUI book2Title;
+        public TextMeshProUGUI book3Title;
+        public TextMeshProUGUI book4Title;
+        public TextMeshProUGUI book5Title;
+        public TextMeshProUGUI book6Title;
+
+        public TextMeshProUGUI referenceButton;
+        public TextMeshProUGUI referenceButton2;
+        public TextMeshProUGUI referenceButton3;
+        public TextMeshProUGUI referenceButton4;
+        public TextMeshProUGUI referenceButton5;
+        public TextMeshProUGUI referenceButton6;
+
+        public TextMeshProUGUI citationBook1Info1;
+        public TextMeshProUGUI citationBook2Info1;
+        public TextMeshProUGUI citationBook2Info2;
+        public TextMeshProUGUI citationBook2Info3;
+        public TextMeshProUGUI citationBook2Info4;
+        public TextMeshProUGUI citationBook3Info;
+        public TextMeshProUGUI citationBook4Infoa;
+        public TextMeshProUGUI citationBook4Infob;
+        public TextMeshProUGUI citationBook5Info;
+        public TextMeshProUGUI citationBook6Info;
+
         public TextMeshProUGUI rule1;
         public TextMeshProUGUI rule2;
         public TextMeshProUGUI rule3;
@@ -84,7 +109,32 @@ namespace Alpha.Phases.Destiny.Quest
             letter3.text = defs["texasLetter3"];
 
             text3.text = defs["stage3Scene1Text3"];
-            text4Task.text = defs["stage3Scene1Text4Task"];
+            text4Task.text = defs["stage3Scene1TextTask"]; // task
+
+            book1Title.text = defs["book1Title"];
+            book2Title.text = defs["book2Title"];
+            book3Title.text = defs["book3Title"];
+            book4Title.text = defs["book4Title"];
+            book5Title.text = defs["book5Title"];
+            book6Title.text = defs["book6Title"];
+
+            referenceButton.text = defs["referenceButton"];
+            referenceButton2.text = defs["referenceButton"];
+            referenceButton3.text = defs["referenceButton"];
+            referenceButton4.text = defs["referenceButton"];
+            referenceButton5.text = defs["referenceButton"];
+            referenceButton6.text = defs["referenceButton"];
+
+            citationBook1Info1.text = defs["citationInfoBook1"];
+
+            citationBook2Info1.text = defs["citationInfoBook2a"];
+            citationBook2Info2.text = defs["citationInfoBook2b"];
+            citationBook2Info3.text = defs["citationInfoBook2c"];
+            citationBook2Info4.text = defs["citationInfoBook2d"];
+            citationBook3Info.text = defs["citationInfoBook3"];
+            citationBook4Infoa.text = defs["citationInfoBook4"]; // not a mistake, same as the previous stage for one of the citations
+            citationBook5Info.text = defs["citationInfoBook5"];
+            citationBook6Info.text = defs["citationInfoBook6"];
 
             rule1.text = defs["stage3Scene1Rule1"];
             rule2.text = defs["stage3Scene1Rule2"];
@@ -92,14 +142,14 @@ namespace Alpha.Phases.Destiny.Quest
             rule4.text = defs["stage3Scene1Rule4"];
             rule5.text = defs["stage3Scene1Rule5"];
 
-            IsThisCorrect.text = defs["stage3Scene1IsThisCorrect"];
-            rule1AnswerCorrectGoodPeople.text = defs["stage3Scene1Rule1Answer"];
-            rule2AnswerCorrectMexicanCitizen.text = defs["stage3Scene1Rule2Answer"];
-            rule3AnswerCorrectCatholicChurch.text = defs["stage3Scene1Rule3Answer"];
-            rule4AnswerInCorrectHunt.text = defs["stage3Scene1Rule4Answer"];
-            rule5AnswerInCorrectStayLimit.text = defs["stage3Scene1Rule5Answer"];
+            IsThisCorrect.text = defs["stage3Scene1Text4"];
+            rule1AnswerCorrectGoodPeople.text = defs["stage3Scene1Text5"];
+            rule2AnswerCorrectMexicanCitizen.text = defs["stage3Scene1Text6"];
+            rule3AnswerCorrectCatholicChurch.text = defs["stage3Scene1Text7"];
+            rule4AnswerInCorrectHunt.text = defs["stage3Scene1Text8"];
+            rule5AnswerInCorrectStayLimit.text = defs["stage3Scene1Text9"];
 
-            text5End.text = defs["stage3Scene1TextEnd"];
+            text5End.text = defs["stage3Scene1Text10"];
 
             book1BP1.text = defs["book1BP1"];
             book1BP2.text = defs["book1BP2"];

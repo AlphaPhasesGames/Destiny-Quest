@@ -98,8 +98,6 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Text1");
-                    Debug.Log("Array1Fires");
                     break;
                 case 1:
 
@@ -107,7 +105,6 @@ namespace Alpha.Phases.Destiny.Quest
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     StartCoroutine(OpenLetter());
-                    SpeakText("stage1Text4");
                     break;
                 
                 case 2:
@@ -116,7 +113,6 @@ namespace Alpha.Phases.Destiny.Quest
                     forwardParent.gameObject.SetActive(false);
                     taskHeader.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Text5");
                     break;
                 
                 case 3:
@@ -125,7 +121,6 @@ namespace Alpha.Phases.Destiny.Quest
                     forwardParent.gameObject.SetActive(false);
                     taskHeader.gameObject.SetActive(true);
                 
-                    SpeakText("thomasJefferson1Pretext");
                     break;
                 
                 case 4:
@@ -187,9 +182,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage3Scene1Text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage3Scene1Text{textIndex} Button is pressed");
         }
 
         // Progress forward through array
@@ -201,10 +196,10 @@ namespace Alpha.Phases.Destiny.Quest
                 positionChanged = true;
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
-
+                StartCoroutine(DelayTextButton());
                 if (arrayPos != 8)
                 {
-                    StartCoroutine(DelayTextButton());
+                    
                 }
             }
         }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using LoLSDK;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class Stage3InventoryManager : MonoBehaviour
+    public class OpenInventoryStage4 : MonoBehaviour
     {
         // this script holds the main meat of the inventory
         // public TUSOMLobby1TextMan tusomTextMan;
@@ -30,6 +30,8 @@ namespace Alpha.Phases.Destiny.Quest
         public Button closeBook7;
         public Button openBook8;
         public Button closeBook8;
+        public Button openBook9;
+        public Button closeBook9;
         // public Button citation1Button;
 
         public GameObject book1;
@@ -40,6 +42,8 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject book6;
         public GameObject book7;
         public GameObject book8;
+        public GameObject book9;
+
         [SerializeField]
         public bool isInvOpen; // bool to check is the inventory is open 
         public bool stopRepeat;
@@ -98,6 +102,13 @@ namespace Alpha.Phases.Destiny.Quest
         public Button ttsBulletPoint4Book8;
         public Button ttsBulletPoint5Book8;
         public Button ttsBulletPoint6Book8;
+
+        public Button ttsBulletPoint1Book9;
+        public Button ttsBulletPoint2Book9;
+        public Button ttsBulletPoint3Book9;
+        public Button ttsBulletPoint4Book9;
+        public Button ttsBulletPoint5Book9;
+        public Button ttsBulletPoint6Book9;
         private void Awake()
         {
             openInv.onClick.AddListener(OpenInventory);
@@ -119,6 +130,8 @@ namespace Alpha.Phases.Destiny.Quest
             closeBook7.onClick.AddListener(CloseBook7ImmigrationStops);
             openBook8.onClick.AddListener(OpenBook8MexicanAmericanWar);
             closeBook8.onClick.AddListener(CloseBook8MexicanAmericanWar);
+            openBook9.onClick.AddListener(OpenBook9TreatyOfGuadalupeHidalgo);
+            closeBook9.onClick.AddListener(CloseBook9TreatyOfGuadalupeHidalgo);
 
             ttsBulletPoint1.onClick.AddListener(PlayTTSBulletPoint1);
             ttsBulletPoint2.onClick.AddListener(PlayTTSBulletPoint2);
@@ -169,6 +182,14 @@ namespace Alpha.Phases.Destiny.Quest
             ttsBulletPoint4Book8.onClick.AddListener(PlayTTSBulletPoint4Book8);
             ttsBulletPoint5Book8.onClick.AddListener(PlayTTSBulletPoint5Book8);
             ttsBulletPoint6Book8.onClick.AddListener(PlayTTSBulletPoint6Book8);
+
+
+            ttsBulletPoint1Book9.onClick.AddListener(PlayTTSBulletPoint1Book9);
+            ttsBulletPoint2Book9.onClick.AddListener(PlayTTSBulletPoint2Book9);
+            ttsBulletPoint3Book9.onClick.AddListener(PlayTTSBulletPoint3Book9);
+            ttsBulletPoint4Book9.onClick.AddListener(PlayTTSBulletPoint4Book9);
+            ttsBulletPoint5Book9.onClick.AddListener(PlayTTSBulletPoint5Book9);
+            ttsBulletPoint6Book9.onClick.AddListener(PlayTTSBulletPoint6Book9);
 
         }
         // Update is called once per frame
@@ -292,6 +313,18 @@ namespace Alpha.Phases.Destiny.Quest
         public void CloseBook8MexicanAmericanWar()
         {
             book8.gameObject.SetActive(false);
+        }
+
+
+        public void OpenBook9TreatyOfGuadalupeHidalgo()
+        {
+            book9.gameObject.SetActive(true);
+
+        }
+
+        public void CloseBook9TreatyOfGuadalupeHidalgo()
+        {
+            book9.gameObject.SetActive(false);
         }
 
         public void PlayTTSBulletPoint1()
@@ -557,6 +590,44 @@ namespace Alpha.Phases.Destiny.Quest
             LOLSDK.Instance.SpeakText("book8BP6");
             Debug.Log("This TTS Worked");
         }
+
+        public void PlayTTSBulletPoint1Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9P1");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint2Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9BP2");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint3Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9BP3");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint4Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9BP4");
+            Debug.Log("This TTS Worked");
+        }
+
+
+        public void PlayTTSBulletPoint5Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9BP5");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint6Book9()
+        {
+            LOLSDK.Instance.SpeakText("book9BP6");
+            Debug.Log("This TTS Worked");
+        }
+
 
     }
 }

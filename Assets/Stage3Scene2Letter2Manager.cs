@@ -20,6 +20,9 @@ namespace Alpha.Phases.Destiny.Quest
         public Button page2TTS;
         public Button page3TTS;
         public Button page3TTSa;
+        public Button page4TTS;
+        public Button page4TTSa;
+        public Button page4TTSb;
 
         private int currentPage = 0;
         public Button closeButton;
@@ -34,7 +37,9 @@ namespace Alpha.Phases.Destiny.Quest
             page2TTS.onClick.AddListener(PlayTTSLetter4);
             page3TTS.onClick.AddListener(PlayTTSLetter5);
             page3TTSa.onClick.AddListener(PlayTTSLetter5a);
-
+            page4TTS.onClick.AddListener(PlayTTSLetter6);
+            page4TTSa.onClick.AddListener(PlayTTSLetter6a);
+            page4TTSb.onClick.AddListener(PlayTTSLetter6b);
             ShowPage(0);
         }
 
@@ -121,6 +126,24 @@ namespace Alpha.Phases.Destiny.Quest
         public void PlayTTSLetter5a()
         {
             LOLSDK.Instance.SpeakText("mexicoLetter5b");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSLetter6()
+        {
+            LOLSDK.Instance.SpeakText("mexicoLetter6a");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSLetter6a()
+        {
+            LOLSDK.Instance.SpeakText("mexicoLetter6b");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSLetter6b()
+        {
+            LOLSDK.Instance.SpeakText("mexicoLetter6c");
             Debug.Log("This TTS Worked");
         }
 

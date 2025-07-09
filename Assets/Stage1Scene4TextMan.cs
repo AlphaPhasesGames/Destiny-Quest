@@ -102,7 +102,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 35, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 24, 100);
                         submitOnce = true;
                     }
                  
@@ -241,7 +241,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 8;
-            LOLSDK.Instance.SubmitProgress(0, 42, 100);
+            LOLSDK.Instance.SubmitProgress(0, 28, 100);
             SceneManager.LoadScene("Stage1Scene5Map");
             Debug.Log("This start coRoutine Runs");
         }

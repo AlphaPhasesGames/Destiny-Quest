@@ -30,10 +30,10 @@ namespace Alpha.Phases.Destiny.Quest
             backButton.onClick.AddListener(OnBackButtonClicked);
             closeButton.onClick.AddListener(CloseLetter);
 
-            page1TTS.onClick.AddListener(PlayTTSLetter3);
-            page1TTSa.onClick.AddListener(PlayTTSLetter3a);
+            page1TTS.onClick.AddListener(PlayTTSLetter1);
+            page1TTSa.onClick.AddListener(PlayTTSLetter1a);
             page2TTS.onClick.AddListener(PlayTTSLetter2);
-            page2TTS.onClick.AddListener(PlayTTSLetter2a);
+            page2TTSa.onClick.AddListener(PlayTTSLetter2a);
             page3TTS.onClick.AddListener(PlayTTSLetter3);
             page3TTSa.onClick.AddListener(PlayTTSLetter3a);
 

@@ -92,7 +92,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 64, 100);
                         submitOnce = true;
                     }
                     textPanal.gameObject.SetActive(true);
@@ -271,6 +271,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene3()
         {
             yield return new WaitForSeconds(5);
+            LOLSDK.Instance.SubmitProgress(0, 68, 100);
             SceneManager.LoadScene("Stage3Scene2");
         }
 

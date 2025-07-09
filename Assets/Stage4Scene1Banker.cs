@@ -10,6 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Stage4TextMan textMan;
         public Camera playerCam;
         public Camera bankerCam;
+        public GameObject playerGameObject;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
@@ -18,6 +19,7 @@ namespace Alpha.Phases.Destiny.Quest
                 textMan.arrayPos = 3;
                 playerCam.gameObject.SetActive(false);
                 bankerCam.gameObject.SetActive(true);
+                playerGameObject.SetActive(false);
             }
         }
     }

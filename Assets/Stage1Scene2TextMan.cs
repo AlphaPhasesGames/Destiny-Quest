@@ -163,7 +163,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 8, 100);
                         submitOnce = true;
                     }
                     StartCoroutine(OpenLetter());

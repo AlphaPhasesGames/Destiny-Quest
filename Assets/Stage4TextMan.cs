@@ -36,7 +36,6 @@ namespace Alpha.Phases.Destiny.Quest
 
         public GameObject letter;
         public GameObject amountAddGame;
-
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -98,7 +97,6 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    Debug.Log("Array1Fires");
                     break;
                 case 1:
 
@@ -116,6 +114,7 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     positionChanged = true;
+                    
                     StartCoroutine(DelayTextButton());
                     break;
                 case 4:
@@ -152,9 +151,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage4Scene1Text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage4Scene1Text{textIndex} Button is pressed");
         }
 
         // Progress forward through array

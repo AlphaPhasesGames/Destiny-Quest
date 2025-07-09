@@ -11,14 +11,17 @@ namespace Alpha.Phases.Destiny.Quest
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
         public Stage3Scene2PolkConcernSelectMan choicesMan;
+        public PlayerMovement playerMoveScript;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray
         public int minLengthArray = 1;          // Minimum bound for backward navigation
 
+        public GameObject citizens;
+
         public GameObject[] modelArray;         // Array of text panel GameObjects
         public GameObject textPanal;            // Main UI panel for text display
-
+        public GameObject playerObject;
         public GameObject letterEnd;
         public GameObject letter;
       //  public GameObject taskHeader;
@@ -94,14 +97,12 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 72, 100);
                         submitOnce = true;
                     }
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Text1");
-                    Debug.Log("Array1Fires");
                     break;
                 case 1:
 
@@ -109,7 +110,7 @@ namespace Alpha.Phases.Destiny.Quest
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
              
-                    SpeakText("stage1Text4");
+
                     break;
 
                 case 2:
@@ -119,16 +120,15 @@ namespace Alpha.Phases.Destiny.Quest
                   //  taskHeader.gameObject.SetActive(true);
                     StartCoroutine(OpenLetter());
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Text5");
                     break;
 
                 case 3:
+                    playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     // taskHeader.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit172());
-                    SpeakText("thomasJefferson1Pretext");
                     break;
 
                 case 4:
@@ -189,9 +189,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage3Scene2Text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage3Scene2Text{textIndex} Button is pressed");
         }
 
         // Progress forward through array
@@ -258,6 +258,9 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
+            playerObject.gameObject.SetActive(true);
+            playerMoveScript.enabled = true;
+            citizens.gameObject.SetActive(true);
             arrayPos = 11;
             polkCam.gameObject.SetActive(false);
             playerCam.gameObject.SetActive(true);
@@ -293,6 +296,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene3()
         {
             yield return new WaitForSeconds(5);
+            LOLSDK.Instance.SubmitProgress(0, 76, 100);
             SceneManager.LoadScene("Stage4Scene1");
         }
 

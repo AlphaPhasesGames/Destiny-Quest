@@ -121,7 +121,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 32, 100);
                         submitOnce = true;
                     }
                     textPanal.gameObject.SetActive(true);
@@ -391,6 +391,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public void MoveToOregon()
         {
+            LOLSDK.Instance.SubmitProgress(0, 36, 100);
             SceneManager.LoadScene("Stage2Scene1");
         }
     }

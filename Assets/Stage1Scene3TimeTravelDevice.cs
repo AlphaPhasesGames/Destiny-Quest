@@ -26,7 +26,7 @@ namespace Alpha.Phases.Destiny.Quest
         public void ChangeStage()
         {
             SceneManager.LoadScene("Stage1CampSection2");
-            LOLSDK.Instance.SubmitProgress(0, 28, 100);
+            LOLSDK.Instance.SubmitProgress(0, 20, 100);
         }
     }
 }

@@ -87,6 +87,7 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Is this running twice");
 
             }
+            /*
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 SceneManager.LoadScene("Stage4Scene1");
@@ -100,7 +101,7 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 SceneManager.LoadScene("Stage2Scene3");
             }
-
+            */
         }
        
         public void Save()

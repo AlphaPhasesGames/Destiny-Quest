@@ -25,8 +25,9 @@ namespace Alpha.Phases.Destiny.Quest
 
         public void ChangeStage()
         {
-            SceneManager.LoadScene("ParisStudy");
             LOLSDK.Instance.SubmitProgress(0, 12, 100);
+            SceneManager.LoadScene("ParisStudy");
+      
         }
     }
 }

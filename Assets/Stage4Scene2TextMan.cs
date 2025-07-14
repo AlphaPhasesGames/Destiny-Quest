@@ -90,13 +90,12 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 88, 100);
                         submitOnce = true;
                     }
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    Debug.Log("Array1Fires");
                     break;
                 case 1:
 
@@ -137,9 +136,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage1Text{textIndex}";
+            string textKey = $"stage4Scene2text{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"labText{textIndex} Button is pressed");
+            Debug.Log($"stage4Scene2text{textIndex} Button is pressed");
         }
 
         // Progress forward through array
@@ -223,6 +222,8 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene4Stage1()
         {
             yield return new WaitForSeconds(5);
+            LOLSDK.Instance.SubmitProgress(0, 92, 100);
+
             SceneManager.LoadScene("SigningScene");
         }
 

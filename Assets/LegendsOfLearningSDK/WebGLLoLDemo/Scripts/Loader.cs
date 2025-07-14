@@ -52,9 +52,9 @@ namespace Alpha.Phases.Destiny.Quest
             LOLSDK.Instance.GameStateChanged += new GameStateChangedHandler(HandleGameStateChange);
 
             // Mock the platform-to-game messages when in the Unity editor.
-#if UNITY_EDITOR
-            LoadMockData();
-#endif
+//#if UNITY_EDITOR
+//            LoadMockData();
+//#endif
 
             // Then, tell the platform the game is ready.
             LOLSDK.Instance.GameIsReady();
@@ -102,7 +102,7 @@ namespace Alpha.Phases.Destiny.Quest
             // Either GameState.Paused or GameState.Resumed
             Debug.Log("HandleGameStateChange");
         }
-        ///*      
+        /*      
 #if UNITY_EDITOR
         private void LoadMockData()
         {
@@ -146,6 +146,6 @@ namespace Alpha.Phases.Destiny.Quest
             }
         }
 #endif
-        //*/
+        */
     }
 }

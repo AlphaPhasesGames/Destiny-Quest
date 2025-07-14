@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 9267f571334735b43a20603afaac47c8, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: d0ee21a0378f86d4b9e75309bd7fa0fc, type: 2}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -328,6 +328,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29071724}
   m_CullTransparentMesh: 1
+--- !u!1 &30778628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3839894134818610534, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1464987506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &33563154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,11 +469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ff95f18dd90d64b8d004d65766efc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!195 &33563156 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 2655629109471195678, guid: ebca7f8a306f050498d9e573651b6937, type: 3}
-  m_PrefabInstance: {fileID: 33563154}
-  m_PrefabAsset: {fileID: 0}
 --- !u!20 &33563157 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6028835408386777004, guid: ebca7f8a306f050498d9e573651b6937, type: 3}
@@ -477,6 +477,11 @@ Camera:
 --- !u!1 &33563158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1499133790187327305, guid: ebca7f8a306f050498d9e573651b6937, type: 3}
+  m_PrefabInstance: {fileID: 33563154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &33563159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3175087571270626298, guid: ebca7f8a306f050498d9e573651b6937, type: 3}
   m_PrefabInstance: {fileID: 33563154}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &53629760
@@ -564,6 +569,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581270a825e493a4a89dc3de374365a6, type: 3}
+--- !u!1 &187488575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187488576}
+  - component: {fileID: 187488578}
+  - component: {fileID: 187488577}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &187488576
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187488575}
+  m_LocalRotation: {x: -0, y: -0, z: -0.999946, w: -0.0103946375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.41662, y: 0.41662, z: 0.41662}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 388239235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -181.191}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 47, y: 0.000059737184}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &187488577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187488575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 083b000fd85918a4d93acedfdebbaec3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &187488578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187488575}
+  m_CullTransparentMesh: 1
 --- !u!1 &266801912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3890264856267194439, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -1293,11 +1373,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1726240483}
+  - {fileID: 187488576}
   m_Father: {fileID: 1961413854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.7, y: 43.1}
+  m_AnchoredPosition: {x: 42.7, y: 36.8}
   m_SizeDelta: {x: 37.4762, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388239236
@@ -1409,7 +1490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &492511714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1427,7 +1508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9, y: -13}
+  m_AnchoredPosition: {x: -15.7, y: -13}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492511715
@@ -1450,10 +1531,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: When you're ready. Approach the map. t
+  m_text: When you're ready. Approach the map.T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1513,10 +1594,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: 0, y: 0, z: -286.83398, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &492511716
@@ -1590,10 +1671,10 @@ MonoBehaviour:
   book1Title: {fileID: 1302238494}
   book2Title: {fileID: 1302238493}
   book3Title: {fileID: 1302238492}
-  book4Title: {fileID: 0}
+  book4Title: {fileID: 1471776228}
   referenceButton: {fileID: 1302238489}
   referenceButton2: {fileID: 1302238487}
-  referenceButton3: {fileID: 1302238482}
+  referenceButton3: {fileID: 1471776227}
   referenceButton4: {fileID: 1302238480}
   citationBook1Info1: {fileID: 1302238488}
   citationBook2Info1: {fileID: 1302238486}
@@ -1637,7 +1718,7 @@ MonoBehaviour:
   s1s4Letter: {fileID: 868660500}
   forwardParent: {fileID: 3676691048358861810}
   s1s4TommyLetter: {fileID: 1292380467}
-  playerObject: {fileID: 33563158}
+  playerObject: {fileID: 33563159}
   tommyBox: {fileID: 1362585311}
   currentTextSection: {fileID: 0}
   arrayPos: 0
@@ -1675,7 +1756,6 @@ MonoBehaviour:
   - {fileID: 1506555888}
   - {fileID: 795313905}
   textBools: 
-  agent: {fileID: 33563156}
 --- !u!114 &514503674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,7 +1861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &620388983
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1822,10 +1902,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Now we should start looking at exploring it. T
+  m_text: 'Now we should start looking at exploring it.
+
+    T'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1885,10 +1967,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: -125.76576, y: 0, z: -326.87033, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &620388985
@@ -2323,7 +2405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 460, y: 44.5}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &795313905
@@ -2430,7 +2512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &863213048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2474,7 +2556,7 @@ MonoBehaviour:
   m_text: But before we do, this letter arrived for you. Take a look! t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2680,7 +2762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &963685100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2698,7 +2780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9, y: -13}
+  m_AnchoredPosition: {x: -11.2, y: -13}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963685101
@@ -2721,10 +2803,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But we need your help. On the table there is a map of the US. t
+  m_text: But we need your help. On the table there is a map of the US.t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2784,10 +2866,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: 0, y: 0, z: -210.14362, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &963685102
@@ -3346,7 +3428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1185194964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3387,10 +3469,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's talk to Thomas Jefferson. t
+  m_text: Let's talk to Thomas JeffersonT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3450,10 +3532,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: 0, y: 0, z: -202.31891, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1185194966
@@ -3564,22 +3646,46 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1709257376045162926, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_text
-      value: "Culturally, a major reason for expansion was the belief in American
-        superiority and divine right. Many people felt it was \u201CGod\u2019s plan\u201D
-        for Americans to spread west, and they believed it was their moral duty to
-        bring their way of life to new territories. t"
+      value: Culturally, a major reason for expansion was the belief in American
+        superiority and divine right. Many people felt it was 'God's plan' for Americans
+        to spread west, and they believed it was their moral duty to bring their
+        way of life to new territories. t
       objectReference: {fileID: 0}
     - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963447426254693402, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2383891858621559221, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_IsActive
@@ -3587,19 +3693,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_text
-      value: "Politically, the U.S. believed it was their Manifest Destiny to expand
+      value: Politically, the U.S. believed it was their Manifest Destiny to expand
         westward. Many Americans thought they had a right to spread U.S. political
-        ideals\u2014like democracy and freedom\u2014to new lands. They were also
-        willing to challenge other nations, such as Great Britain and Mexico, to
-        achieve this goal.t"
+        ideals like democracy and freedom, to new lands. They were also willing to
+        challenge other nations, such as Great Britain and Mexico, to achieve this
+        goal.t
       objectReference: {fileID: 0}
     - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2795633012866881292, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3607,11 +3737,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2924715508973846129, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 37.8
+      value: 32.27
       objectReference: {fileID: 0}
     - target: {fileID: 3034136670508853302, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142391255107489878, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 27.44104
       objectReference: {fileID: 0}
     - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_text
@@ -3625,8 +3759,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462542398792830543, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4787387649174222644, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_Name
@@ -3865,17 +4023,6 @@ MonoBehaviour:
 --- !u!114 &1302238481 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
-  m_PrefabInstance: {fileID: 1464987506}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1302238482 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 668139245539740291, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
   m_PrefabInstance: {fileID: 1464987506}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -4558,11 +4705,19 @@ PrefabInstance:
       value: 'Economic Opportunity: Western lands like Louisiana and Oregon promised
         valuable resources, trade routes, and fertile farmland for settlers t'
       objectReference: {fileID: 0}
+    - target: {fileID: 1210261282480297678, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1315114445029920244, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
       value: 'Reference r
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750721753923597016, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19.000008
       objectReference: {fileID: 0}
     - target: {fileID: 1815964604803352012, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
@@ -4634,6 +4789,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Citation Info Panal
       objectReference: {fileID: 0}
+    - target: {fileID: 4125507750265305695, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125507750265305695, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125507750265305695, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125507750265305695, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4144299484343263073, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
       value: Refernce Button
@@ -4676,6 +4847,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5002437499184821141, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: textPanel
+      value: 
+      objectReference: {fileID: 30778628}
     - target: {fileID: 5102099034129527520, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4714,7 +4889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 164.3137
+      value: 409.9427
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4722,7 +4897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1
+      value: -0.034103394
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4751,6 +4926,10 @@ PrefabInstance:
     - target: {fileID: 5823123305245358370, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.54350704
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068544974675589040, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6084591856151093454, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Pivot.x
@@ -4854,7 +5033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413730510579712019, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 8
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6413730510579712019, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4891,6 +5070,22 @@ PrefabInstance:
     - target: {fileID: 7381859866935458001, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -109.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463969880516729279, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463969880516729279, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463969880516729279, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463969880516729279, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7714019140998395612, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4958,9 +5153,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9068068395604564714, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
       value: Refernce Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083900911922150756, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083900911922150756, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083900911922150756, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083900911922150756, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5339,6 +5566,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b4748f09ea74f33419a1175baa3a2fe5, type: 3}
   m_PrefabInstance: {fileID: 1674748349}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471776227 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6369739186968135917, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1464987506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1471776228 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3693506537415422433, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1464987506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266801912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1506555886
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,7 +6478,7 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6292,7 +6541,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1726240485
@@ -6520,7 +6769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1847814987
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6562,10 +6811,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: We need you to look at it and help us make decisions on what Lewis and
-    Clark should do along the way.
+    Clark should do along the way.T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6625,10 +6874,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: -133.45529, y: 0, z: -301.46628, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1847814989
@@ -6802,7 +7051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1958202155
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6844,10 +7093,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Meet Lewis and Clark. These brave explorers are going to map out and chart
-    a route from Illinois all the way west to the pacific ocean. t
+    a route from Illinois all the way west to the pacific ocean.T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6907,10 +7156,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: -133.68956, y: 0, z: -292.3466, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1958202157
@@ -7565,7 +7814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 420, y: 44.5}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111883425
@@ -7675,11 +7924,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome Back. I\u2019ve just been told the great news about Louisiana.
-    t"
+  m_text: Welcome Back. I've just been told the great news about Louisiana.t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7739,10 +7987,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.63937, w: 0}
+  m_margin: {x: -67.987724, y: 0, z: -236.03406, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!224 &275296401532062962
@@ -7773,6 +8021,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 718767353}
     m_Modifications:
+    - target: {fileID: 3262938448659950691, guid: b973df32ec48aa04f851c01a03838b74, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6130797838430599163, guid: b973df32ec48aa04f851c01a03838b74, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7859,7 +8111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7701330128702431575, guid: b973df32ec48aa04f851c01a03838b74, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8958040785136447279, guid: b973df32ec48aa04f851c01a03838b74, type: 3}
       propertyPath: m_text
@@ -8672,7 +8924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7127943301658635754
 RectTransform:
   m_ObjectHideFlags: 0

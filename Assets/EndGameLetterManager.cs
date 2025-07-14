@@ -34,6 +34,7 @@ namespace Alpha.Phases.Destiny.Quest
             page2TTS.onClick.AddListener(PlayTTSLetter2);
             page3TTS.onClick.AddListener(PlayTTSLetter3);
             page4TTS.onClick.AddListener(PlayTTSLetter4);
+            LOLSDK.Instance.SubmitProgress(0, 95, 100);
 
             ShowPage(0);
             StartCoroutine(StartLetter());

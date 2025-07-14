@@ -18,7 +18,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public GameObject[] modelArray;         // Array of text panel GameObjects
         public GameObject textPanal;            // Main UI panel for text display
-
+        public GameObject bugFixPanalTurnOn;
         // State flags
         public bool positionChanged;            // Used to trigger updates when arrayPos changes
         public bool hasScrolled;                // Tracks if user has scrolled
@@ -91,7 +91,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 10, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 80, 100);
                         submitOnce = true;
                     }
                     textPanal.gameObject.SetActive(true);
@@ -229,6 +229,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             yield return new WaitForSeconds(2);
             positionChanged = true;
+            bugFixPanalTurnOn.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
             Debug.Log("This start function Runs");
@@ -237,6 +238,8 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator MoveToScene4Stage1()
         {
             yield return new WaitForSeconds(5);
+            LOLSDK.Instance.SubmitProgress(0, 84, 100);
+
             SceneManager.LoadScene("Stage4EndGame");
         }
 

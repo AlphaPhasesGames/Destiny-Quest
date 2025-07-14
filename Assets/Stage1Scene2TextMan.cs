@@ -403,7 +403,7 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(6);
             timeTravelUIImage.gameObject.SetActive(true);
             // positionChanged = true;
-            LOLSDK.Instance.SubmitProgress(0, 14, 100);
+           // LOLSDK.Instance.SubmitProgress(0, 14, 100);
             Debug.Log("This start coRoutine Runs");
         }
 

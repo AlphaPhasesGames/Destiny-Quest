@@ -962,6 +962,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &183586118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6369739186968135917, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 724049663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225017661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1546,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -10.58068
       objectReference: {fileID: 0}
+    - target: {fileID: 8309165599058716620, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 458
+      objectReference: {fileID: 0}
     - target: {fileID: 8501199095513643511, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_text
       value: Excellent, we should definitely expand west. Let's head to the Mississippi
@@ -1967,7 +1982,8 @@ Transform:
   m_LocalPosition: {x: -5.048133, y: 0.8394041, z: 5.183946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1429720009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &314300312
@@ -2022,7 +2038,7 @@ MonoBehaviour:
   book4Title: {fileID: 2088149561}
   referenceButton: {fileID: 1179081830}
   referenceButton2: {fileID: 1179081829}
-  referenceButton3: {fileID: 1179081828}
+  referenceButton3: {fileID: 183586118}
   referenceButton4: {fileID: 1179081833}
   citationBook1Info1: {fileID: 372719485}
   citationBook2Info1: {fileID: 372719484}
@@ -3469,6 +3485,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556850373}
   m_CullTransparentMesh: 1
+--- !u!1 &578959852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3839894134818610534, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 724049663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646125686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,7 +3788,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.1
+      value: -14.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: tManifest Destiny and the Growing Nation - The Louisiana Territory -
+        Pages 3 and 4
       objectReference: {fileID: 0}
     - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
@@ -3807,7 +3833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 342523299550713175, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 385902993560697320, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -3858,6 +3884,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 993223581674908157, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: Manifest Destiny and the Growing Nation - Introduction - Page 1t
+      objectReference: {fileID: 0}
+    - target: {fileID: 993223581674908157, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
@@ -3893,6 +3923,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 55.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1210261282480297678, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1315114445029920244, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -3905,6 +3939,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1448305703609626874, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1750721753923597016, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.x
       value: 427.9021
@@ -3915,10 +3953,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1750721753923597016, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -23
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 1828913198618330723, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876986672311226005, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1893362527443849461, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -3949,8 +3991,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2314878705967560385, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2341464997421459714, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2425674656707385899, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495365684461152479, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2744186883042481392, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -3961,9 +4015,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2854649607737504400, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2891989431785808076, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.4
+      value: -15.899998
       objectReference: {fileID: 0}
     - target: {fileID: 2957205235133101721, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -3974,8 +4032,20 @@ PrefabInstance:
       value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 3205682700810664833, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.28710905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205682700810664833, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.28710905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205682700810664833, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.28710905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205682700810664833, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 55.5
+      value: 61.3
       objectReference: {fileID: 0}
     - target: {fileID: 3397314377672723471, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -3997,17 +4067,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -41.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3619998849798143421, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3733993734899333078, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -62.999996
       objectReference: {fileID: 0}
     - target: {fileID: 3810372578351306796, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.7
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3810372578351306796, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 54.8
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3839894134818610534, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
@@ -4025,6 +4099,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4134786118444021008, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4144299484343263073, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
       value: Refernce Button
@@ -4033,13 +4111,21 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4221028310337658755, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227493714008861954, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4250611827683483719, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4274289084972949987, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 53.7
+      value: 59.1
       objectReference: {fileID: 0}
     - target: {fileID: 4301250996024951231, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4055,7 +4141,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367184222367465996, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: A man named James Monroe was sent to buy New Orleans for our farmers.
+        Napoleon and France surprised us, they sold the US all of Louisiana instead!
+        This peaceful deal doubled the country's size
       objectReference: {fileID: 0}
     - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -4067,6 +4159,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4457603738325012970, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568657527226822260, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4627456765130905669, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -4129,12 +4225,24 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5002437499184821141, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: textPanel
+      value: 
+      objectReference: {fileID: 578959852}
     - target: {fileID: 5112208516995205889, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -8.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5208317100338484040, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5271023602320625479, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357963750234684469, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5449686995402900675, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -4143,7 +4251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 355.25
+      value: 581.7166
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4151,7 +4259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.0674973
+      value: 3.590004
       objectReference: {fileID: 0}
     - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4197,6 +4305,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -114.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5829291284160000856, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5844404510631311939, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 24.9
@@ -4219,6 +4331,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057585133254583700, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068544974675589040, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6084591856151093454, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -4313,6 +4429,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6296782240589024545, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6303709026749010930, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
       value: 0
@@ -4320,6 +4440,10 @@ PrefabInstance:
     - target: {fileID: 6413730510579712019, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483241219799139791, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6543484879637098811, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -4332,6 +4456,10 @@ PrefabInstance:
     - target: {fileID: 6663561290407636185, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695736794029064065, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6746596317348540977, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -4353,6 +4481,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6940542832647480285, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6943268983386928225, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4360,6 +4492,12 @@ PrefabInstance:
     - target: {fileID: 7269367867753848357, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280882766112617950, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: America is destined to expand westward and claim new land. Our young
+        nation didn't begin to grow through war, we grew with smart deals and brave
+        settlers. t
       objectReference: {fileID: 0}
     - target: {fileID: 7280882766112617950, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -4385,6 +4523,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7756345421902708271, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774391659389459989, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7854227951820206357, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -4397,13 +4543,17 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8174982927120786079, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8354621673279570813, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8366147075017926236, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.4
+      value: -15.899998
       objectReference: {fileID: 0}
     - target: {fileID: 8374309020206429629, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_LocalScale.x
@@ -4419,11 +4569,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8374309020206429629, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.2
+      value: -15.699998
       objectReference: {fileID: 0}
     - target: {fileID: 8519171309689071419, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 56.000004
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 8545481508536428808, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
@@ -4482,6 +4632,11 @@ PrefabInstance:
       value: 23.3
       objectReference: {fileID: 0}
     - target: {fileID: 8734192032381744477, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: "In the 1800s, many Americans believed it was their country\u2019s 'obvious
+        fate' to grow across the whole continent.t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734192032381744477, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -4536,6 +4691,10 @@ PrefabInstance:
     - target: {fileID: 8911808049070437188, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
       value: Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914363630799553565, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -6220,17 +6379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171613373}
   m_CullTransparentMesh: 1
---- !u!114 &1179081828 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 668139245539740291, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
-  m_PrefabInstance: {fileID: 724049663}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1179081829 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7705570559126692740, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -6820,6 +6968,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416768657}
   m_CullTransparentMesh: 1
+--- !u!1 &1429720008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429720009}
+  - component: {fileID: 1429720010}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1429720009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429720008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314300311}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1429720010
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429720008}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0d614a7a8c6639644a87becf1be4416a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.102
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1434020775
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,7 +9193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 24}
+  m_AnchoredPosition: {x: 11, y: 24}
   m_SizeDelta: {x: 322.7833, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869615274
@@ -8940,7 +9216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Manifest Destiny and the Growing Nation - The Louisiana Territory - Pages
+  m_text: TManifest Destiny and the Growing Nation - The Louisiana Territory - Pages
     3 and 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -8968,8 +9244,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9004,7 +9280,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -130.06146, y: 0, z: -108.53131, w: 0}
+  m_margin: {x: -307.04123, y: 0, z: -253.443, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

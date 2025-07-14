@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: d0ee21a0378f86d4b9e75309bd7fa0fc, type: 2}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2250,6 +2250,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1326
       objectReference: {fileID: 0}
+    - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0339142
+      objectReference: {fileID: 0}
+    - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0339142
+      objectReference: {fileID: 0}
+    - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0339142
+      objectReference: {fileID: 0}
+    - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.8
+      objectReference: {fileID: 0}
     - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
       value: Manifest Destiny and the Growing Nation - The Louisiana Territory -
@@ -2341,7 +2357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917809050663839697, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 922933102256856445, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2397,6 +2413,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 57.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1210261282480297678, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1315114445029920244, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
       value: Reference t
@@ -2407,7 +2427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1488445333789868641, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 276
+      value: 267.00003
       objectReference: {fileID: 0}
     - target: {fileID: 1741810999166966418, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2452,6 +2472,18 @@ PrefabInstance:
     - target: {fileID: 2229041553819417272, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 39.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306005498105509839, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.24387963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306005498105509839, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24387963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306005498105509839, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.24387963
       objectReference: {fileID: 0}
     - target: {fileID: 2306005498105509839, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2503,11 +2535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3414758949548612681, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 148.8
+      value: 105.9
       objectReference: {fileID: 0}
     - target: {fileID: 3414758949548612681, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 58.8
+      value: 50.6
       objectReference: {fileID: 0}
     - target: {fileID: 3569069550221342935, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
@@ -2536,10 +2568,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3839894134818610534, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3905508226332295569, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956977314809438665, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: In the early 1800s, farmers needed the Mississippi River and the port
+        of New Orleans to sell their crops. If they lost access, they couldn't make
+        money. t
+      objectReference: {fileID: 0}
+    - target: {fileID: 3956977314809438665, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4058275163171046631, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -2576,15 +2618,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: "A man named James Monroe was sent to buy New Orleans for our farmers.
-        Napoleon and France surprised us \u2014 they sold the US all of Louisiana
-        instead! This peaceful deal doubled the country's size. t"
+      value: A man named James Monroe was sent to buy New Orleans for our farmers.
+        Napoleon and France surprised us, they sold the US all of Louisiana instead!
+        This peaceful deal doubled the country's size. t
       objectReference: {fileID: 0}
     - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473171913245928640, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: The land west of the river,Louisiana,was owned by France. Farmers worried
+        Napoleon might close New Orleans and stop their trade. t
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473171913245928640, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -2596,6 +2647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Citiation Info Texta
       objectReference: {fileID: 0}
+    - target: {fileID: 4646249782053846794, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4696135002921654234, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -2606,8 +2661,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4799061202104493733, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: "In Texas, Americans moved in with Mexico\u2019s permission. They promised
-        to follow the rules \u2014 no fighting, just settlement. t"
+      value: In Texas, Americans moved in with Mexico's permission. They promised
+        to follow the rules, no fighting, just settlement. t
       objectReference: {fileID: 0}
     - target: {fileID: 4799061202104493733, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -2689,11 +2744,23 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507341158690858423, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 56.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5579701527215734764, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
       value: Out west, Lewis and Clark explored new lands. Later, a path known as
         the South Pass made it easier for wagons to reach Oregon. As more settlers
         arrived, so did our claim. t
+      objectReference: {fileID: 0}
+    - target: {fileID: 5579701527215734764, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.x
+      value: -45.294647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5579701527215734764, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.z
+      value: -180.3593
       objectReference: {fileID: 0}
     - target: {fileID: 5579701527215734764, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -2725,6 +2792,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057585133254583700, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068544974675589040, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6084591856151093454, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -2872,6 +2943,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7280882766112617950, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: America is destined to expand westward and claim new land. Our young
+        nation didn't begin to grow through war, we grew with smart deals and brave
+        settlers. t
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280882766112617950, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -2907,6 +2984,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894351181207982596, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 296
+      objectReference: {fileID: 0}
     - target: {fileID: 8203683498582528925, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -2920,8 +3001,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8366147075017926236, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.054447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366147075017926236, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.054447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366147075017926236, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.054447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366147075017926236, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7
+      value: -19.9
       objectReference: {fileID: 0}
     - target: {fileID: 8374309020206429629, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2937,11 +3030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8374309020206429629, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7
+      value: -19.5
       objectReference: {fileID: 0}
     - target: {fileID: 8519171309689071419, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 47.4
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 8607559511950169406, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -2958,6 +3051,15 @@ PrefabInstance:
     - target: {fileID: 8705267670390142570, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 25.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734192032381744477, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: In the 1800s, many Americans believed it was their country's 'obvious
+        fate' to grow across the whole continent.t
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734192032381744477, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8857703296351411170, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
@@ -5970,7 +6072,7 @@ MonoBehaviour:
   book3Title: {fileID: 1954457951}
   referenceButton: {fileID: 509264802}
   referenceButton2: {fileID: 509264800}
-  referenceButton3: {fileID: 1615035797}
+  referenceButton3: {fileID: 1217613094}
   citationBook1Info1: {fileID: 509264801}
   citationBook2Info1: {fileID: 2050995897}
   citationBook2Info2: {fileID: 2050995896}
@@ -7358,6 +7460,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208288054}
   m_CullTransparentMesh: 1
+--- !u!114 &1217613094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6369739186968135917, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 399963915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1241732395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9154,17 +9267,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610781501}
   m_CullTransparentMesh: 1
---- !u!114 &1615035797 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 668139245539740291, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
-  m_PrefabInstance: {fileID: 399963915}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1615035798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8637043352634740238, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}

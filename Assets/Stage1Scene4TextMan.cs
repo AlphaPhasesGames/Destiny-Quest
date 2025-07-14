@@ -46,7 +46,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+      //  public NavMeshAgent agent;              // Controls AI navigation
 
         private void Awake()
         {
@@ -106,7 +106,7 @@ namespace Alpha.Phases.Destiny.Quest
                         submitOnce = true;
                     }
                  
-                    playerMoveScript.enabled = false;
+                    //playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
@@ -118,8 +118,8 @@ namespace Alpha.Phases.Destiny.Quest
                     playerCam.gameObject.SetActive(false);
                     jeffersonCam.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
-                    playerMoveScript.enabled = false;
-                    agent.isStopped = false;
+                   // playerMoveScript.enabled = false;
+                   // agent.isStopped = false;
                     break;   
                     
                 case 2:
@@ -147,7 +147,7 @@ namespace Alpha.Phases.Destiny.Quest
                    break;
 
                 case 7:             
-                    agent.isStopped = false;
+                  //  agent.isStopped = false;
                     StartCoroutine(MoveToBlankInvislbePanal());
                     break;
 
@@ -155,7 +155,7 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 8:
                     textPanal.gameObject.SetActive(false);
-                    agent.isStopped = false;
+                   // agent.isStopped = false;
                     break;
             }
         }

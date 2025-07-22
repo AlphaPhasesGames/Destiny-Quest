@@ -18,8 +18,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Animator tommyJ;
         public PlayerMovement player;
         // Reference to player's NavMeshAgent
-        private NavMeshAgent agent;
-
+        public bool runOnce;
         // References to cameras (not currently used in this script, but likely used elsewhere)
         public Camera playerCam;
         public Camera jeffersonCam;
@@ -39,9 +38,7 @@ namespace Alpha.Phases.Destiny.Quest
             // Check if the player entered the trigger area
             if (other.CompareTag("Player"))
             {
-                // Get the player's NavMeshAgent
-                agent = other.GetComponent<NavMeshAgent>();
-                if (agent != null)
+                if (!runOnce)
                 {
                     // Show the sign text and question UI
                     signText.gameObject.SetActive(true);
@@ -49,10 +46,9 @@ namespace Alpha.Phases.Destiny.Quest
                     correctButton.gameObject.SetActive(true);
                     incorrectButton.gameObject.SetActive(true);
                     player.enabled = false;
-                    // Stop the player's movement
-                    agent.isStopped = true;
-                    agent.velocity = Vector3.zero;
+                    runOnce = true;
                 }
+       
             }
         }
 
@@ -80,15 +76,7 @@ namespace Alpha.Phases.Destiny.Quest
             box3.enabled = true;
             box4.enabled = true;
 
-            // Resume player movement if agent exists
-            if (agent != null)
-            {
-                agent.isStopped = false;
-            }
-
-            // Clear the agent reference
-            agent = null;
-
+          
             // Trigger Jefferson's walking animation
             playerCam.gameObject.SetActive(false);
             jeffersonCam.gameObject.SetActive(true);
@@ -105,14 +93,7 @@ namespace Alpha.Phases.Destiny.Quest
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
 
-            // Resume player movement if agent exists
-            if (agent != null)
-            {
-                agent.isStopped = false;
-            }
-
-            // Clear the agent reference
-            agent = null;
+           
         }
     }
 }

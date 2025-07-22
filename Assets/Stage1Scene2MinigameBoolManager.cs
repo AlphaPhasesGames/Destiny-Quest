@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.UI;
+using System.Collections;
 namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage1Scene2MinigameBoolManager : MonoBehaviour
@@ -17,12 +16,20 @@ namespace Alpha.Phases.Destiny.Quest
             {
                 if (priority1 && priority2 && priority3)
                 {
-                    textMan.positionChanged = true;
-                    textMan.arrayPos = 11;
+                    StartCoroutine(DelayCompleteText());
                     runONce = true;
                 }
             }
            
         }
+
+
+        public IEnumerator DelayCompleteText()
+        {
+            yield return new WaitForSeconds(5f);
+            textMan.positionChanged = true;
+            textMan.arrayPos = 11;
+        }
+
     }
 }

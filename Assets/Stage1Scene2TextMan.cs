@@ -43,7 +43,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         //public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+       // public NavMeshAgent agent;              // Controls AI navigation
 
         public Button text1TTS;
         public Button TaskTTS; // task TTS
@@ -167,7 +167,7 @@ namespace Alpha.Phases.Destiny.Quest
                         submitOnce = true;
                     }
                     StartCoroutine(OpenLetter());
-                    playerMoveScript.enabled = false;
+                   // playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
@@ -211,28 +211,28 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 7: // incorrect Mini game 2
                     textPanal.gameObject.SetActive(true);
-                    agent.isStopped = false;
+                  //  agent.isStopped = false;
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     forwardParent.gameObject.SetActive(false);
                     break;
 
                 case 8: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                    agent.isStopped = false;
+                   // agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 9: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                    agent.isStopped = false;
+                  //  agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 10: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                    agent.isStopped = false;
+                   // agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
@@ -240,7 +240,7 @@ namespace Alpha.Phases.Destiny.Quest
                 case 11:
                     textPanal.gameObject.SetActive(true);
                     tommyBox.enabled = true;
-                    agent.isStopped = false;
+                   // agent.isStopped = false;
                     task2PrioritiesLetter.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
@@ -252,7 +252,7 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     playerCam.gameObject.SetActive(false);
                     jeffersonCam.gameObject.SetActive(true);
-                    agent.isStopped = true;
+                   // agent.isStopped = true;
                     playerObject.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToParis());
@@ -260,7 +260,7 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 13:
                     textPanal.gameObject.SetActive(false);
-                    agent.isStopped = false;
+                   // agent.isStopped = false;
                     break;
             }
         }

@@ -11,8 +11,6 @@ namespace Alpha.Phases.Destiny.Quest
     {
         public TextMeshProUGUI newGameText;
         public TextMeshProUGUI continueGameText;
-        public TextMeshProUGUI iPadButton;
-        public TextMeshProUGUI continueButton;
 
         private void Awake()
         {
@@ -20,8 +18,6 @@ namespace Alpha.Phases.Destiny.Quest
 
             newGameText.text = defs["newGame"];
             continueGameText.text = defs["continue"];
-            iPadButton.text = defs["ipadButton"];
-            continueButton.text = defs["chromebookButton"];
         }
        
     }

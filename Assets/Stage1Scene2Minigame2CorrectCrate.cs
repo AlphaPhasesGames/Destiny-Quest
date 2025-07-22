@@ -13,7 +13,6 @@ namespace Alpha.Phases.Destiny.Quest
         public Button correctButton;
         public Button incorrectButton;
         public GameObject tickImage;
-        private NavMeshAgent agent;
         private void Awake()
         {
             correctButton.onClick.AddListener(CorrectButton);
@@ -23,17 +22,14 @@ namespace Alpha.Phases.Destiny.Quest
         {
             if (other.CompareTag("Player"))
             {
-                agent = other.GetComponent<NavMeshAgent>();
-                if (agent != null)
-                {
+              
                     signText.gameObject.SetActive(true);
                     signQuestion.gameObject.SetActive(true);
                     correctButton.gameObject.SetActive(true);
                     incorrectButton.gameObject.SetActive(true);
 
-                    agent.isStopped = true;
-                    agent.velocity = Vector3.zero;
-                }
+                  
+              
             }
         }
         // This function controls the correct and incorrect buttons.
@@ -51,12 +47,8 @@ namespace Alpha.Phases.Destiny.Quest
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
             textMan.arrayPos = 8; // this text box closes the text panal and players can look for a new sign
-            if (agent != null)
-            {
-                agent.isStopped = false;
-            }
+          
             boolMan.priority1 = true;
-            agent = null;
         }
         public void IncorrectButton()
         {
@@ -68,11 +60,6 @@ namespace Alpha.Phases.Destiny.Quest
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
             textMan.arrayPos = 13;
-            if (agent != null)
-            {
-                agent.isStopped = false;
-            }
-            agent = null;
         }
 
     }

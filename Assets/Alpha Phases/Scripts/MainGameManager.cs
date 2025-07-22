@@ -75,18 +75,10 @@ namespace Alpha.Phases.Destiny.Quest
         {
             dqwbSaveData.current_stage = currentStagedqwb;
 
-            if (iPadChosen)
-            {
-                if (!hasIPadBeenSelected)
-                {
-                    Application.targetFrameRate = 30; // Set the target frame rate for iOS builds
-                    hasIPadBeenSelected = true;
-                    iPadChosen = false;
-                }
-
+        
                 Debug.Log("Is this running twice");
 
-            }
+            
             /*
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {

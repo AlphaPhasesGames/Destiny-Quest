@@ -12,6 +12,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Camera playerCam;
         public Stage3Scene2MinigameManager miniManager;
         public GameObject playerToDisable;
+        public SphereCollider polkTrigger;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
@@ -20,6 +21,7 @@ namespace Alpha.Phases.Destiny.Quest
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 2;
+                    polkTrigger.enabled = false;
                 }
 
                 if (miniManager.amountOfConcerns > 3)

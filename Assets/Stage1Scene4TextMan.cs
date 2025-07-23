@@ -16,8 +16,8 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject forwardParent;        // Parent object holding forward navigation UI
         public GameObject s1s4TommyLetter;      // UI element for Thomas Jefferson's letter
 
-      //  public Animator lewisWave1;
-      //  public Animator clarkWave1;
+        public Animator lewisWave1;
+        public Animator clarkWave1;
 
         public GameObject playerObject;
         public BoxCollider tommyBox;
@@ -132,6 +132,8 @@ namespace Alpha.Phases.Destiny.Quest
                 case 4:                   
                     jeffersonCam.gameObject.SetActive(false);
                     lewisClarkCam.gameObject.SetActive(true);
+                    lewisWave1.SetBool("waveL", true);
+                    clarkWave1.SetBool("waveC", true);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(true);

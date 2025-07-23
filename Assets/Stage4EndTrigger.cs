@@ -23,7 +23,7 @@ namespace Alpha.Phases.Destiny.Quest
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 4;
-                    Debug.Log("This fucntion fired");
+                    Debug.Log("This fucntion fired as well");
                 }
 
             }

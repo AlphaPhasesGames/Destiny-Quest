@@ -23,7 +23,7 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject concern2BGSelected;
         public GameObject concern3BGSelected;
         public GameObject concern4BGSelected;
-
+        public SphereCollider polkTrigger;
         private void Awake()
         {
             concernSelection1Laws.onClick.AddListener(ConcernSelectLawsButton);
@@ -40,6 +40,7 @@ namespace Alpha.Phases.Destiny.Quest
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 7;
+                   
                     runONce = true;
                 }
 

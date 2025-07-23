@@ -79,11 +79,12 @@ namespace Alpha.Phases.Destiny.Quest
                 Debug.Log("Is this running twice");
 
             
-            /*
+            
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("Stage4Scene1");
+                SceneManager.LoadScene("Stage2Scene1");
             }
+            /*
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadScene("ParisStudy");

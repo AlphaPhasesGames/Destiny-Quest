@@ -42,7 +42,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Camera polkCam;
         public Camera playerCam;
-
+        public SphereCollider polkCollider;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -108,6 +108,7 @@ namespace Alpha.Phases.Destiny.Quest
 
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
+                    playerMoveScript.enabled = true;
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
              
 
@@ -135,6 +136,7 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
+                    polkCollider.enabled = true;
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
                
@@ -160,6 +162,7 @@ namespace Alpha.Phases.Destiny.Quest
                                backwardsButton.gameObject.SetActive(false);
                                forwardParent.gameObject.SetActive(true);
                                forwardButton.gameObject.SetActive(true);
+                   
                     break;
                 
                             case 8:

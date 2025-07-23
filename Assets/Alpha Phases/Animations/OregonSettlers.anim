@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LewisAndClarkWaveAnim
+  m_Name: OregonSettlers
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -19,7 +19,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.385, y: 4.659, z: -4.717}
+        value: {x: -180, y: 0, z: 12.757004}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -27,17 +27,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.3833333
-        value: {x: 61.485, y: 74.252, z: -103.726}
-        inSlope: {x: 0, y: 29.233486, z: 0}
-        outSlope: {x: 0, y: 29.233486, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 1.6333333
-        value: {x: 39.601, y: 86.189, z: -87.917}
+        time: 1
+        value: {x: -179.75, y: 1.6380005, z: 13.375}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -45,26 +36,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.8833333
-        value: {x: 63.085, y: 72.401, z: -105.862}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 2.1833334
-        value: {x: 41.341, y: 85.712, z: -88.713}
-        inSlope: {x: -121.35481, y: 0, z: 132.76643}
-        outSlope: {x: -121.35481, y: 0, z: 132.76643}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 2.4
-        value: {x: 0.385, y: 4.659, z: -4.717}
+        time: 1.75
+        value: {x: -180.298, y: -2.1130066, z: 11.949005}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -74,14 +47,14 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
   m_PositionCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.33947462, y: 0.0014477303, z: 0.0014347148}
+        value: {x: -0.17903882, y: 0.000000667572, z: 0.000000007826186}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -89,17 +62,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.3833333
-        value: {x: 0.33948103, y: 0.0014463366, z: 0.0014570657}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 2.4
-        value: {x: 0.33947486, y: 0.0014475734, z: 0.0014347363}
+        time: 1
+        value: {x: -0.17903903, y: -0.00000067055197, z: -0.000004482812}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -109,7 +73,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -121,7 +85,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3048589358
+      path: 2742644367
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -130,7 +94,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3048589358
+      path: 2742644367
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -144,12 +108,12 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.4
+    m_StopTime: 1.75
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -166,7 +130,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.33947462
+        value: -0.17903882
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -174,17 +138,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: 0.33948103
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: 0.33947486
+        time: 1
+        value: -0.17903903
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -195,7 +150,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -205,7 +160,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.0014477303
+        value: 0.000000667572
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -213,17 +168,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: 0.0014463366
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: 0.0014475734
+        time: 1
+        value: -0.00000067055197
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -234,7 +180,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -244,7 +190,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.0014347148
+        value: 0.000000007826186
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -252,17 +198,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: 0.0014570657
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: 0.0014347363
+        time: 1
+        value: -0.000004482812
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -273,7 +210,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -283,7 +220,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.385
+        value: -180
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -291,8 +228,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: 61.485
+        time: 1
+        value: -179.75
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -300,35 +237,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6333333
-        value: 39.601
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8833333
-        value: 63.085
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.1833334
-        value: 41.341
-        inSlope: -121.35481
-        outSlope: -121.35481
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: 0.385
+        time: 1.75
+        value: -180.298
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -339,7 +249,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -349,7 +259,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 4.659
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -357,17 +267,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: 74.252
-        inSlope: 29.233486
-        outSlope: 29.233486
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.6333333
-        value: 86.189
+        time: 1
+        value: 1.6380005
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -375,26 +276,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.8833333
-        value: 72.401
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.1833334
-        value: 85.712
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: 4.659
+        time: 1.75
+        value: -2.1130066
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -405,7 +288,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -415,7 +298,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -4.717
+        value: 12.757004
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -423,8 +306,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3833333
-        value: -103.726
+        time: 1
+        value: 13.375
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -432,35 +315,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.6333333
-        value: -87.917
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8833333
-        value: -105.862
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.1833334
-        value: -88.713
-        inSlope: 132.76643
-        outSlope: 132.76643
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2.4
-        value: -4.717
+        time: 1.75
+        value: 11.949005
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -471,7 +327,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -484,7 +340,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -496,7 +352,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -508,7 +364,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Root/Pelvis/spine_01/spine_02/spine_03/clavicle_r/UpperArm_R/lowerarm_r
+    path: Root/Pelvis/spine_01/spine_02/spine_03
     classID: 4
     script: {fileID: 0}
     flags: 0

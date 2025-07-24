@@ -46,7 +46,7 @@ namespace Alpha.Phases.Destiny.Quest
         public bool[] textBools;                // Track whether each arrayPos has already been processed
 
         public Animator napoAnim;
-
+        public Animator monroeAnim;
         public Button stageText1TTS;
         public Button stageText2TTS;
         public Button stageTaskTTS;
@@ -237,6 +237,8 @@ namespace Alpha.Phases.Destiny.Quest
             positionChanged = true;
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
+            napoAnim.SetBool("napoStart", true);
+            monroeAnim.SetBool("monStart", true);
             Debug.Log("This start coRoutine Runs");
         }
 
@@ -267,7 +269,7 @@ namespace Alpha.Phases.Destiny.Quest
             minigame.minigameCanvas.gameObject.SetActive(true);
             minigame.napoleon1Choices.gameObject.SetActive(true);
             task.gameObject.SetActive(true);
-            napoAnim.SetBool("napoStart", true);
+           // napoAnim.SetBool("napoStart", true);
             arrayPos = 5;
             Debug.Log("This start coRoutine Runs");
         }

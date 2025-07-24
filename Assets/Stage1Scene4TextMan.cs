@@ -117,9 +117,8 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     playerCam.gameObject.SetActive(false);
                     jeffersonCam.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
-                   // playerMoveScript.enabled = false;
-                   // agent.isStopped = false;
+                    StartCoroutine(DelayTextButton());
+                    // playerMoveScript.enabled = false;
                     break;   
                     
                 case 2:
@@ -135,8 +134,7 @@ namespace Alpha.Phases.Destiny.Quest
                     lewisWave1.SetBool("waveL", true);
                     clarkWave1.SetBool("waveC", true);
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     break;
 
                 case 5:

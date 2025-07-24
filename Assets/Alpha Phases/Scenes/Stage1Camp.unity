@@ -2039,7 +2039,7 @@ MonoBehaviour:
   currentTextSection: {fileID: 0}
   arrayPos: 0
   maxLengthArray: 14
-  minLengthArray: 1
+  minLengthArray: 0
   modelArray:
   - {fileID: 2891579167575815983}
   - {fileID: 604885997}

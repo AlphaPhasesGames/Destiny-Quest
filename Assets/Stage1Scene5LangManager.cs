@@ -9,6 +9,7 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage1Scene5LangManager : MonoBehaviour
     {
+        public TextMeshProUGUI keyTitle;
         public TextMeshProUGUI keyAmerica;
         public TextMeshProUGUI keyLouisana;
         public TextMeshProUGUI keySpanishTerritory;
@@ -87,6 +88,7 @@ namespace Alpha.Phases.Destiny.Quest
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+            keyTitle.text = defs["mapKeyTitle"];
             keyAmerica.text = defs["mapKeyAmerica"];
             keyLouisana.text = defs["mapKeyLouisiana"];
             keySpanishTerritory.text = defs["mapKeySpanish"];

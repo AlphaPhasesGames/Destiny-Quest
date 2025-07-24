@@ -2272,6 +2272,14 @@ PrefabInstance:
         Pages 3 and 4
       objectReference: {fileID: 0}
     - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.x
+      value: -304.22217
+      objectReference: {fileID: 0}
+    - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.z
+      value: -279.89053
+      objectReference: {fileID: 0}
+    - target: {fileID: 213645879862953771, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
@@ -2325,6 +2333,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 442159235495946227, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2676463
+      objectReference: {fileID: 0}
+    - target: {fileID: 442159235495946227, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36921817
+      objectReference: {fileID: 0}
+    - target: {fileID: 442159235495946227, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.36921817
+      objectReference: {fileID: 0}
+    - target: {fileID: 442159235495946227, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 442159235495946227, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -115.4
+      objectReference: {fileID: 0}
     - target: {fileID: 490700437779523946, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -2362,6 +2390,10 @@ PrefabInstance:
     - target: {fileID: 922933102256856445, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 922933102256856445, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 992023906271889566, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -2468,6 +2500,14 @@ PrefabInstance:
     - target: {fileID: 2203058339746967205, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229041553819417272, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 604.7996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229041553819417272, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.9821014
       objectReference: {fileID: 0}
     - target: {fileID: 2229041553819417272, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2596,6 +2636,10 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4188132654148426511, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: Diplomatic and Miltary Stratergies t
+      objectReference: {fileID: 0}
     - target: {fileID: 4250611827683483719, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -2677,7 +2721,6 @@ PrefabInstance:
       value: 'Manifest Destiny and the Growing Nation - The Louisiana Territory -
         Page 3/4 t
 
-
 '
       objectReference: {fileID: 0}
     - target: {fileID: 4821787659488181128, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -2715,6 +2758,10 @@ PrefabInstance:
     - target: {fileID: 4949966516075861112, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087709198580108136, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 5102099034129527520, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -2962,7 +3009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7381859866935458001, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -114.9
+      value: -115.6
       objectReference: {fileID: 0}
     - target: {fileID: 7623634524186158750, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -3032,9 +3079,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -19.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8442839043529839554, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 67
+      objectReference: {fileID: 0}
     - target: {fileID: 8519171309689071419, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 55
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8607559511950169406, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -5988,7 +6039,7 @@ MonoBehaviour:
   currentTextSection: {fileID: 0}
   arrayPos: 0
   maxLengthArray: 0
-  minLengthArray: 3
+  minLengthArray: 0
   modelArray:
   - {fileID: 1405255312}
   - {fileID: 14184833}
@@ -6010,6 +6061,7 @@ MonoBehaviour:
   backwardsButton: {fileID: 1405255309}
   textBools: 
   napoAnim: {fileID: 5370270805653521801}
+  monroeAnim: {fileID: 403929771}
   stageText1TTS: {fileID: 1405255311}
   stageText2TTS: {fileID: 1847005625}
   stageTaskTTS: {fileID: 603322074}

@@ -357,7 +357,7 @@ MonoBehaviour:
   currentTextSection: {fileID: 0}
   arrayPos: 4
   maxLengthArray: 0
-  minLengthArray: 1
+  minLengthArray: 0
   positionChanged: 0
   invButton: {fileID: 8741453425072420682}
   modelArray:
@@ -896,9 +896,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: d8a6c223124bb2a4aaf56ee762e145fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: d8a6c223124bb2a4aaf56ee762e145fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d8a6c223124bb2a4aaf56ee762e145fd, type: 3}
       propertyPath: m_Name
       value: CardReader
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d8a6c223124bb2a4aaf56ee762e145fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: d8a6c223124bb2a4aaf56ee762e145fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2053,8 +2069,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856244996}
   m_SourcePrefab: {fileID: 100100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+--- !u!1 &856244995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+  m_PrefabInstance: {fileID: 856244994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &856244996
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856244995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0800765, y: 0.55007225, z: 0.66729414}
+  m_Center: {x: 0.008318307, y: 0.2676158, z: -0.000492856}
 --- !u!114 &884133032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6830553119836940508, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
@@ -2584,7 +2629,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1101308930
 Transform:
@@ -3175,8 +3220,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1288360930}
   m_SourcePrefab: {fileID: 100100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+--- !u!1 &1288360929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ab7010a3ddc7a8544aad80f4c234ec3b, type: 3}
+  m_PrefabInstance: {fileID: 1288360928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1288360930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288360929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0800763, y: 0.55007225, z: 0.6672941}
+  m_Center: {x: 0.008318306, y: 0.2676158, z: -0.0004928562}
 --- !u!1 &1313598214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,8 +5534,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0f95f0ea1be5b56479266db8ad2dfa03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2114362082}
   m_SourcePrefab: {fileID: 100100000, guid: 0f95f0ea1be5b56479266db8ad2dfa03, type: 3}
+--- !u!1 &2114362081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0f95f0ea1be5b56479266db8ad2dfa03, type: 3}
+  m_PrefabInstance: {fileID: 2114362080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2114362082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114362081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &18417860883296411
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5486,7 +5589,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &1125376368444229445
 MeshRenderer:
@@ -5979,7 +6082,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4525086040503388001
 Transform:
@@ -6086,7 +6189,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1001 &5796077970069115953
 PrefabInstance:

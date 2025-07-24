@@ -86,7 +86,7 @@ namespace Alpha.Phases.Destiny.Quest
             book2BP4.text = defs["book2BP4"];
             referenceButton.text = defs["referenceButton"];
             referenceButton2.text = defs["referenceButton"];
-            citationBook1Info1.text = defs["citationInfoBook2a"];
+            citationBook1Info1.text = defs["citationInfoBook1"];
             citationBook2Info1.text = defs["citationInfoBook2a"];
             citationBook2Info2.text = defs["citationInfoBook2b"];
             citationBook2Info3.text = defs["citationInfoBook2c"];

@@ -14,7 +14,7 @@ namespace Alpha.Phases.Destiny.Quest
         [Header("Navigation")]
         public Button forwardButton;     // Your forward arrow button
         public Button backButton;        // Your back arrow button
-
+        public GameObject book2;
         public Button page1TTS;
         public Button page2TTS;
         public Button page3TTS;
@@ -87,6 +87,7 @@ namespace Alpha.Phases.Destiny.Quest
             letterParent.gameObject.SetActive(false);
             s1TextMan.positionChanged = true;
             s1TextMan.arrayPos = 4;
+            book2.gameObject.SetActive(true);
         }
 
         public void PlayTTSLetter1()

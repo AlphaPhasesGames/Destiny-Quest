@@ -92,8 +92,8 @@ namespace Alpha.Phases.Destiny.Quest
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
-
-           
+            player.enabled = true;
+            runOnce = false;
         }
     }
 }

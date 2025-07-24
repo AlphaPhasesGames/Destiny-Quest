@@ -110,10 +110,7 @@ namespace Alpha.Phases.Destiny.Quest
 
             crateMiniGameCompleteTTS.onClick.AddListener(SpeakTask2CompleteTTS);
 
-         //   answer1TTS.onClick.AddListener();
-         //   answer2TTS.onClick.AddListener();
-          //  answer3TTS.onClick.AddListener();
-         //   answer4TTS.onClick.AddListener();
+
 
             moveToParisTTS.onClick.AddListener(MoveToParisTTS);
             // Begin scene coroutine
@@ -211,29 +208,26 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 7: // incorrect Mini game 2
                     textPanal.gameObject.SetActive(true);
-                  //  agent.isStopped = false;
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     forwardParent.gameObject.SetActive(false);
                     break;
 
                 case 8: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                   // agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 9: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                  //  agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 10: // correct Mini game 2 1
                     textPanal.gameObject.SetActive(true);
-                   // agent.isStopped = false;
                     forwardParent.gameObject.SetActive(false);
+                    forwardButton.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
@@ -323,7 +317,7 @@ namespace Alpha.Phases.Destiny.Quest
         // Waits before showing forward button (used for pacing)
         public IEnumerator DelayTextButton()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6.1f);
             forwardParent.gameObject.SetActive(true);
             forwardButton.gameObject.SetActive(true);
             Debug.Log("Forward Arrow Showing");
@@ -333,7 +327,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 13;
@@ -342,7 +336,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToBlankInvislbePanal()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 13;
@@ -353,7 +347,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator OpenLetter()
         {
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             playerMoveScript.enabled = true;
             s1s2Letter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
@@ -363,7 +357,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator OpenTommyLetter()
         {
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             playerMoveScript.enabled = false;
             s1s2TommyLetter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
@@ -382,7 +376,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToTommyJefferson()
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(7);
             positionChanged = true;
             playerMoveScript.enabled = false;
             arrayPos = 3;

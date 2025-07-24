@@ -17,7 +17,7 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject currentTextSection;
         public int arrayPos;
         public int maxLengthArray;
-        public int minLengthArray = 1;
+        public int minLengthArray = 0;
 
         public bool positionChanged; //= true;
 
@@ -104,10 +104,11 @@ namespace Alpha.Phases.Destiny.Quest
                     playerMoveScript.enabled = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    
+                    Array.Fill(textBools, false);
                     // forwardParent.gameObject.SetActive(true);
-                     break;
+                    break;
                 case 1:
+                    backwardsButton.enabled = true;
                     backwardsButton.gameObject.SetActive(true);
                     StartCoroutine(DelayTextButton());
                     break;
@@ -238,6 +239,7 @@ namespace Alpha.Phases.Destiny.Quest
             textPanal.gameObject.SetActive(true);
             forwardParent.gameObject.SetActive(true);
             arrayPos = 0;
+            textBools[0] = true;
             Debug.Log("This start coRoutine Runs");
 
         }

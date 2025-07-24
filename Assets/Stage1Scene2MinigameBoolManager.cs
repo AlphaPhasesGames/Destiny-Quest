@@ -26,7 +26,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator DelayCompleteText()
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(8f);
             textMan.positionChanged = true;
             textMan.arrayPos = 11;
         }

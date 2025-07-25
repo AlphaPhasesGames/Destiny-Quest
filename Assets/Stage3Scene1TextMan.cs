@@ -10,7 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage3Scene1TextMan : MonoBehaviour
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-
+        public Stage3Scene1LetterManager s3s1LetterSciptToEnable;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray
@@ -31,7 +31,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button forwardButton;            // UI button for progressing forward
         public Button backwardsButton;          // UI button for going back
-
+        public Button timeTravelButton;
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
         //public NavMeshAgent agent;              // Controls AI navigation
@@ -43,7 +43,7 @@ namespace Alpha.Phases.Destiny.Quest
             // Hook up forward and back buttons to corresponding logic
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
-
+            timeTravelButton.onClick.AddListener(MoveToScene3);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -97,7 +97,7 @@ namespace Alpha.Phases.Destiny.Quest
                     }
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     break;
                 case 1:
 
@@ -162,15 +162,15 @@ namespace Alpha.Phases.Destiny.Quest
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToScene3());
+                  
                     break;
 
                 case 10: // decision 2 wrong
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    taskHeader.gameObject.SetActive(false);
-                    StartCoroutine(MoveToScene3());
+                  //  textPanal.gameObject.SetActive(true);
+                 //   backwardsButton.gameObject.SetActive(false);
+                 //   forwardParent.gameObject.SetActive(false);
+                 //   taskHeader.gameObject.SetActive(false);
+                 //   StartCoroutine(MoveToScene3());
                     break;
 
                 case 11: // decision 2 wrong
@@ -196,10 +196,10 @@ namespace Alpha.Phases.Destiny.Quest
                 positionChanged = true;
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
-                StartCoroutine(DelayTextButton());
-                if (arrayPos != 8)
+               
+                if (arrayPos != 1)
                 {
-                    
+                    StartCoroutine(DelayTextButton());
                 }
             }
         }
@@ -244,7 +244,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6f);
             textPanal.gameObject.SetActive(false);
             arrayPos = 5;
             Debug.Log("This start coRoutine Runs");
@@ -268,9 +268,9 @@ namespace Alpha.Phases.Destiny.Quest
             Debug.Log("This start function Runs");
         }
 
-        public IEnumerator MoveToScene3()
+        public void MoveToScene3()
         {
-            yield return new WaitForSeconds(5);
+         
             LOLSDK.Instance.SubmitProgress(0, 68, 100);
             SceneManager.LoadScene("Stage3Scene2");
         }
@@ -278,6 +278,7 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator OpenLetter()
         {
             yield return new WaitForSeconds(5);
+            s3s1LetterSciptToEnable.enabled = true;
             letter.gameObject.SetActive(true);
         }
     }

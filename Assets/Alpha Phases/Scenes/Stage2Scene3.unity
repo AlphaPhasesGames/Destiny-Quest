@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 598869536}
   m_IndirectSpecularColor: {r: 0.44928926, g: 0.49936056, b: 0.5757104, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 3302488d0aed9f247b75becb87845bcf, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -413,6 +413,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 353241567}
+  - {fileID: 2021199949}
   m_Father: {fileID: 532454498}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -440,12 +441,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Let\u2019s travel forward in time again and witness the causes and outcomes
+  m_text: Let's travel forward in time again and witness the causes and outcomes
     of the Annexation of Texas and the Mexican-American War. Press the time travel
-    button when you're ready. T"
+    button when you're ready. T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -508,7 +509,7 @@ MonoBehaviour:
   m_margin: {x: -158.12958, y: 0, z: -317.18655, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &210141636
@@ -580,7 +581,7 @@ MonoBehaviour:
   m_text: Thanks to you, the Oregon Trail has been a success. T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -765,7 +766,7 @@ MonoBehaviour:
   currentTextSection: {fileID: 0}
   arrayPos: 0
   maxLengthArray: 7
-  minLengthArray: 1
+  minLengthArray: 0
   modelArray:
   - {fileID: 532454504}
   - {fileID: 1879414295}
@@ -793,6 +794,7 @@ MonoBehaviour:
   textBools: 
   choice1Answer1Stay: {fileID: 2128968236}
   choice1Answer2Go: {fileID: 446248296}
+  timeTravelButton: {fileID: 2021199950}
 --- !u!114 &326493499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,7 +906,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 487, y: 62}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353241568
@@ -1156,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4737227145985978393, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -114.8
+      value: -115.8
       objectReference: {fileID: 0}
     - target: {fileID: 5002437499184821141, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: textPanel
@@ -1264,11 +1266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7381859866935458001, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -116
+      value: -115.5
       objectReference: {fileID: 0}
     - target: {fileID: 7809697933047394465, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -110.9
+      value: -115.5
       objectReference: {fileID: 0}
     - target: {fileID: 8637043352634740238, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -1883,6 +1885,18 @@ PrefabInstance:
       value: 232.9781
       objectReference: {fileID: 0}
     - target: {fileID: 4141907289151477281, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.145235
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141907289151477281, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141907289151477281, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141907289151477281, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 43.5398
       objectReference: {fileID: 0}
@@ -1893,6 +1907,14 @@ PrefabInstance:
     - target: {fileID: 4311219654643932039, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Name
       value: TextParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450686889921782386, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450686889921782386, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 6426003209898051250, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -2103,7 +2125,7 @@ MonoBehaviour:
     water and fertile land. Maybe another choice would benefit us more.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2212,7 +2234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450.8, y: 65.8}
+  m_AnchoredPosition: {x: 489, y: 65.8}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593802522
@@ -3050,7 +3072,7 @@ MonoBehaviour:
     and continue our expansion to the west. t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3503,7 +3525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 487, y: 62}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726683053
@@ -3691,7 +3713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 488, y: 63}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800245432
@@ -4213,7 +4235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 488, y: 66}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830129422
@@ -4501,8 +4523,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1471177600}
-  - {fileID: 500388254}
   - {fileID: 532454497}
+  - {fileID: 500388254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4649,6 +4671,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879414295}
   m_CullTransparentMesh: 1
+--- !u!1001 &2021199948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 210141634}
+    m_Modifications:
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.4754589
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.201033
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.201033
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 349.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6990494084278648729, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_text
+      value: 1821
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540360407351507760, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+      propertyPath: m_Name
+      value: Time Travel UI Element
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+--- !u!224 &2021199949 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 27748144440842833, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+  m_PrefabInstance: {fileID: 2021199948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2021199950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5950242327669524227, guid: 475bec79a324aef48a2774a251827a03, type: 3}
+  m_PrefabInstance: {fileID: 2021199948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2128968234
 GameObject:
   m_ObjectHideFlags: 0

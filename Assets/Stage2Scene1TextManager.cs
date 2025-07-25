@@ -32,13 +32,13 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+
 
         public Button choice1Answer1GoRound;
         public Button choice1Answer2TravelThrough;
 
         public GameObject letterParent;
-
+        public Stage2LetterManager s2Letterman;
 
         private void Awake()
         {
@@ -101,20 +101,21 @@ namespace Alpha.Phases.Destiny.Quest
                     }
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     Debug.Log("Array1Fires");
                     break;
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
+                    s2Letterman.enabled = true;
                     letterParent.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
                 case 2:
                     backwardsButton.gameObject.SetActive(false);
-                    //forwardParent.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    DelayTextButton();
+                    StartCoroutine(DelayTextButton());
                     break;
                 case 3:
                     backwardsButton.gameObject.SetActive(true);
@@ -129,7 +130,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
                 case 5: // decision 2 wrong
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     backwardsButton.gameObject.SetActive(false);
                     break;
                 case 6:
@@ -173,7 +174,7 @@ namespace Alpha.Phases.Destiny.Quest
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
 
-                if (arrayPos != 8)
+                if (arrayPos != 3 && arrayPos !=8 && arrayPos != 6)
                 {
                     StartCoroutine(DelayTextButton());
                 }
@@ -212,7 +213,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator DelayTextButton()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6);
             forwardParent.gameObject.SetActive(true);
             forwardButton.gameObject.SetActive(true);
             Debug.Log("Forward Arrow Showing");
@@ -247,7 +248,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToScene2()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(7);
             LOLSDK.Instance.SubmitProgress(0, 44, 100);
             SceneManager.LoadScene("Stage2Scene2");
         }

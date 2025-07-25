@@ -96,7 +96,7 @@ namespace Alpha.Phases.Destiny.Quest
                     }
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     break;
                 case 1:
 

@@ -14,7 +14,7 @@ namespace Alpha.Phases.Destiny.Quest
         [Header("Navigation")]
         public Button forwardButton;     // Your forward arrow button
         public Button backButton;        // Your back arrow button
-
+        public GameObject timeTravelDevice;
         public Button page1TTS;
         public Button page1TTSa;
         public Button page2TTS;
@@ -92,7 +92,7 @@ namespace Alpha.Phases.Destiny.Quest
         public void CloseLetter()
         {
             letterParent.gameObject.SetActive(false);
-            SceneManager.LoadScene("Stage4Scene1");
+            timeTravelDevice.gameObject.SetActive(true);
         }
 
 

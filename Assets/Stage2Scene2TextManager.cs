@@ -115,11 +115,12 @@ namespace Alpha.Phases.Destiny.Quest
                 case 3:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     break;
                 case 4:
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
+                    forwardButton.gameObject.SetActive(false);
                     StartCoroutine(MoveToScene3());
                     break;
                 case 5: // decision 2 wrong
@@ -219,7 +220,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToScene3()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6);
             LOLSDK.Instance.SubmitProgress(0, 52, 100);
             SceneManager.LoadScene("Stage2Scene3");
         }

@@ -84,13 +84,16 @@ namespace Alpha.Phases.Destiny.Quest
             textman.positionChanged = true;
             correct1Paper.gameObject.SetActive(true);
             textman.arrayPos = 3;
+            correct1HardWorking.enabled = false;
             textman.ResetBools();
+
         }
 
         public void FindCorrect2()
         {
             textman.positionChanged = true;
             correct2Paper.gameObject.SetActive(true);
+            correct2Citizen.enabled = false;
             textman.arrayPos = 3;
             textman.ResetBools();
         }
@@ -100,6 +103,7 @@ namespace Alpha.Phases.Destiny.Quest
             correct3Paper.gameObject.SetActive(true);
             textman.positionChanged = true;
             textman.arrayPos = 3;
+            correct3Catholic.enabled = false;
             textman.ResetBools();
         }
 
@@ -150,6 +154,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             correct4Paper.gameObject.SetActive(false);
             textman.positionChanged = true;
+            incorrect4Hunting.enabled = false;
             textman.arrayPos = 7;
         }
 
@@ -157,6 +162,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             correct5Paper.gameObject.SetActive(false);
             textman.positionChanged = true;
+            incorrect5StayLimit.enabled = false;
             textman.arrayPos = 8;
         }
 

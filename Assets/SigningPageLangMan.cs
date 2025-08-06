@@ -16,7 +16,9 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI letterpage3;
         public TextMeshProUGUI letterpage4;
 
-
+        public TextMeshProUGUI signingText1BeforeMexcianCession;
+        public TextMeshProUGUI signingText1AfterMexcianCession;
+        public TextMeshProUGUI thankYouForPlaying;
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -26,6 +28,9 @@ namespace Alpha.Phases.Destiny.Quest
             letterpage3.text = defs["endGame4"];
             letterpage4.text = defs["endGame5"];
 
+            signingText1BeforeMexcianCession.text = defs["signingScreenText1"];
+            signingText1AfterMexcianCession.text = defs["signingScreenText2"];
+            thankYouForPlaying.text = defs["signingScreenText3"];
 
         }
     }

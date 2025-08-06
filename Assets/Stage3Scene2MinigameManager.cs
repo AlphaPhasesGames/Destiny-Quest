@@ -15,7 +15,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             if (!runOnce)
             {
-                if (amountOfConcerns == 4)
+                if (amountOfConcerns == 3)
                 {
                     task1ToDisable.gameObject.SetActive(false);
                     task2ToShow.gameObject.SetActive(true);

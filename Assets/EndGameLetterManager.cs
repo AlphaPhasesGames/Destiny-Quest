@@ -20,7 +20,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button page3TTS;
         public Button page4TTS;
 
-        public GameObject finaltext;
+        public SigningStageTextMan finaltextMan;
         public Animator endFade;
         public GameObject fadeEnable;
         private int currentPage = 0;
@@ -130,8 +130,10 @@ namespace Alpha.Phases.Destiny.Quest
       
         public IEnumerator RunFunctionAfterPage4Delay()
         {
+           
             yield return new WaitForSeconds(4);
-            finaltext.gameObject.SetActive(true);
+            finaltextMan.positionChanged = true;
+            finaltextMan.arrayPos = 2;
             yield return new WaitForSeconds(2);
             fadeEnable.gameObject.SetActive(true);
             endFade.SetBool("fadeEnd", true);

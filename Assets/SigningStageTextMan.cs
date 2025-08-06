@@ -7,10 +7,11 @@ using LoLSDK;
 using UnityEngine.SceneManagement;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class Stage4Scene2TextMan : MonoBehaviour
+    public class SigningStageTextMan : MonoBehaviour
     {
+        public EndGameLetterManager endLetterMan;
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-        public PlayerMovement playerMove;
+       // public PlayerMovement playerMove;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray
@@ -32,9 +33,10 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-        public NavMeshAgent agent;              // Controls AI navigation
+     //   public NavMeshAgent agent;              // Controls AI navigation
 
-
+        public GameObject mapExpansionUI;
+        public Animator mapExpansionAnim;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -88,45 +90,25 @@ namespace Alpha.Phases.Destiny.Quest
             switch (arrayPos)
             {
                 case 0:
-                    if (!submitOnce)
-                    {
-                        LOLSDK.Instance.SubmitProgress(0, 88, 100);
-                        submitOnce = true;
-                    }
+                   
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
+                    mapExpansionUI.gameObject.SetActive(true);
                     StartCoroutine(DelayTextButton());
                     break;
                 case 1:
+                    mapExpansionAnim.SetTrigger("mapExpand");
+                    backwardsButton.gameObject.SetActive(true);
 
-                    backwardsButton.gameObject.SetActive(false);
-                    StartCoroutine(DelayTextButton());
+                   StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
                 case 2:
-     
-                    backwardsButton.gameObject.SetActive(true);
-                    playerMove.enabled = true;
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);                
                     break;
+                            
                 case 3:
-
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
-                case 4:
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
-                case 5:
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToScene4Stage1());
-                    break;
-
-                case 6:
                     textPanal.gameObject.SetActive(false);
                     break;
 
@@ -194,13 +176,15 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(12);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 6;
-            playerMove.enabled = true;
+            mapExpansionUI.gameObject.SetActive(false);
+            arrayPos = 3;
+            endLetterMan.enabled = true;
             Debug.Log("This start coRoutine Runs");
         }
 
+      
         public IEnumerator StartStage4Scene1()
         {
             yield return new WaitForSeconds(2);

@@ -49,13 +49,13 @@ namespace Alpha.Phases.Destiny.Quest
         public void IncorrectButton()
         {
 
-              signObject.gameObject.SetActive(false);
-            textMan.positionChanged = true;
+              //signObject.gameObject.SetActive(false);
+           // textMan.positionChanged = true;
             signText.gameObject.SetActive(false);
             signQuestion.gameObject.SetActive(false);
             correctButton.gameObject.SetActive(false);
             incorrectButton.gameObject.SetActive(false);
-            textMan.arrayPos = 13;
+           // textMan.arrayPos = 13;
           
         }
 

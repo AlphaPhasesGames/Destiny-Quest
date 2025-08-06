@@ -1017,6 +1017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 123297926}
   - component: {fileID: 123297925}
+  - component: {fileID: 123297927}
   m_Layer: 0
   m_Name: NapoleonCamera
   m_TagString: Untagged
@@ -1090,6 +1091,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 6.456, y: -89.853, z: -0.474}
+--- !u!81 &123297927
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123297923}
+  m_Enabled: 1
 --- !u!1 &136466584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,6 +4388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626106461}
   - component: {fileID: 626106460}
+  - component: {fileID: 626106462}
   m_Layer: 0
   m_Name: MonroeCamera
   m_TagString: Untagged
@@ -4452,6 +4462,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 81.762, z: 0}
+--- !u!81 &626106462
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626106458}
+  m_Enabled: 1
 --- !u!1 &641605768
 GameObject:
   m_ObjectHideFlags: 0

@@ -78,13 +78,13 @@ namespace Alpha.Phases.Destiny.Quest
         
                 Debug.Log("Is this running twice");
 
-            
-            
+
+           
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("Stage3Scene1");
+                SceneManager.LoadScene("SigningScene");
             }
-            /*
+            /* 
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadScene("ParisStudy");
@@ -96,7 +96,7 @@ namespace Alpha.Phases.Destiny.Quest
             }
             */
         }
-       
+
         public void Save()
         {
             LOLSDK.Instance.SaveState(dqwbSaveData); // save data to cargoSaveData

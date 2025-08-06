@@ -22,6 +22,8 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI letter1a;
         public TextMeshProUGUI letter1b;
 
+        public TextMeshProUGUI millionText;
+
         public TextMeshProUGUI letter2a;
         public TextMeshProUGUI letter2b;
 
@@ -115,6 +117,9 @@ namespace Alpha.Phases.Destiny.Quest
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+
+            millionText.text = defs["stage3Scene2TextMillion"];
+
             text1.text = defs["stage4Scene1Text1"];
             text2.text = defs["stage4Scene1Text2"];
             text3.text = defs["stage4Scene1Text3"];

@@ -60,7 +60,13 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI citationBook3Info;
         public TextMeshProUGUI citationBook4Infoa;
         public TextMeshProUGUI citationBook4Infob;
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCTitle;
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCCitation;
         public TextMeshProUGUI citationBook5Info;
+        public TextMeshProUGUI citationBook5bInfoTitle;
+        public TextMeshProUGUI citationBook5bSource;
+        public TextMeshProUGUI citationBook5bCredit;
+
         public TextMeshProUGUI citationBook6Info;
         public TextMeshProUGUI citationBook7Info;
         public TextMeshProUGUI citationBook8aInfo;
@@ -251,8 +257,15 @@ namespace Alpha.Phases.Destiny.Quest
             citationBook2Info3.text = defs["citationInfoBook2c"];
             citationBook2Info4.text = defs["citationInfoBook2d"];
             citationBook3Info.text = defs["citationInfoBook3"];
-            citationBook4Infoa.text = defs["citationInfoBook4"]; // not a mistake, same as the previous stage for one of the citations
+            citationBook4Infoa.text = defs["citationInfoBook3"];
+            citationBook4Infob.text = defs["citationInfoBook4"];
+            citationBook4InfoCLetterToLaCTitle.text = defs["citationInfoBook4aTitle"];
+            citationBook4InfoCLetterToLaCCitation.text = defs["citationInfoBook4aCitation"];
             citationBook5Info.text = defs["citationInfoBook5"];
+            citationBook5bInfoTitle.text = defs["citationInfoBook5aTitle"];
+            citationBook5bSource.text = defs["citationInfoBook5aSource"];
+            citationBook5bCredit.text = defs["citationInfoBook5aCredit"];
+
             citationBook6Info.text = defs["citationInfoBook6"];
             citationBook7Info.text = defs["citationInfoBook7"];
             citationBook8aInfo.text = defs["citationInfoBook8"];

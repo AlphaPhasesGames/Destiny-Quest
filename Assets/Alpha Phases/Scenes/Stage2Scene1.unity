@@ -3332,7 +3332,12 @@ MonoBehaviour:
   citationBook3Info: {fileID: 1635563014}
   citationBook4Infoa: {fileID: 1635563012}
   citationBook4Infob: {fileID: 1635563011}
+  citationBook4InfoCLetterToLaCTitle: {fileID: 1696593527}
+  citationBook4InfoCLetterToLaCCitation: {fileID: 1696593526}
   citationBook5Info: {fileID: 1635563009}
+  citationBook5bInfoTitle: {fileID: 1696593525}
+  citationBook5bSource: {fileID: 1696593524}
+  citationBook5bCredit: {fileID: 1696593523}
   book1BP1: {fileID: 1820055697}
   book1BP2: {fileID: 1820055695}
   book1BP3: {fileID: 1820055693}
@@ -7656,6 +7661,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1696593523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5372126135618948338, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1820055653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696593524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 74899666424105273, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1820055653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696593525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2302233764130133768, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1820055653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696593526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2071083522017519672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1820055653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1696593527 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4473487027019727740, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+  m_PrefabInstance: {fileID: 1820055653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1707433846
 GameObject:
   m_ObjectHideFlags: 0
@@ -7778,6 +7838,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1065835504}
     m_Modifications:
+    - target: {fileID: 74899666424105273, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: https://www.lewis-and-clark-expedition.org/lewis-clark-journals/lewis-clark-journals-may-1805-52.html
+        t
+      objectReference: {fileID: 0}
     - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9825857
@@ -7793,6 +7858,10 @@ PrefabInstance:
     - target: {fileID: 92285592948886468, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 123046581048771217, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 226104748897330610, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -7866,6 +7935,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 780211658780781221, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 910376185475806391, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_Name
+      value: Reference INFO a
+      objectReference: {fileID: 0}
     - target: {fileID: 917809050663839697, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
       value: Inventory
@@ -7926,6 +8003,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1750721753923597016, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1821809913842597546, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -7933,6 +8014,10 @@ PrefabInstance:
     - target: {fileID: 2119652403268954139, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2228377700852370906, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2249444307503279822, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
@@ -7947,6 +8032,10 @@ PrefabInstance:
     - target: {fileID: 2249444307503279822, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302233764130133768, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_text
+      value: The Journals of Lewis and Clark. t
       objectReference: {fileID: 0}
     - target: {fileID: 2306005498105509839, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_LocalScale.x
@@ -8007,6 +8096,10 @@ PrefabInstance:
     - target: {fileID: 3205682700810664833, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 57.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300477329640573325, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.999996
       objectReference: {fileID: 0}
     - target: {fileID: 3416932205522874210, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name
@@ -8084,6 +8177,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 59.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4367184222367465996, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4427113189681219672, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -8144,6 +8241,14 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5196352999825183551, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.0887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196352999825183551, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15.5744
+      objectReference: {fileID: 0}
     - target: {fileID: 5208317100338484040, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -8175,6 +8280,14 @@ PrefabInstance:
     - target: {fileID: 5462093136301740403, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -13.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 125.0885
+      objectReference: {fileID: 0}
+    - target: {fileID: 5485111697917355351, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.734
       objectReference: {fileID: 0}
     - target: {fileID: 5579701527215734764, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -8308,6 +8421,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6413730510579712019, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 79
+      objectReference: {fileID: 0}
     - target: {fileID: 6483241219799139791, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -8347,6 +8464,10 @@ PrefabInstance:
     - target: {fileID: 6746596317348540977, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206865583746792481, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7280882766112617950, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_sharedMaterial
@@ -8519,6 +8640,10 @@ PrefabInstance:
     - target: {fileID: 8965991571554082252, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038782404069863868, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 9068068395604564714, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Name

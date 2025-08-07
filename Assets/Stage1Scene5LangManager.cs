@@ -57,6 +57,7 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book2Title;
         public TextMeshProUGUI book3Title;
         public TextMeshProUGUI book4Title;
+        public TextMeshProUGUI book5Title;
 
         public TextMeshProUGUI referenceButton;
         public TextMeshProUGUI referenceButton2;
@@ -70,8 +71,12 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI citationBook3Info;
         public TextMeshProUGUI citationBook4Infoa;
         public TextMeshProUGUI citationBook4Infob;
-
-
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCTitle;
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCCitation;
+        public TextMeshProUGUI citationBook5Info;
+        public TextMeshProUGUI citationBook5bInfoTitle;
+        public TextMeshProUGUI citationBook5bSource;
+        public TextMeshProUGUI citationBook5bCredit;
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
         public TextMeshProUGUI book1BP3;
@@ -90,7 +95,12 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI book4BP2;
         public TextMeshProUGUI book4BP3;
         public TextMeshProUGUI book4BP4;
-
+        public TextMeshProUGUI book5BP1;
+        public TextMeshProUGUI book5BP2;
+        public TextMeshProUGUI book5BP3;
+        public TextMeshProUGUI book5BP4;
+        public TextMeshProUGUI book5BP5;
+        public TextMeshProUGUI book5BP6;
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -115,6 +125,7 @@ namespace Alpha.Phases.Destiny.Quest
             book2Title.text = defs["book2Title"];
             book3Title.text = defs["book3Title"];
             book4Title.text = defs["book4Title"];
+            book5Title.text = defs["book5Title"];
 
             referenceButton.text = defs["referenceButton"];
             referenceButton2.text = defs["referenceButton"];
@@ -130,7 +141,12 @@ namespace Alpha.Phases.Destiny.Quest
             citationBook3Info.text = defs["citationInfoBook3"];
             citationBook4Infoa.text = defs["citationInfoBook3"];
             citationBook4Infob.text = defs["citationInfoBook4"];
-
+            citationBook4InfoCLetterToLaCTitle.text = defs["citationInfoBook4aTitle"];
+            citationBook4InfoCLetterToLaCCitation.text = defs["citationInfoBook4aCitation"];
+            citationBook5Info.text = defs["citationInfoBook5"];
+            citationBook5bInfoTitle.text = defs["citationInfoBook5aTitle"];
+            citationBook5bSource.text = defs["citationInfoBook5aSource"];
+            citationBook5bCredit.text = defs["citationInfoBook5aCredit"];
 
             mapText1.text = defs["maptext1"];
             mapText2.text = defs["maptext2"];
@@ -177,6 +193,12 @@ namespace Alpha.Phases.Destiny.Quest
             book4BP2.text = defs["book4BP2"];
             book4BP3.text = defs["book4BP3"];
             book4BP4.text = defs["book4BP4"];
+            book5BP1.text = defs["book5BP1"];
+            book5BP2.text = defs["book5BP2"];
+            book5BP3.text = defs["book5BP3"];
+            book5BP4.text = defs["book5BP4"];
+            book5BP5.text = defs["book5BP5"];
+            book5BP6.text = defs["book5BP6"];
         }
     }
 }

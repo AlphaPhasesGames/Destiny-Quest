@@ -22,12 +22,15 @@ namespace Alpha.Phases.Destiny.Quest
         public Button closeBook3;
         public Button openBook4;
         public Button closeBook4;
+        public Button openBook5;
+        public Button closeBook5;
         // public Button citation1Button;
 
         public GameObject book1;
         public GameObject book2;
         public GameObject book3;
         public GameObject book4;
+        public GameObject book5;
         [SerializeField]
         public bool isInvOpen; // bool to check is the inventory is open 
         public bool stopRepeat;
@@ -58,6 +61,12 @@ namespace Alpha.Phases.Destiny.Quest
         public Button ttsBulletPoint3Book4;
         public Button ttsBulletPoint4Book4;
 
+        public Button ttsBulletPoint1Book5;
+        public Button ttsBulletPoint2Book5;
+        public Button ttsBulletPoint3Book5;
+        public Button ttsBulletPoint4Book5;
+        public Button ttsBulletPoint5Book5;
+        public Button ttsBulletPoint6Book5;
         private void Awake()
         {
             openInv.onClick.AddListener(OpenInventory);
@@ -71,6 +80,8 @@ namespace Alpha.Phases.Destiny.Quest
             closeBook3.onClick.AddListener(CloseBook3Louisiana);
             openBook4.onClick.AddListener(OpenBook4Motivations);
             closeBook4.onClick.AddListener(CloseBook4Motivations);
+            openBook5.onClick.AddListener(OpenBook5OregonTrail);
+            closeBook5.onClick.AddListener(CloseBook5OregonTrail);
 
             ttsBulletPoint1.onClick.AddListener(PlayTTSBulletPoint1);
             ttsBulletPoint2.onClick.AddListener(PlayTTSBulletPoint2);
@@ -93,6 +104,13 @@ namespace Alpha.Phases.Destiny.Quest
             ttsBulletPoint2Book4.onClick.AddListener(PlayTTSBook4BulletPoint2);
             ttsBulletPoint3Book4.onClick.AddListener(PlayTTSBook4BulletPoint3);
             ttsBulletPoint4Book4.onClick.AddListener(PlayTTSBook4BulletPoint4);
+
+            ttsBulletPoint1Book5.onClick.AddListener(PlayTTSBulletPoint1Book5);
+            ttsBulletPoint2Book5.onClick.AddListener(PlayTTSBulletPoint2Book5);
+            ttsBulletPoint3Book5.onClick.AddListener(PlayTTSBulletPoint3Book5);
+            ttsBulletPoint4Book5.onClick.AddListener(PlayTTSBulletPoint4Book5);
+            ttsBulletPoint5Book5.onClick.AddListener(PlayTTSBulletPoint5Book5);
+            ttsBulletPoint6Book5.onClick.AddListener(PlayTTSBulletPoint6Book5);
         }
         // Update is called once per frame
         void Update()
@@ -171,6 +189,19 @@ namespace Alpha.Phases.Destiny.Quest
         {
             book4.gameObject.SetActive(false);
         }
+
+
+        public void OpenBook5OregonTrail()
+        {
+            book5.gameObject.SetActive(true);
+
+        }
+
+        public void CloseBook5OregonTrail()
+        {
+            book5.gameObject.SetActive(false);
+        }
+
         public void PlayTTSBulletPoint1()
         {
             LOLSDK.Instance.SpeakText("book1BP1");
@@ -282,5 +313,41 @@ namespace Alpha.Phases.Destiny.Quest
             Debug.Log("This TTS Worked");
         }
 
+        public void PlayTTSBulletPoint1Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP1");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint2Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP2");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint3Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP3");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint4Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP4");
+            Debug.Log("This TTS Worked");
+        }
+
+
+        public void PlayTTSBulletPoint5Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP5");
+            Debug.Log("This TTS Worked");
+        }
+
+        public void PlayTTSBulletPoint6Book5()
+        {
+            LOLSDK.Instance.SpeakText("book5BP6");
+            Debug.Log("This TTS Worked");
+        }
     }
 }

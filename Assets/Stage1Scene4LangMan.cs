@@ -94,8 +94,8 @@ namespace Alpha.Phases.Destiny.Quest
             citationBook4Infoa.text = defs["citationInfoBook3"];
             citationBook4Infob.text = defs["citationInfoBook4"];
 
-            citationBook4InfoCLetterToLaCTitle.text = defs["citationInfoBook5aTitle"]; 
-            citationBook4InfoCLetterToLaCCitation.text = defs["citationInfoBook5aCitation"];
+            citationBook4InfoCLetterToLaCTitle.text = defs["citationInfoBook4aTitle"]; 
+            citationBook4InfoCLetterToLaCCitation.text = defs["citationInfoBook4aCitation"];
             stageStartText.text = defs["stage1Scene4Text1"];
             stage1Scene4Text1.text = defs["stage1Scene4Text2"];
             stage1Scene4Text2.text = defs["stage1Scene4Text3"];

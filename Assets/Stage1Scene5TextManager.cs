@@ -47,7 +47,11 @@ namespace Alpha.Phases.Destiny.Quest
         public Button choice2Answer2Freindly;
 
         public Animator moveToMississipi;
-    
+
+        public GameObject journalPaper;
+        public GameObject journalEntry1;
+        public GameObject journalEntry2;
+        public GameObject journalEntry3;
 
         public Button choice3Answer1GodsPlan;
         public Button choice3Answer2StayHere;
@@ -136,16 +140,23 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
 
                 case 3:
+                    StartCoroutine(DelayLetterPage1());
+                   
+                    forwardParent.gameObject.SetActive(false);
                     break;
 
                 case 4:
                     backwardsButton.gameObject.SetActive(false);
+
                     break;
                 case 5: // decision 2 wrong
                     backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+
                     break;
                 case 6: // // decision 2 right
-                    StartCoroutine(DelayTextButton());
+                    StartCoroutine(DelayLetterPage2());
+                   // StartCoroutine(DelayTextButton());
                     moveToMississipi.SetBool("step1", true);
                     break;
                 case 7:
@@ -156,8 +167,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
                 case 9:
                     moveToMississipi.SetBool("step2", true);
-                    StartCoroutine(DelayTextButton());
-
+                    StartCoroutine(DelayLetterPage3());
                     break;
                 case 10: // Decision 3
 
@@ -210,7 +220,7 @@ namespace Alpha.Phases.Destiny.Quest
 
 
 
-                if (arrayPos != 5 && arrayPos != 4 && arrayPos != 7 && arrayPos != 8 && arrayPos != 10 && arrayPos != 11 && arrayPos != 12) // add any other positions too
+                if (arrayPos != 5 && arrayPos != 4 && arrayPos != 3 && arrayPos != 7 && arrayPos != 8 && arrayPos != 10 && arrayPos != 11 && arrayPos != 12) // add any other positions too
                 {
                     StartCoroutine(DelayTextButton());
 
@@ -393,6 +403,27 @@ namespace Alpha.Phases.Destiny.Quest
         {
             LOLSDK.Instance.SubmitProgress(0, 36, 100);
             SceneManager.LoadScene("Stage2Scene1");
+        }
+
+        public IEnumerator DelayLetterPage1()
+        {
+            yield return new WaitForSeconds(2);
+            journalPaper.gameObject.SetActive(true);
+            journalEntry1.gameObject.SetActive(true);
+        }
+
+        public IEnumerator DelayLetterPage2()
+        {
+            yield return new WaitForSeconds(2);
+            journalPaper.gameObject.SetActive(true);
+            journalEntry2.gameObject.SetActive(true);
+        }
+
+        public IEnumerator DelayLetterPage3()
+        {
+            yield return new WaitForSeconds(4);
+            journalPaper.gameObject.SetActive(true);
+            journalEntry3.gameObject.SetActive(true);
         }
     }
 }

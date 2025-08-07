@@ -22,6 +22,11 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI stage1Scene4Letter2;
         public TextMeshProUGUI stage1Scene4Letter3;
 
+        public TextMeshProUGUI letterToMandW1;
+        public TextMeshProUGUI letterToMandW2;
+        public TextMeshProUGUI letterToMandW3;
+
+
         public TextMeshProUGUI book1Title;
         public TextMeshProUGUI book2Title;
         public TextMeshProUGUI book3Title;
@@ -39,6 +44,8 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI citationBook3Info;
         public TextMeshProUGUI citationBook4Infoa;
         public TextMeshProUGUI citationBook4Infob;
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCTitle;
+        public TextMeshProUGUI citationBook4InfoCLetterToLaCCitation;
 
         public TextMeshProUGUI book1BP1;
         public TextMeshProUGUI book1BP2;
@@ -68,6 +75,10 @@ namespace Alpha.Phases.Destiny.Quest
             book3Title.text = defs["book3Title"];
             book4Title.text = defs["book4Title"];
 
+            letterToMandW1.text = defs["scene1Stage4ThomasJeffersonLetterToLaC1"];
+            letterToMandW2.text = defs["scene1Stage4ThomasJeffersonLetterToLaC2"];
+            letterToMandW3.text = defs["scene1Stage4ThomasJeffersonLetterToLaC3"];
+
             referenceButton.text = defs["referenceButton"];
             referenceButton2.text = defs["referenceButton"];
             referenceButton3.text = defs["referenceButton"];
@@ -82,6 +93,9 @@ namespace Alpha.Phases.Destiny.Quest
             citationBook3Info.text = defs["citationInfoBook3"];
             citationBook4Infoa.text = defs["citationInfoBook3"];
             citationBook4Infob.text = defs["citationInfoBook4"];
+
+            citationBook4InfoCLetterToLaCTitle.text = defs["citationInfoBook5aTitle"]; 
+            citationBook4InfoCLetterToLaCCitation.text = defs["citationInfoBook5aCitation"];
             stageStartText.text = defs["stage1Scene4Text1"];
             stage1Scene4Text1.text = defs["stage1Scene4Text2"];
             stage1Scene4Text2.text = defs["stage1Scene4Text3"];

@@ -82,7 +82,7 @@ namespace Alpha.Phases.Destiny.Quest
            
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("SigningScene");
+                SceneManager.LoadScene("Stage1CampSection2");
             }
             /* 
             if (Input.GetKeyDown(KeyCode.Alpha2))

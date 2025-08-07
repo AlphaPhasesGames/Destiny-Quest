@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationTestScript : MonoBehaviour
 {
-
+    /*
     public Animator step1;
     // Start is called before the first frame update
     void Start()
@@ -29,5 +29,5 @@ public class AnimationTestScript : MonoBehaviour
         {
             step1.SetBool("step3", true);
         }
-    }
+    }*/
 }

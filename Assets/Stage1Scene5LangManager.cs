@@ -20,6 +20,12 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI mapPoint2RockMountains;
         public TextMeshProUGUI mapPoint3Pacific;
 
+        public TextMeshProUGUI journalTitle;
+        public TextMeshProUGUI journal1;
+        public TextMeshProUGUI journal2;
+        public TextMeshProUGUI journal3;
+        public TextMeshProUGUI journal4;
+
         public TextMeshProUGUI mapText1;
         public TextMeshProUGUI mapText2;
         public TextMeshProUGUI mapText3;
@@ -98,6 +104,12 @@ namespace Alpha.Phases.Destiny.Quest
             mapPoint1Mississippi.text = defs["mapPoint1Mississippi"];
             mapPoint2RockMountains.text = defs["mapPoint2RockyMountain"];
             mapPoint3Pacific.text = defs["mapPoint3PacificCoast"];
+
+            journalTitle.text = defs["mapJournalTitle"];
+            journal1.text = defs["mapJournalEntry1"];
+            journal2.text = defs["mapJournalEntry2"];
+            journal3.text = defs["mapJournalEntry3"];
+            journal4.text = defs["mapJournalEntry4"];
 
             book1Title.text = defs["book1Title"];
             book2Title.text = defs["book2Title"];

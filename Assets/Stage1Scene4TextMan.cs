@@ -46,8 +46,8 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
-      //  public NavMeshAgent agent;              // Controls AI navigation
-
+                                              
+        public GameObject letterToLaC;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -249,8 +249,8 @@ namespace Alpha.Phases.Destiny.Quest
         public IEnumerator OpenLetter()
         {
             yield return new WaitForSeconds(4);
-            playerMoveScript.enabled = true;
-            s1s4Letter.gameObject.SetActive(true);
+            playerMoveScript.enabled = false;
+            letterToLaC.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
             arrayPos = 8;
             Debug.Log("This start coRoutine Runs well");

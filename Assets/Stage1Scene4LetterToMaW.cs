@@ -30,11 +30,11 @@ namespace Alpha.Phases.Destiny.Quest
         }
         public void SpeakTaskText2TTS()
         {
-            LOLSDK.Instance.SpeakText("scene1Stage4ThomasJeffersonLetterToLaC1");
+            LOLSDK.Instance.SpeakText("scene1Stage4ThomasJeffersonLetterToLaC2");
         }
         public void SpeakTaskText3TTS()
         {
-            LOLSDK.Instance.SpeakText("scene1Stage4ThomasJeffersonLetterToLaC1");
+            LOLSDK.Instance.SpeakText("scene1Stage4ThomasJeffersonLetterToLaC3");
         }
 
         public void CloseLetter()

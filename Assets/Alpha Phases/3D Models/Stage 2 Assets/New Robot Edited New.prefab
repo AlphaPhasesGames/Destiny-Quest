@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5588356532576325446}
-  - component: {fileID: 123198888030999636}
   - component: {fileID: 1242102737767309648}
   - component: {fileID: 665132818068221623}
   - component: {fileID: 7908278288728629072}
+  - component: {fileID: 1165735592101897355}
   m_Layer: 0
   m_Name: New Robot Edited New
   m_TagString: Player
@@ -36,28 +36,6 @@ Transform:
   - {fileID: 5363018729957896223}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!195 &123198888030999636
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559042937250572956}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 1.38
-  m_Speed: 7
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 260
-  m_StoppingDistance: 0.2
-  m_AutoTraverseOffMeshLink: 0
-  m_AutoBraking: 1
-  m_AutoRepath: 0
-  m_Height: 1.09
-  m_BaseOffset: 1.57
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &1242102737767309648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +48,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ff95f18dd90d64b8d004d65766efc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotateSpeed: 120
+  leftWheel: {fileID: 0}
+  rightWheel: {fileID: 0}
+  wheelRadius: 0.45
+  wheelSpinMultiplier: 1
+  invertWheelSpin: 0
 --- !u!65 &665132818068221623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -118,6 +103,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!143 &1165735592101897355
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559042937250572956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5363018729958288031
 PrefabInstance:
   m_ObjectHideFlags: 0

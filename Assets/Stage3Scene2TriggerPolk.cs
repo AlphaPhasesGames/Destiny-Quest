@@ -17,14 +17,14 @@ namespace Alpha.Phases.Destiny.Quest
         {
             if (other.CompareTag("Player"))
             {
-                if (miniManager.amountOfConcerns < 4)
+                if (miniManager.amountOfConcerns < 3)
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 2;
                     polkTrigger.enabled = false;
                 }
 
-                if (miniManager.amountOfConcerns > 3)
+                if (miniManager.amountOfConcerns > 2)
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 5;

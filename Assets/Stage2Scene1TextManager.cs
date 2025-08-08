@@ -10,7 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage2Scene1TextManager : MonoBehaviour
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-
+        public PlayerMovement player;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray
@@ -33,6 +33,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
 
+        public Button closeTaskReminder;
 
         public Button choice1Answer1GoRound;
         public Button choice1Answer2TravelThrough;
@@ -40,12 +41,14 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject letterParent;
         public Stage2LetterManager s2Letterman;
 
+        public GameObject stageTaskBoxAndText;
+        public GameObject sliderToShow;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
-
+            closeTaskReminder.onClick.AddListener(CloseReminder);
            
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
@@ -120,6 +123,9 @@ namespace Alpha.Phases.Destiny.Quest
                 case 3:
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
+                    player.enabled = true;
+                    sliderToShow.gameObject.SetActive(true);
+                    stageTaskBoxAndText.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
                 case 4:
@@ -251,6 +257,11 @@ namespace Alpha.Phases.Destiny.Quest
             yield return new WaitForSeconds(7);
             LOLSDK.Instance.SubmitProgress(0, 44, 100);
             SceneManager.LoadScene("Stage2Scene2");
+        }
+
+        public void CloseReminder()
+        {
+            stageTaskBoxAndText.gameObject.SetActive(false);
         }
     }
 }

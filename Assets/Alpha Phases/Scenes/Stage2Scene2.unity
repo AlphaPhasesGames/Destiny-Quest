@@ -2911,13 +2911,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 28d5574a9a924f14d92ee0cbca973022, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6126884088779302611, guid: 2e9b6d8a30b983a4a8ebb57981144cd0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5299718957662957102, guid: 2e9b6d8a30b983a4a8ebb57981144cd0, type: 3}
       insertIndex: 0
       addedObject: {fileID: 677766193}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3925924220128544776, guid: 2e9b6d8a30b983a4a8ebb57981144cd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 934433269}
   m_SourcePrefab: {fileID: 100100000, guid: 2e9b6d8a30b983a4a8ebb57981144cd0, type: 3}
 --- !u!1 &934433264 stripped
 GameObject:
@@ -2944,6 +2948,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7898607438621945165, guid: 2e9b6d8a30b983a4a8ebb57981144cd0, type: 3}
   m_PrefabInstance: {fileID: 934433263}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &934433269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934433264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11482d708ea849b4cb7f257ac45c6306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotateSpeed: 120
+  leftWheel: {fileID: 934433268}
+  rightWheel: {fileID: 934433267}
+  wheelRadius: 0.45
+  wheelSpinMultiplier: 1
+  invertWheelSpin: 0
 --- !u!1001 &1084883314
 PrefabInstance:
   m_ObjectHideFlags: 0

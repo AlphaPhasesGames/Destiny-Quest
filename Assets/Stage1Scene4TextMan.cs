@@ -48,6 +48,7 @@ namespace Alpha.Phases.Destiny.Quest
         public bool[] textBools;                // Track whether each arrayPos has already been processed
                                               
         public GameObject letterToLaC;
+        public Button closeLetterToLaC;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -252,6 +253,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = false;
             letterToLaC.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);
+            StartCoroutine(DelayCloseButtonOnTommyLetter());
             arrayPos = 8;
             Debug.Log("This start coRoutine Runs well");
         }
@@ -293,6 +295,10 @@ namespace Alpha.Phases.Destiny.Quest
             Debug.Log("This start function Runs");
         }
 
-       
+        public IEnumerator DelayCloseButtonOnTommyLetter()
+        {
+            yield return new WaitForSeconds(3);
+            closeLetterToLaC.gameObject.SetActive(true);
+        }
     }
 }

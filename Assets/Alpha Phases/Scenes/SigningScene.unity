@@ -633,13 +633,13 @@ MonoBehaviour:
     we can understand the full story of our nation\u2019s growth. t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1858,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4787387649174222644, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6942336555557265867, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_Pivot.x
@@ -2831,7 +2831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -13.8}
+  m_AnchoredPosition: {x: 2, y: -17.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211650748
@@ -2854,11 +2854,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    As settlers moved west, the U.S. gained new lands and built new
-    towns, railroads, and trade routes. But expansion also had serious effects on
-    the people who were already living there. t'
+  m_text: As settlers moved west, the U.S. gained new lands and built new towns,
+    railroads, and trade routes. But expansion also had serious effects on the people
+    who were already living there. T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -5091,10 +5089,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'After the Treaty of Guadalupe Hidalgo: The signing of the Treaty and the
-    resulting Mexican Cession gave the U.S. control of its final western territories.
-    With this, America finally stretched from the Atlantic to the Pacific, achieving
-    its long-held dream of Manifest Destiny.'
+  m_text: 'Before the Treaty of Guadalupe Hidalgo: The United States was still growing,
+    with much of the West under Mexican control. Expansionists believed it was America''s
+    destiny to stretch from coast to coast, but that goal hadn''t yet been fully
+    realized.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}

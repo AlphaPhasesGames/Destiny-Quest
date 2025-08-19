@@ -25,7 +25,7 @@ namespace Alpha.Phases.Destiny.Quest
         public TextMeshProUGUI letterToMandW1;
         public TextMeshProUGUI letterToMandW2;
         public TextMeshProUGUI letterToMandW3;
-
+        public TextMeshProUGUI letterToMandW4SignOff;
 
         public TextMeshProUGUI book1Title;
         public TextMeshProUGUI book2Title;
@@ -78,6 +78,7 @@ namespace Alpha.Phases.Destiny.Quest
             letterToMandW1.text = defs["scene1Stage4ThomasJeffersonLetterToLaC1"];
             letterToMandW2.text = defs["scene1Stage4ThomasJeffersonLetterToLaC2"];
             letterToMandW3.text = defs["scene1Stage4ThomasJeffersonLetterToLaC3"];
+            letterToMandW4SignOff.text = defs["scene1Stage4ThomasJeffersonLetterToLaCSignOff"];
 
             referenceButton.text = defs["referenceButton"];
             referenceButton2.text = defs["referenceButton"];

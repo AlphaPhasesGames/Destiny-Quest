@@ -63,6 +63,17 @@ namespace Alpha.Phases.Destiny.Quest
 
             // Handle back button visibility (only show on page 1+)
             backButton.gameObject.SetActive(index > 0);
+
+
+            if (index == 3)
+            {
+                closeButton.gameObject.SetActive(false);
+                StartCoroutine(DelayCloseButton());
+            }
+            else
+            {
+                closeButton.gameObject.SetActive(false);
+            }
         }
 
         public void OnForwardButtonClicked()
@@ -145,6 +156,12 @@ namespace Alpha.Phases.Destiny.Quest
         {
             LOLSDK.Instance.SpeakText("mexicoLetter6c");
             Debug.Log("This TTS Worked");
+        }
+
+        public IEnumerator DelayCloseButton()
+        {
+            yield return new WaitForSeconds(3);
+            closeButton.gameObject.SetActive(true);
         }
 
     }

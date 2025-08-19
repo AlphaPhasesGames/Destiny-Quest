@@ -32,23 +32,35 @@ namespace Alpha.Phases.Destiny.Quest
         }
 
         public void ShowPage(int index)
-        {
-            currentPage = index;
+        {           
+            {
+                currentPage = index;
 
-            // Hide all pages
-            for (int i = 0; i < letterPages.Length; i++)
-                letterPages[i].SetActive(false);
+                // Hide all pages
+                for (int i = 0; i < letterPages.Length; i++)
+                    letterPages[i].SetActive(false);
 
-            // Show the current page
-            letterPages[index].SetActive(true);
+                // Show the current page
+                letterPages[index].SetActive(true);
 
-            // Handle forward button visibility
-            forwardButton.gameObject.SetActive(false);
-            if (index < letterPages.Length - 1)
-                StartCoroutine(EnableForwardButtonAfterDelay(5f));
+                // Handle forward button visibility
+                forwardButton.gameObject.SetActive(false);
+                if (index < letterPages.Length - 1)
+                    StartCoroutine(EnableForwardButtonAfterDelay(5f));
 
-            // Handle back button visibility (only show on page 1+)
-            backButton.gameObject.SetActive(index > 0);
+                // Handle back button visibility (only show on page 1+)
+                backButton.gameObject.SetActive(index > 0);
+
+                if (index == letterPages.Length - 1)
+                {
+                    closeButton.gameObject.SetActive(false); // hide it initially
+                    StartCoroutine(delayCloseButton());      // delayed show
+                }
+                else
+                {
+                    closeButton.gameObject.SetActive(false); // hide on other pages
+                }
+            }
         }
 
         public void OnForwardButtonClicked()
@@ -99,6 +111,12 @@ namespace Alpha.Phases.Destiny.Quest
         {
             LOLSDK.Instance.SpeakText("labTextLetter3");
             Debug.Log("This TTS Worked");
+        }
+
+        public IEnumerator delayCloseButton()
+        {
+            yield return new WaitForSeconds(3);
+            closeButton.gameObject.SetActive(true);
         }
     }
 }

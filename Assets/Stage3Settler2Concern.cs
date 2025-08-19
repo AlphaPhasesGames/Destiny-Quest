@@ -14,6 +14,8 @@ namespace Alpha.Phases.Destiny.Quest
         public bool runOnce;
         public SphereCollider collider;
         public Animator citizenAnim;
+        public bool addCounterOnce;
+        public SphereCollider polkCollider;
         private void Awake()
         {
             closeConcern.onClick.AddListener(CloseConcern);
@@ -38,11 +40,17 @@ namespace Alpha.Phases.Destiny.Quest
                 concern.gameObject.SetActive(false);
                 citizenCam.gameObject.SetActive(false);
                 playerCam.gameObject.SetActive(true);
-                miniMan.amountOfConcerns++;
-                //collider.enabled = false;
-               
             
-           
+            if (!addCounterOnce)
+            {
+                miniMan.amountOfConcerns++;
+                addCounterOnce = true;
+                //collider.enabled = false;
+            }
+
+
+
+
         }
 
     }

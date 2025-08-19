@@ -10,7 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage2Scene1TextManager : MonoBehaviour
     {
         public GameObject forwardParent;        // Parent object holding forward navigation UI
-        public PlayerMovement player;
+        public WagonPlayerMovement player;
         public GameObject currentTextSection;   // Currently active text display section
         public int arrayPos;                    // Current index in modelArray
         public int maxLengthArray;              // Total number of items in modelArray

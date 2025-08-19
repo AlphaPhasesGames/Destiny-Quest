@@ -44,10 +44,11 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject taskHeaderImage;
         public Button taskTTSButton;
         public Button taskTTSButton2; // Return to polk task
+        public Button closeAnswersToTalkToCitizens;
         public Camera polkCam;
         public Camera playerCam;
         public SphereCollider polkCollider;
-        public Button timeTravelButton;
+      //  public Button timeTravelButton;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -55,7 +56,8 @@ namespace Alpha.Phases.Destiny.Quest
             backwardsButton.onClick.AddListener(ProgressTextBack);
             taskTTSButton.onClick.AddListener(SpeakTask);
             taskTTSButton2.onClick.AddListener(SpeakTask2);
-            timeTravelButton.onClick.AddListener(MoveToScene3);
+          //  timeTravelButton.onClick.AddListener(MoveToScene3);
+            closeAnswersToTalkToCitizens.onClick.AddListener(CloseAnswers);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -317,14 +319,14 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 0;
             Debug.Log("This start function Runs");
         }
-
+        /*
         public void MoveToScene3()
         {
           
             LOLSDK.Instance.SubmitProgress(0, 76, 100);
             SceneManager.LoadScene("Stage4Scene1");
         }
-
+        */
         public IEnumerator OpenLetter()
         {
             yield return new WaitForSeconds(5);
@@ -348,6 +350,29 @@ namespace Alpha.Phases.Destiny.Quest
         {
             LOLSDK.Instance.SpeakText("stage3Scene2Task2");
         }
+
+        public void CloseAnswers()
+        {
+            StartCoroutine(ReEnableAustinCollider());
+            polkCollider.enabled = false;
+            textPanal.gameObject.SetActive(false);
+            Debug.Log("Step 1 works");
+            playerObject.gameObject.SetActive(true);
+            playerMoveScript.enabled = true;
+            Debug.Log("Step 2 works");
+            //taskHeaderImage.gameObject.SetActive(true);
+            polkCam.gameObject.SetActive(false);
+            Debug.Log("Step 3 works");
+            playerCam.gameObject.SetActive(true);
+            ResetBools();
+        }
+
+        public IEnumerator ReEnableAustinCollider()
+        {
+            yield return new WaitForSeconds(4);
+            polkCollider.enabled = true;
+        }
+
     }
 }
 

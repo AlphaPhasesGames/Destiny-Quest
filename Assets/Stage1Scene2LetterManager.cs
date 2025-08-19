@@ -56,6 +56,16 @@ namespace Alpha.Phases.Destiny.Quest
 
             // Handle back button visibility (only show on page 1+)
             backButton.gameObject.SetActive(index > 0);
+
+            if (index == 3)
+            {
+                closeButton.gameObject.SetActive(false);
+                StartCoroutine(DelayCloseButton());
+            }
+            else
+            {
+                closeButton.gameObject.SetActive(false);
+            }
         }
 
         public void OnForwardButtonClicked()
@@ -114,18 +124,12 @@ namespace Alpha.Phases.Destiny.Quest
             LOLSDK.Instance.SpeakText("stage1thomasJefferson4Letter4");
             Debug.Log("This TTS Worked");
         }
-        /*
-        private IEnumerator PlayTwoLines()
+
+        public IEnumerator DelayCloseButton()
         {
-            LOLSDK.Instance.SpeakText("thomasJefferson3Letter3");
-
-            // Wait for the first line to finish — adjust this time based on your TTS speed
-            yield return new WaitForSeconds(6f); // try 3–5 seconds depending on the text length
-
-            LOLSDK.Instance.SpeakText("thomasJefferson4Letter4");
-
-            Debug.Log("Both TTS lines played.");
+            yield return new WaitForSeconds(3);
+            closeButton.gameObject.SetActive(true);
         }
-        */
+
     }
 }

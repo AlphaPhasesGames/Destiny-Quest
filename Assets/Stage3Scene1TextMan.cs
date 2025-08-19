@@ -31,7 +31,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public Button forwardButton;            // UI button for progressing forward
         public Button backwardsButton;          // UI button for going back
-        public Button timeTravelButton;
+       // public Button timeTravelButton;
         public Button[] textButtons;            // Optional buttons to play TTS
         public bool[] textBools;                // Track whether each arrayPos has already been processed
         //public NavMeshAgent agent;              // Controls AI navigation
@@ -43,7 +43,7 @@ namespace Alpha.Phases.Destiny.Quest
             // Hook up forward and back buttons to corresponding logic
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
-            timeTravelButton.onClick.AddListener(MoveToScene3);
+         //   timeTravelButton.onClick.AddListener(MoveToScene3);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -267,14 +267,14 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 0;
             Debug.Log("This start function Runs");
         }
-
+        /*
         public void MoveToScene3()
         {
          
             LOLSDK.Instance.SubmitProgress(0, 68, 100);
             SceneManager.LoadScene("Stage3Scene2");
         }
-
+        */
         public IEnumerator OpenLetter()
         {
             yield return new WaitForSeconds(5);

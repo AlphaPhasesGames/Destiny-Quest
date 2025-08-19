@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.EventSystems;
+
 
 namespace Alpha.Phases.Destiny.Quest
 {
@@ -11,8 +10,8 @@ namespace Alpha.Phases.Destiny.Quest
         public float rotateSpeed = 120f;
 
         private CharacterController controller;
-        private float fixedY; // Cached starting Y value
-
+       // private float fixedY; // Cached starting Y value
+/*
         [Header("Wagon Wheels")]
         public Transform leftWheel;
         public Transform rightWheel;
@@ -22,11 +21,11 @@ namespace Alpha.Phases.Destiny.Quest
         public float wheelSpinMultiplier = 1f;
         [Tooltip("Flip if your wheels spin the wrong way.")]
         public bool invertWheelSpin = false;
-
+*/
         void Start()
         {
             controller = GetComponent<CharacterController>();
-            fixedY = transform.position.y; // Store initial Y position
+          //  fixedY = transform.position.y; // Store initial Y position
         }
 
         void Update()
@@ -40,7 +39,7 @@ namespace Alpha.Phases.Destiny.Quest
             Vector3 move = transform.forward * moveInput;
 
             controller.Move(move * moveSpeed * Time.deltaTime);
-
+            /*
             // Spin wheels for both forward 
             if (Mathf.Abs(moveInput) > 0.001f && wheelRadius > 0f)
             {
@@ -61,6 +60,7 @@ namespace Alpha.Phases.Destiny.Quest
             // Re-lock Y position
             Vector3 pos = transform.position;
             transform.position = new Vector3(pos.x, fixedY, pos.z);
+            */
         }
     }
 }

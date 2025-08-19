@@ -28,12 +28,15 @@ namespace Alpha.Phases.Destiny.Quest
                 {
                     textMan.positionChanged = true;
                     textMan.arrayPos = 5;
+
                 }
                 playerToDisable.gameObject.SetActive(false);
                 polkCam.gameObject.SetActive(true);
                 playerCam.gameObject.SetActive(false);
             }
         }
+
+      
 
 
     }

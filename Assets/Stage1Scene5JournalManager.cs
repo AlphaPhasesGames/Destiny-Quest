@@ -16,7 +16,7 @@ namespace Alpha.Phases.Destiny.Quest
         public GameObject forwardParentButton;
         public GameObject forwardChildButton;
 
-        public Button journalEntry1TTS;          
+        public Button journalEntry1TTS;         
         public Button journalEntry2TTS;
         public Button journalEntry3TTS;
         public Button journalEntry4TTS;

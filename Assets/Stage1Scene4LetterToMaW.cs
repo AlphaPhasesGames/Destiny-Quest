@@ -43,5 +43,7 @@ namespace Alpha.Phases.Destiny.Quest
             playerMoveScript.enabled = true;
         }
 
+      
+
     }
 }

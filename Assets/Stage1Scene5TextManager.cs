@@ -57,7 +57,13 @@ namespace Alpha.Phases.Destiny.Quest
         public Button choice3Answer2StayHere;
         public Button choice3Answer3GoHome;
 
-        public Button moveToNextStage;
+        // buttons function accessed by journal manager, we only use declare these buttons here to delay their appearance
+        public Button closeButtonJournal1; 
+
+       // public Button moveToNextStage;
+        // normally the following 2 declerations are coded into a seprate file called Time Travel mananger, I've included it in here for this stage. 
+       // public GameObject whiteFlashImage;
+       // public Animator flashAnim;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -76,7 +82,7 @@ namespace Alpha.Phases.Destiny.Quest
             choice3Answer2StayHere.onClick.AddListener(Choice3ButtonStayHere);
             choice3Answer3GoHome.onClick.AddListener(Choice3ButtonGoHome);
 
-            moveToNextStage.onClick.AddListener(MoveToOregon);
+           // moveToNextStage.onClick.AddListener(MoveToOregon);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -398,32 +404,45 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 12;
             StartCoroutine(ReturnToDecision3());
         }
-
+        /*
         public void MoveToOregon()
         {
             LOLSDK.Instance.SubmitProgress(0, 36, 100);
             SceneManager.LoadScene("Stage2Scene1");
         }
-
+        */
         public IEnumerator DelayLetterPage1()
         {
             yield return new WaitForSeconds(2);
+            closeButtonJournal1.gameObject.SetActive(false);
             journalPaper.gameObject.SetActive(true);
             journalEntry1.gameObject.SetActive(true);
+            StartCoroutine(DelayJournal1Close());
         }
 
         public IEnumerator DelayLetterPage2()
         {
             yield return new WaitForSeconds(2);
+            closeButtonJournal1.gameObject.SetActive(false);
             journalPaper.gameObject.SetActive(true);
             journalEntry2.gameObject.SetActive(true);
+            StartCoroutine(DelayJournal1Close());
         }
 
         public IEnumerator DelayLetterPage3()
         {
             yield return new WaitForSeconds(4);
+            closeButtonJournal1.gameObject.SetActive(false);
             journalPaper.gameObject.SetActive(true);
             journalEntry3.gameObject.SetActive(true);
+            StartCoroutine(DelayJournal1Close());
         }
+
+        public IEnumerator DelayJournal1Close()
+        {
+            yield return new WaitForSeconds(3);
+            closeButtonJournal1.gameObject.SetActive(true);
+        }
+
     }
 }

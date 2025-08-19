@@ -38,7 +38,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button choice1Answer2Go;
 
 
-        public Button timeTravelButton;
+       // public Button timeTravelButton;
         private void Awake()
         {
             // Hook up forward and back buttons to corresponding logic
@@ -48,7 +48,7 @@ namespace Alpha.Phases.Destiny.Quest
             choice1Answer1Stay.onClick.AddListener(MoveToWrong);
 
             choice1Answer2Go.onClick.AddListener(MoveToRight);
-            timeTravelButton.onClick.AddListener(MoveToScene3);
+          //  timeTravelButton.onClick.AddListener(MoveToScene3);
             // Setup TTS button listeners
             for (int i = 0; i < textButtons.Length; i++)
             {
@@ -228,14 +228,14 @@ namespace Alpha.Phases.Destiny.Quest
             arrayPos = 0;
             Debug.Log("This start function Runs");
         }
-
+        /*
         public void MoveToScene3()
         {
            
             LOLSDK.Instance.SubmitProgress(0, 60, 100);
             SceneManager.LoadScene("Stage3Scene1");
         }
-
+        */
 
         public void MoveToWrong()
         {

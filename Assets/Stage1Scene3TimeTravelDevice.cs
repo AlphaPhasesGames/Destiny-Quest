@@ -10,11 +10,13 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage1Scene3TimeTravelDevice : MonoBehaviour
     {
+        public Animator flashScreen;
         public Button timeTravelButton;
+        public GameObject flashImage;
         // Start is called before the first frame update
         void Start()
         {
-            timeTravelButton.onClick.AddListener(ChangeStage);
+            timeTravelButton.onClick.AddListener(TimeTravelFlash);
         }
 
         // Update is called once per frame
@@ -23,8 +25,16 @@ namespace Alpha.Phases.Destiny.Quest
 
         }
 
-        public void ChangeStage()
+        public void TimeTravelFlash()
         {
+            flashImage.gameObject.SetActive(true);
+            flashScreen.SetBool("flash", true);
+            StartCoroutine(ChangeScene());
+        }
+
+        public IEnumerator ChangeScene()
+        {
+            yield return new WaitForSeconds(1);
             SceneManager.LoadScene("Stage1CampSection2");
             LOLSDK.Instance.SubmitProgress(0, 20, 100);
         }

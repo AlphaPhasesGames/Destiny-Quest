@@ -4,24 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Alpha.Phases.Destiny.Quest
 {
-    public class WaterSlider : MonoBehaviour
+    public class FoodSlider : MonoBehaviour
     {
-        public Button closeWaterWarning;
-        public GameObject warningBox;
-        public Slider waterSlider;
+        public Button closeFoodTaskBox;
+        public GameObject foodTaskBox;
+        public Slider foodSlider;
 
         private void Awake()
         {
-            closeWaterWarning.onClick.AddListener(NotEnoughWater);
+            closeFoodTaskBox.onClick.AddListener(NotEnoughWater);
         }
         public void AddValueToSlider()
         {
-            waterSlider.value++;
+            foodSlider.value++;
         }
 
         public void NotEnoughWater()
         {
-            warningBox.gameObject.SetActive(false);
+            foodTaskBox.gameObject.SetActive(false);
         }
     }
 }

@@ -38,6 +38,7 @@ namespace Alpha.Phases.Destiny.Quest
         public Button choice1Answer1GoRound;
         public Button choice1Answer2TravelThrough;
 
+        public GameObject taskBox;
 
         private void Awake()
         {
@@ -100,6 +101,7 @@ namespace Alpha.Phases.Destiny.Quest
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    taskBox.gameObject.SetActive(true);
                     break;
                 case 1:
                     textPanal.gameObject.SetActive(true);

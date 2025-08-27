@@ -159,6 +159,7 @@ namespace Alpha.Phases.Destiny.Quest
                     break;
 
                 case 9: // Correct 5 InCorrect
+                    StopAllCoroutines();
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);

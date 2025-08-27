@@ -8,6 +8,8 @@ namespace Alpha.Phases.Destiny.Quest
     {
         public Stage3Scene1TextMan textman;
 
+        public GameObject minigameUI;
+
         public Button correct1HardWorking;
         public Button correct2Citizen;
         public Button correct3Catholic;
@@ -84,7 +86,7 @@ namespace Alpha.Phases.Destiny.Quest
             textman.positionChanged = true;
             correct1Paper.gameObject.SetActive(true);
             textman.arrayPos = 3;
-            correct1HardWorking.enabled = false;
+           // correct1HardWorking.enabled = false;
             textman.ResetBools();
 
         }
@@ -93,7 +95,7 @@ namespace Alpha.Phases.Destiny.Quest
         {
             textman.positionChanged = true;
             correct2Paper.gameObject.SetActive(true);
-            correct2Citizen.enabled = false;
+           // correct2Citizen.enabled = false;
             textman.arrayPos = 3;
             textman.ResetBools();
         }
@@ -103,7 +105,7 @@ namespace Alpha.Phases.Destiny.Quest
             correct3Paper.gameObject.SetActive(true);
             textman.positionChanged = true;
             textman.arrayPos = 3;
-            correct3Catholic.enabled = false;
+           // correct3Catholic.enabled = false;
             textman.ResetBools();
         }
 
@@ -128,6 +130,7 @@ namespace Alpha.Phases.Destiny.Quest
             correct1Paper.gameObject.SetActive(false);
             textman.positionChanged = true;
             textman.arrayPos = 4;
+            correct1HardWorking.enabled = false;
             tick1.gameObject.SetActive(true);
             correct1 = true;
         }
@@ -137,6 +140,7 @@ namespace Alpha.Phases.Destiny.Quest
             correct2Paper.gameObject.SetActive(false);
             textman.positionChanged = true;
             textman.arrayPos = 5;
+            correct2Citizen.enabled = false;
             tick2.gameObject.SetActive(true);
             correct2 = true;
         }
@@ -146,6 +150,7 @@ namespace Alpha.Phases.Destiny.Quest
             correct3Paper.gameObject.SetActive(false);
             textman.positionChanged = true;
             textman.arrayPos = 6;
+            correct3Catholic.enabled = false;
             tick3.gameObject.SetActive(true);
             correct3 = true;
         }
@@ -203,7 +208,9 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator CompleteStage()
         {
-            yield return new WaitForSeconds(6);
+            minigameUI.gameObject.SetActive(false);
+            yield return new WaitForSeconds(5);
+
             textman.positionChanged = true;
             textman.arrayPos = 9;
         }

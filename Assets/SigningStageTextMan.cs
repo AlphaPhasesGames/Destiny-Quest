@@ -118,9 +118,9 @@ namespace Alpha.Phases.Destiny.Quest
         // Plays TTS for intro text buttons
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage4Scene2text{textIndex}";
+            string textKey = $"signingScreenText{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
-            Debug.Log($"stage4Scene2text{textIndex} Button is pressed");
+            Debug.Log($"signingScreenText{textIndex} Button is pressed");
         }
 
         // Progress forward through array

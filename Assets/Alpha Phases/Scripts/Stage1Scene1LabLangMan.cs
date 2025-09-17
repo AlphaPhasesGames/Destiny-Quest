@@ -15,7 +15,9 @@ namespace Alpha.Phases.Destiny.Quest
          public TextMeshProUGUI labText2;
          public TextMeshProUGUI labText3;
          public TextMeshProUGUI labText4;
-        
+
+        public TextMeshProUGUI inventory;
+
          public TextMeshProUGUI labTextLetterHead;
          public TextMeshProUGUI labTextLetter1;
          public TextMeshProUGUI labTextLetter2;
@@ -47,6 +49,8 @@ namespace Alpha.Phases.Destiny.Quest
             JSONNode defs = SharedState.LanguageDefs;
 
             book1Title.text = defs["book1Title"];
+
+            inventory.text = defs["inventoryText"];
 
             labText1.text = defs["labText1"];
             labText2.text = defs["labText2"];

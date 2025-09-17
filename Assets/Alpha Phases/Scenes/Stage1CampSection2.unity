@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Thomas Jefferson to Meriwether Lewis, 4 July 1803 t
+  m_text: Thomas Jefferson to Meriwether Lewis, 4 July 1803
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -13103,8 +13103,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 514503665}
-  - {fileID: 718767353}
   - {fileID: 2393905541244659568}
+  - {fileID: 718767353}
   - {fileID: 349464952}
   - {fileID: 2069383445}
   - {fileID: 1328496108}

@@ -180,7 +180,8 @@ namespace Alpha.Phases.Destiny.Quest
                     playerMoveScript.enabled = false;
                     playerObject.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToTommyJefferson());
+                    StartCoroutine(DelayTextButton());
+                    //StartCoroutine(MoveToTommyJefferson());
                     break;
 
                 case 3:
@@ -196,6 +197,7 @@ namespace Alpha.Phases.Destiny.Quest
 
                 case 5:
                     backwardsButton.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton());
                     break;
 
                 case 6:
@@ -276,11 +278,12 @@ namespace Alpha.Phases.Destiny.Quest
                 positionChanged = true;
                 hasScrolled = false;
                 forwardButton.gameObject.SetActive(false);
-
+                /*
                 if (arrayPos != 3)
                 {
                     StartCoroutine(DelayTextButton());
                 }
+                */
             }
         }
 
@@ -336,7 +339,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator MoveToBlankInvislbePanal()
         {
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(7);
             playerMoveScript.enabled = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 13;
@@ -357,7 +360,7 @@ namespace Alpha.Phases.Destiny.Quest
 
         public IEnumerator OpenTommyLetter()
         {
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(7);
             playerMoveScript.enabled = false;
             s1s2TommyLetter.gameObject.SetActive(true);
             textPanal.gameObject.SetActive(false);

@@ -9,7 +9,7 @@ namespace Alpha.Phases.Destiny.Quest
 {
     public class Stage2Scene2LangMan : MonoBehaviour
     {
-
+        public TextMeshProUGUI levelInstructions;
         public TextMeshProUGUI text1;
         public TextMeshProUGUI text2;
         public TextMeshProUGUI text2a;
@@ -74,6 +74,10 @@ namespace Alpha.Phases.Destiny.Quest
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+
+            levelInstructions.text = defs["stage2Scene2Instructions"];
+
+
             text1.text = defs["stage2Scene2Text1"];
             text2.text = defs["stage2Scene2Text2"];
             text2a.text = defs["stage2Scene2Text2Choice1"];

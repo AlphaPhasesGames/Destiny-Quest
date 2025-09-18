@@ -5611,8 +5611,8 @@ PrefabInstance:
     - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_text
       value: "America is destined to expand westward and claim new land. Our young
-        nation didn\u2019t begin to grow through war \u2014 we grew with smart deals
-        and brave settlers. t"
+        nation didn\u2019t begin to grow through war - we grew with smart deals and
+        brave settlers. t"
       objectReference: {fileID: 0}
     - target: {fileID: 2750354202815694749, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_margin.z
@@ -5661,6 +5661,14 @@ PrefabInstance:
     - target: {fileID: 3034136670508853302, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142391255107489878, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 48.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142391255107489878, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38.1
       objectReference: {fileID: 0}
     - target: {fileID: 3233112920054920569, guid: 67e37d9bfe6cf0843959ec09856e65b9, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -12909,7 +12917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &993223580447131279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15961,7 +15969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.9, y: -11.7}
+  m_AnchoredPosition: {x: 25.9, y: -14.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2210070288341217792
@@ -17435,7 +17443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.2, y: -25.3}
+  m_AnchoredPosition: {x: 22.9, y: -25.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &2860804443184870800
@@ -17801,7 +17809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.3, y: 24.4}
+  m_AnchoredPosition: {x: -54.2, y: 24.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3021391440657042578
@@ -21146,7 +21154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.00006, y: 41}
+  m_AnchoredPosition: {x: -133, y: 41}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4289604189060792900
@@ -21376,9 +21384,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A man named James Monroe was sent to buy New Orleans for our farmers.
-    Napoleon and France surprised us \u2014 they sold the US all of Louisiana instead!
-    This peaceful deal doubled the country's size"
+  m_text: "James Monroe deb\xEDa comprar Nueva Orleans para nuestros agricultores.
+    Napole\xF3n y Francia nos sorprenden; \xA1venden toda Luisiana en su lugar! Este
+    acuerdo pac\xEDfico duplic\xF3 el tama\xF1o del pa\xEDs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -21441,7 +21449,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -148.41205, w: 0}
+  m_margin: {x: -14.7252655, y: 0, z: -164.47786, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22172,8 +22180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In Texas, Americans moved in with Mexico\u2019s permission. They promised
-    to follow the rules \u2014 no fighting, just settlement."
+  m_text: "En Texas, los estadounidenses se mudaron con el permiso de M\xE9xico.
+    Prometieron seguir las reglas, sin pelear, solo asentarse."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -24571,9 +24579,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Out west, Lewis and Clark explored new lands. Later, a path known as the
-    South Pass made it easier for wagons to reach Oregon. As more settlers arrived,
-    so did our claim.
+  m_text: "En el oeste, Lewis y Clark exploran nuevas tierras. M\xE1s tarde, un camino,
+    el South Pass, facilit\xF3 que los carros llegaran a Oreg\xF3n. A medida que
+    m\xE1s colonos llegaban, tambi\xE9n lo hac\xEDa nuestra reclamaci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -24636,7 +24644,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -136.52557, w: 0}
+  m_margin: {x: -16.035088, y: 0, z: -160.5703, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -24909,8 +24917,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A man named John O\u2019Sullivan came up with the phrase \"Manifest Destiny\"
-    in 1845.T"
+  m_text: "Un hombre llamado John O'Sullivan acu\xF1\xF3 la frase 'Destino Manifiesto'
+    en 1845."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -24976,7 +24984,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5723547725769864124
@@ -25289,7 +25297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270.0001, y: 31.999979}
+  m_AnchoredPosition: {x: 287, y: 31.999979}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5841887226763497735
@@ -25370,8 +25378,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This belief was used to ignore the rights of Great Britain, Mexico, and
-    Indigenous peoples who already lived on the land. t
+  m_text: "Esta creencia se utiliz\xF3 para ignorar los derechos de Gran Breta\xF1a,
+    M\xE9xico y los pueblos ind\xEDgenas que ya viv\xEDan en la tierra."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -25437,7 +25445,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!224 &5864807384514430641
@@ -27184,8 +27192,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some Americans believed that expansion was right, even if it meant using
-    force or unfair methods. t
+  m_text: "Algunos cre\xEDan que la expansi\xF3n era correcta, incluso si significaba
+    usar la fuerza o m\xE9todos injustos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -27248,10 +27256,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
+  m_margin: {x: -13.840721, y: 0, z: -160.47499, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &6553373247328392447
@@ -28796,7 +28804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 281275506542931854, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 365240714539208089, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -28836,7 +28844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603038084560513198, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2840004348907216251, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -29003,12 +29011,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_text
+      value: "Wow, realmente estamos en 1803. Hay una tarea que debemos completar.
+        Hag\xE1moslo ahora."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_margin.x
+      value: -78.64738
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_margin.z
+      value: -234.30496
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 6945999537831836944, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7427506470367356879, guid: c810f598c9538ab45963497f6261de38, type: 3}
       propertyPath: m_fontAsset
@@ -29296,9 +29321,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "America is destined to expand westward and claim new land. Our young nation
-    didn\u2019t begin to grow through war \u2014 we grew with smart deals and brave
-    settlers. t"
+  m_text: "EE.UU. est\xE1 destinado a expandirse y reclamar el oeste. Nuestra naci\xF3n
+    no creci\xF3 a trav\xE9s de la guerra; fue con acuerdos inteligentes y valientes
+    colonos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -29361,7 +29386,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -116.6199, w: 0}
+  m_margin: {x: -2.6429062, y: 0, z: -131.17177, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -31459,8 +31484,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: By 1848, the United States had tripled in size through treaties, settlements,
-    trickery, and war. t
+  m_text: "Para 1848, EE.UU. hab\xEDa triplicado su tama\xF1o a trav\xE9s de tratados,
+    asentamientos, enga\xF1os y guerra."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -31523,10 +31548,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
+  m_margin: {x: 0, y: 0, z: -168.92941, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8083097360161659198
@@ -32655,8 +32680,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: People thought it was their duty from God to spread freedom and democracy
-    to new lands. t
+  m_text: La gente pensaba que era su deber de Dios difundir la libertad y la democracia
+    a nuevas tierras.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -32722,7 +32747,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8648310828547882677
@@ -32883,6 +32908,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 718767353}
     m_Modifications:
+    - target: {fileID: 12312632171081503, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1398402602992756059, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -32971,6 +33000,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2783971565821810936, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3093091203189849746, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -32979,22 +33012,58 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4061186084637701176, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4892811335012577914, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_text
+      value: Destino Desubicado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875538777416043600, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6088029328652811011, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Name
       value: Mingame1SignUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6096981778698125474, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.80554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096981778698125474, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.80554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096981778698125474, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.80554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096981778698125474, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6560088006743928540, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -33004,24 +33073,60 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_text
+      value: Destino Desubicado
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709329708145359922, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443422488255653699, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_text
+      value: Destino Obvio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443422488255653699, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_margin.z
+      value: -8.425415
       objectReference: {fileID: 0}
     - target: {fileID: 7443422488255653699, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
     - target: {fileID: 7443422488255653699, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
+    - target: {fileID: 7443422488255653699, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699696335303729998, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8434697570840959993, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926141049838205359, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8995708597097904327, guid: edc5991f894d0f3489893e1a98fda082, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -33076,8 +33181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In the 1800s, many Americans believed it was their country\u2019s \"obvious
-    fate\" to grow across the whole continent.t"
+  m_text: "En el siglo XIX, muchos estadounidenses cre\xEDan que era el 'destino
+    obvio' de su pa\xEDs expandirse por todo el continente."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -33143,7 +33248,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -146.64214, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8739805283112512198
@@ -33867,7 +33972,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

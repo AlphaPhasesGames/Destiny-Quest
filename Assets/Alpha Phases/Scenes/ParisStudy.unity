@@ -2334,9 +2334,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 401955692602095664, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: After losing a colony in Haiti, Napoleon changed his mind and the British
-        were approaching. Instead of just New Orleans, he considered selling the
-        whole Louisiana Territory. t
+      value: "Despu\xE9s de perder una colonia en Hait\xED, Napole\xF3n cambi\xF3
+        de opini\xF3n. En lugar de solo Nueva Orleans, consider\xF3 vender todo el
+        Territorio de Luisiana."
       objectReference: {fileID: 0}
     - target: {fileID: 406809883521001136, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -2376,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 602367523165429821, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -18.3
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 636217715508180283, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -2592,8 +2592,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3569069550221342935, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: President Jefferson sent James Monroe to buy New Orleans for $10 million.
-        But Napoleon offered the whole Louisiana Territory for $15 million! t
+      value: "El presidente Jefferson envi\xF3 a James Monroe a comprar Nueva Orleans
+        por 10 millones de d\xF3lares. \xA1Napole\xF3n ofreci\xF3 todo el Territorio
+        de Luisiana por 15 millones de d\xF3lares!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569069550221342935, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.x
+      value: -18.073975
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569069550221342935, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_margin.z
+      value: -160.89905
       objectReference: {fileID: 0}
     - target: {fileID: 3625661625615332630, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -2625,9 +2634,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3956977314809438665, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: In the early 1800s, farmers needed the Mississippi River and the port
-        of New Orleans to sell their crops. If they lost access, they couldn't make
-        money. t
+      value: "A principios de 1800, los agricultores necesitaban el r\xEDo Misisipi
+        y el puerto de Nueva Orleans para vender sus cultivos. Si perd\xEDan el acceso,
+        no pod\xEDan ganar dinero."
       objectReference: {fileID: 0}
     - target: {fileID: 3956977314809438665, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -2685,8 +2694,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4473171913245928640, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_text
-      value: The land west of the river,Louisiana,was owned by France. Farmers worried
-        Napoleon might close New Orleans and stop their trade. t
+      value: "La tierra al oeste del r\xEDo, Luisiana, era propiedad de Francia.
+        Los agricultores tem\xEDan que Napole\xF3n pudiera cerrar Nueva Orleans y
+        detener su comercio."
       objectReference: {fileID: 0}
     - target: {fileID: 4473171913245928640, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -2976,7 +2986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763517613243721939, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 27
+      value: 23.3
       objectReference: {fileID: 0}
     - target: {fileID: 6774845686945963825, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -7093,7 +7103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.10001, y: -3.9998105}
+  m_AnchoredPosition: {x: -11.6, y: -5.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170143371
@@ -7116,10 +7126,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some Americans didn't like it - they thought it was too much land or that
-    it broke the rules of the Constitution. But most people were excited. In 1804,
-    Lewis and Clark set off to explore the new land, with help from a Shoshone woman
-    named Sacagawea.
+  m_text: "A algunos estadounidenses no les gust\xF3; pensaron que era demasiada
+    tierra o que romp\xEDa las reglas de la Constituci\xF3n. Pero la mayor\xEDa de
+    la gente estaba emocionada. En 1804, Lewis y Clark partieron para explorar la
+    nueva tierra, con la ayuda de una mujer shoshone llamada Sacagawea."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -7182,7 +7192,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -41.400314, y: 0, z: -135.79437, w: 0}
+  m_margin: {x: -41.400314, y: 0, z: -146.78258, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7495,7 +7505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1040455268148445380, guid: 1f9247250bb24aa40b5ef1c96b2281ba, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4201503330895251689, guid: 1f9247250bb24aa40b5ef1c96b2281ba, type: 3}
       propertyPath: m_Pivot.x
@@ -7978,7 +7988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We are prepared to purchase New Orleans. t
+  m_text: Estamos preparados para comprar Nueva Orleans.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -9512,14 +9522,14 @@ RectTransform:
   m_GameObject: {fileID: 1665982569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.85859, y: 0.85859, z: 0.85859}
+  m_LocalScale: {x: 0.8038953, y: 0.8038953, z: 0.8038953}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1785443962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -2}
+  m_AnchoredPosition: {x: 29.4, y: -2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665982571
@@ -9542,8 +9552,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: War with Britain is coming, we must act swiftly, before the British seize
-    our lands.
+  m_text: "Creo que mantener Luisiana es la mejor idea, en caso de que ganemos la
+    guerra con Gran Breta\xF1a"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -9606,7 +9616,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -130.06943, y: 0, z: -40.121674, w: 0}
+  m_margin: {x: -162.66621, y: 0, z: -71.509415, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10859,6 +10869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InvButton
       objectReference: {fileID: 0}
+    - target: {fileID: 646874944945574157, guid: 506826b9e5a21e84da83f58b18a347ed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1562894022840789971, guid: 506826b9e5a21e84da83f58b18a347ed, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11021,7 +11035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What are your intentions with Louisiana? t
+  m_text: "\xBFCu\xE1les son sus intenciones con Luisiana?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -12077,14 +12091,14 @@ RectTransform:
   m_GameObject: {fileID: 2102299677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.84089, y: 0.84089, z: 0.84089}
+  m_LocalScale: {x: 0.7708469, y: 0.7708469, z: 0.7708469}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 360152822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29, y: -6}
+  m_AnchoredPosition: {x: 25.6, y: -0.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102299679
@@ -12107,8 +12121,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I think keeping hold of Lousianna is the best idea, in case we win the
-    war with Britain.
+  m_text: " La guerra con Gran Breta\xF1a se acerca; debemos actuar r\xE1pido, antes
+    de que los brit\xE1nicos se apoderen de las tierras."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -12171,7 +12185,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -130.06943, y: 0, z: -41.008423, w: 0}
+  m_margin: {x: -198.03123, y: 0, z: -103.62956, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

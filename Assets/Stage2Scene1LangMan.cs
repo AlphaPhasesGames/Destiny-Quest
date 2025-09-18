@@ -10,7 +10,7 @@ namespace Alpha.Phases.Destiny.Quest
     public class Stage2Scene1LangMan : MonoBehaviour
     {
         public TextMeshProUGUI stageTaskText;
-
+        public TextMeshProUGUI notEnoughText;
         public TextMeshProUGUI text1;
         public TextMeshProUGUI text2;
         public TextMeshProUGUI text3;
@@ -90,7 +90,7 @@ namespace Alpha.Phases.Destiny.Quest
             book5Title.text = defs["book5Title"];
 
             stageTaskText.text = defs["stage2Scene1Instructions"];
-
+            notEnoughText.text = defs["stage2Scene1NotCollectedWater"];
             referenceButton.text = defs["referenceButton"];
             referenceButton2.text = defs["referenceButton"];
             referenceButton3.text = defs["referenceButton"];

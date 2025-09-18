@@ -80,12 +80,12 @@ namespace Alpha.Phases.Destiny.Quest
 
 
 
-            /*
+           
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("Stage3Scene2");
+                SceneManager.LoadScene("Stage2Scene1");
             }
-           
+            /*
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadScene("ParisStudy");

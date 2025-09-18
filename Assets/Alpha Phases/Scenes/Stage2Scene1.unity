@@ -3708,6 +3708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageTaskText: {fileID: 1473439261}
+  notEnoughText: {fileID: 2738832355955099528}
   text1: {fileID: 694583521}
   text2: {fileID: 1883515231}
   text3: {fileID: 532960312}
@@ -10347,7 +10348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917809050663839697, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 920704408960484773, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
@@ -14165,6 +14166,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f867e90b926db240b8456e900a8f17a, type: 3}
+--- !u!114 &2738832355955099528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7169513934442197863, guid: 7f867e90b926db240b8456e900a8f17a, type: 3}
+  m_PrefabInstance: {fileID: 2738832355955099527}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2750354202062063978
 MonoBehaviour:
   m_ObjectHideFlags: 0

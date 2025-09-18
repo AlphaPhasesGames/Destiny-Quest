@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7714019140998395612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3194,7 +3194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2306005498105509839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3204,7 +3204,7 @@ RectTransform:
   m_GameObject: {fileID: 992023906271889566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.23885764, y: 0.23885764, z: 0.23885764}
+  m_LocalScale: {x: 0.17969371, y: 0.17969371, z: 0.17969371}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8519171309689071419}
@@ -4890,7 +4890,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Manifest Destiny and the Growing Nation - Introduction - Page 1t
+  m_text: "Destino Manifiesto y la Naci\xF3n en Crecimiento - Introducci\xF3n - P\xE1gina
+    1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -8670,8 +8671,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Manifest Destiny and the Growing Nation - The Louisiana Territory - Pages
-    3 and 4
+  m_text: "Destino Manifiesto y la Naci\xF3n en Crecimiento - El Territorio de Luisiana
+    - P\xE1ginas 3 y 4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -8734,7 +8735,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -130.06146, y: 0, z: -108.53131, w: 0}
+  m_margin: {x: -150.4612, y: 0, z: -123.027725, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19397,7 +19398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5196352999825183551
 RectTransform:
   m_ObjectHideFlags: 0

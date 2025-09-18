@@ -1215,6 +1215,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 375681129596580916, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 406809883521001136, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1392,6 +1396,10 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6746596317348540977, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206865583746792481, guid: 6ff13a1436933554cbda4d0daf7219ca, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -3860,6 +3868,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2451475357333030980, guid: 7f867e90b926db240b8456e900a8f17a, type: 3}
   m_PrefabInstance: {fileID: 243733083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &243733087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7169513934442197863, guid: 7f867e90b926db240b8456e900a8f17a, type: 3}
+  m_PrefabInstance: {fileID: 243733083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247564965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6373,6 +6392,10 @@ PrefabInstance:
       propertyPath: book5Title
       value: 
       objectReference: {fileID: 114535152}
+    - target: {fileID: 6636111330283886969, guid: 311fd969846f43a43b6330ce55f8d024, type: 3}
+      propertyPath: notEnoughText
+      value: 
+      objectReference: {fileID: 243733087}
     - target: {fileID: 6636111330283886969, guid: 311fd969846f43a43b6330ce55f8d024, type: 3}
       propertyPath: referenceButton
       value: 
@@ -20020,7 +20043,7 @@ RectTransform:
   m_GameObject: {fileID: 6088327227953220509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12121947, y: 1, z: 1}
+  m_LocalScale: {x: 0.10193346, y: 0.8409, z: 0.8409}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8233747593830874897}
@@ -20167,9 +20190,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Taking the path that Lewis and Clark took isnt a wise idea. The terrain
-    is too rough for our wagons. If we go this way, we might lose wagons and settlers.
-    Maybe there is another route we could take. t
+  m_text: "A diferencia de los empinados caminos usados por Lewis y Clark, el Paso
+    del Sur era lo suficientemente plano para que las carretas cruzaran las Rocosas.
+    Ahora, el camino est\xE1 abierto para que los colonizadores busquen fortuna en
+    Oreg\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -20232,10 +20256,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -148.13194, y: 0, z: -296.89795, w: 0}
+  m_margin: {x: -205.00926, y: 0, z: -369.52866, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &2276962610950453323
@@ -21173,14 +21197,14 @@ RectTransform:
   m_GameObject: {fileID: 4213807075036580052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.4034648, y: 1.4034647, z: 1.4034647}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5871365848154555287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 466.7563, y: 50.78402}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3983313629804732411
@@ -22586,9 +22610,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unlike the high, steep passes used by Lewis and Clark, South Pass was low
-    and flat enough for wagons to cross the Rockies. Now, the path is open for colonizers
-    to seek their fortunes in Oregon.
+  m_text: "Tomar el camino que tomaron Lewis y Clark no es una idea sabia. El terreno
+    es demasiado \xE1spero para nuestras carretas. Si vamos por este camino, podr\xEDamos
+    perder carretas y colonos. Tal vez haya otra ruta que podr\xEDamos tomar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
@@ -22651,10 +22675,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -149.58463, y: 0, z: -285.56308, w: 0}
+  m_margin: {x: -208.7107, y: 0, z: -359.43408, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!224 &5871365848154555287
@@ -22666,7 +22690,7 @@ RectTransform:
   m_GameObject: {fileID: 8721046943732925528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12121947, y: 1, z: 1}
+  m_LocalScale: {x: 0.10621977, y: 0.87626, z: 0.87626}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3903252684707948974}
@@ -23898,14 +23922,14 @@ RectTransform:
   m_GameObject: {fileID: 835181238889018072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.4624807, y: 1.4624808, z: 1.4624808}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1950812689047792672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: 44.5}
+  m_AnchoredPosition: {x: 486.38345, y: 52.919495}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8262811688380229402
@@ -23976,7 +24000,7 @@ MonoBehaviour:
     careful, this is dangerous terrain. t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 5064143332982569253, guid: ff93913c1c6b5f146a2817e8ea28267f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
